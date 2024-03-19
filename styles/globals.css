@@ -2,32 +2,706 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  @apply m-0 p-0 box-border;
+}
+
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --Yellow-color: #ffd500;
+  --Background-color: #2b2d31;
+}
+html {
+  scroll-behavior: smooth;
+}
+/*  Header  */
+.Header {
+  @apply flex fixed items-center justify-between w-full px-[10%] max-[700px]:px-[1%] bg-none z-[100000000000];
+}
+.Drop-Navbar {
+  @apply fixed flex justify-between py-[150px] h-screen px-[10%] overflow-hidden right-0 z-[100000000] w-full text-[var(--primary-color)];
+  background: linear-gradient(to right, #d91820, #f15a24) no-repeat;
+}
+.Drop-Navbar .Buttons {
+  @apply flex gap-5 text-[40px] font-extralight text-white list-none min-[1900px]:text-[60px];
+}
+.Drop-Navbar .Header-Info {
+  @apply pr-[10%] pt-[20px] font-normal text-white text-[18px] min-[1900px]:text-[28px];
+}
+.Drop-Navbar .Header-Info .Social-Div {
+  @apply flex gap-3 items-center pt-[20px] max-[1024px]:flex-wrap;
+}
+.Header-Info .Social-Div h4 {
+  @apply font-normal text-white text-[18px] min-[1900px]:text-[28px];
+}
+.Header-Info .Social-Div .Icons {
+  @apply text-[20px] min-[1900px]:text-[32px];
+}
+/*  Header  */
+
+/*  Slider-Section  */
+.Progress-Bar {
+  @apply bg-white w-[100%] absolute;
+}
+/*  Slider-Nav  */
+.slider-container .Side-Nav {
+  @apply text-right text-white absolute right-[10%] top-[35%] z-[100000];
+}
+#Side-Nav {
+  @apply max-[800px]:hidden;
+}
+.Uper-div {
+  @apply leading-[50px];
+}
+.Uper-div h3 {
+  @apply text-[68px] font-extralight min-[1850px]:text-[85px];
+}
+.Uper-div h2 {
+  @apply text-[19px] font-semibold text-[var(--Yellow-color)] cursor-pointer min-[1850px]:text-[28px];
+}
+.Lower-div {
+  @apply leading-[30px] pt-[15%] min-[1850px]:leading-[40px];
+}
+.Lower-div p {
+  @apply cursor-pointer font-medium min-[1850px]:text-[24px];
+}
+/*  Slider-Nav  */
+/*  Slider-Section  */
+.slider-container {
+  @apply relative overflow-hidden;
+}
+.slider {
+  @apply flex;
+}
+.slider-content {
+  @apply flex transition-transform duration-700 ease-linear;
+}
+.slider-section {
+  @apply flex items-center justify-center w-screen h-screen;
+}
+.slider-button {
+  @apply absolute top-[50%] translate-y-[-50%] max-[800px]:top-[95%] bg-transparent border-none text-white text-[18px] cursor-pointer p-[10px];
+  background-color: rgba(128, 128, 128, 0.3);
+}
+.slider-button.previous {
+  @apply left-[0px] max-[800px]:left-[87%] max-[600px]:left-[84%] max-[500px]:left-[80%] max-[390px]:left-[76%];
+}
+.slider-button.next {
+  @apply right-[0px];
+}
+.slider-progress {
+  @apply h-[2px] bg-[var(--Yellow-color)] transition-all duration-700 ease-linear z-[100];
+}
+/*  Slider-Section  */
+
+/*  Home-Page  */
+.Home-Section {
+  @apply h-screen bg-no-repeat bg-cover px-[10%] pt-[150px] text-white flex justify-between items-center flex-wrap;
+  background-image: url("../public/img/GoldSilver.jpg");
+}
+.Home-Section .heading {
+  @apply w-[250px] z-[10] min-[1850px]:w-[500px];
+}
+.Home-Section .heading h2 {
+  @apply text-[68px] leading-[80px] font-extralight;
+}
+.Home-Section .heading p {
+  @apply text-[15px] pt-[17px] font-normal text-gray-200;
+}
+/*  Home-Page  */
+
+/*  About-Page  */
+
+/*  About-Section  */
+.About-Section {
+  @apply h-screen w-screen bg-no-repeat bg-cover px-[10%] pt-[150px] text-white relative;
+  background-image: url("../public/img/BackgroundImage-2.jpg");
+}
+.About-Box {
+  @apply absolute bottom-[3%];
+}
+.About-Section h2 {
+  @apply text-[68px] font-extralight w-min leading-[70px];
+}
+.About-Section .Second-div {
+  @apply flex gap-6 justify-start items-start;
+}
+.About-Section .Second-div h3 {
+  @apply text-[150px] font-thin leading-[150px] max-[651px]:text-[120px];
+}
+.About-Section .Second-div p {
+  @apply text-[14px] w-[320px] pt-[17px] max-[600px]:pr-[20px] text-gray-200;
+}
+/*  About-Section  */
+/*  Our-Value Section  */
+.Our-Value-Section {
+  @apply h-screen w-full flex;
+}
+.Our-Value-Section .Text-Box {
+  @apply bg-[#2B2D31] px-[4%] py-[10px] max-[800px]:pt-[20px] leading-[25px] flex flex-col justify-center w-full;
+}
+.Our-Value-Section .Text-Box h4 {
+  @apply text-white text-[48px] w-[90%] font-extralight leading-[50px] max-[650px]:text-[40px];
+}
+.Our-Value-Section .Text-Box p {
+  @apply text-gray-200 text-[16px] pt-[15px] w-[60%] font-normal max-[650px]:text-[40px] min-[1850px]:leading-[30px] min-[2000px]:leading-[40px];
+}
+@media (max-width: 800px) {
+  .Our-Value-Section .Text-Box p {
+    @apply w-full text-[14px] leading-[20px];
+  }
+}
+/*  Our-Value Section  */
+/*  History-Section  */
+.History-Section {
+  @apply h-screen w-full relative bg-no-repeat bg-cover;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
+    url("../public/img/Oppurtuinity-Image.png");
+}
+.History-Section .Text-Box {
+  @apply flex flex-col justify-center gap-[15px] z-10 h-full pt-[6%] min-[1850px]:pt-0;
+}
+.History-Section .Text-Box .Evolution {
+  @apply flex gap-[3%] px-[10%];
+}
+.History-Section .Text-Box .Evolution h4 {
+  @apply text-[var(--Yellow-color)] text-[22px] font-semibold max-[800px]:text-[18px] min-[1850px]:text-[24px] min-[2000px]:text-[28px];
+}
+.History-Section .Text-Box .Evolution p {
+  @apply text-gray-300 text-[18px] max-[425px]:text-[14px] font-normal w-[65%] max-[800px]:w-full max-[650px]:text-[16px];
+}
+/*  History-Section  */
+/*  Invest-Conviction-With Section  */
+.Invest-Con-Section {
+  @apply h-screen w-full flex;
+}
+.Invest-Con-Section .Text-Box {
+  @apply bg-[#2B2D31] pl-[10%] py-[10%] max-[450px]:pt-[0%] flex flex-col justify-center w-[50%] max-[800px]:w-full;
+}
+.Invest-Con-Section .Text-Box h4 {
+  @apply text-white text-[48px] pt-[120px] w-[90%] font-extralight leading-[50px];
+}
+.Invest-Con-Section .Text-Box p {
+  @apply text-gray-200 text-[12px] pt-[10px] pr-[10px] w-[90%] font-medium max-[1376px]:w-full max-[1376px]:pt-[5px] min-[1850px]:text-[16px];
+}
+/*  Invest-Conviction-With Section  */
+
+/*  About-Page  */
+
+/*  What-We-Do Page  */
+/*  WhatWeDo-Section  */
+.WWeDo-Section {
+  @apply h-screen w-screen bg-[#33245d] px-[10%] pt-[150px] text-white relative;
+}
+.WWeDo-Box {
+  @apply absolute bottom-[3%];
+}
+.WWeDo-Section h2 {
+  @apply text-[68px] font-extralight w-[50%] leading-[70px] max-[651px]:text-[60px];
+}
+.WWeDo-Section .Second-div {
+  @apply flex gap-10 justify-start items-start;
+}
+.WWeDo-Section .Second-div h3 {
+  @apply text-[170px] font-thin leading-[150px] max-[651px]:text-[120px];
+}
+.WWeDo-Section .Second-div p {
+  @apply text-[15px] w-[280px] pt-[17px] text-gray-200;
+}
+/*  WhatWeDo-Section  */
+/*  Visionaries Section  */
+.Visionaries-Section {
+  @apply h-screen w-screen flex bg-[#33245d] text-white relative;
+}
+.Visionaries-Section .Text-Box {
+  @apply flex flex-col justify-center w-[30%] h-full pl-[7%];
+}
+.Visionaries-Section .Text-Box h4 {
+  @apply text-white text-[48px] pt-[15px] w-[70%] font-extralight leading-[60px];
+}
+.Visionaries-Section .Text-Box p {
+  @apply text-gray-300 text-[18px] pt-[10px] font-normal leading-[25px] min-[2000px]:leading-[35px];
+}
+/*  Visionaries Section  */
+/*  ScaleRes Section  */
+.ScaleRes-Section {
+  @apply h-screen w-screen flex justify-between bg-[#33245d] text-white relative;
+}
+.ScaleRes-Section .Text-Box {
+  @apply flex flex-col justify-center w-[40%] h-full pl-[10%] max-[800px]:w-[60%]  max-[800px]:pr-[3%];
+}
+.ScaleRes-Section .Text-Box h4 {
+  @apply text-white text-[48px] pt-[30px] w-[70%] max-[650px]:w-full font-extralight leading-[50px];
+}
+.ScaleRes-Section .Text-Box p {
+  @apply text-gray-200 text-[16px] pt-[10px] font-normal leading-[25px] min-[2000px]:leading-[35px];
+}
+/*  ScaleRes Section  */
+/*  EmergingMarket Section  */
+.EmergingMarket-Section {
+  @apply h-screen w-screen flex bg-[#33245d] text-white relative;
+}
+.EmergingMarket-Section .Text-Box {
+  @apply flex flex-col justify-center w-[30%] h-full pl-[5%] max-[800px]:w-[50%];
+}
+.EmergingMarket-Section .Text-Box h4 {
+  @apply text-white text-[48px] pt-[15px] w-[70%] font-extralight leading-[60px];
+}
+.EmergingMarket-Section .Text-Box p {
+  @apply text-gray-200 text-[18px] pt-[10px] font-normal leading-[25px] min-[2000px]:leading-[35px];
+}
+/*  EmergingMarket Section  */
+/*  HugeConcentration Section  */
+.HugeConcentration-Section {
+  @apply h-screen w-screen flex justify-between bg-[#33245d] text-white relative;
+}
+.HugeConcentration-Section .Text-Box {
+  @apply flex flex-col justify-center w-[40%] h-full pl-[10%] max-[800px]:w-[60%] max-[800px]:pr-[5%];
+}
+.HugeConcentration-Section .Text-Box h4 {
+  @apply text-white text-[48px] pt-[30px] font-extralight leading-[60px] max-[800px]:text-[40px];
+}
+.HugeConcentration-Section .Text-Box p {
+  @apply text-gray-200 text-[18px] pt-[10px] font-normal leading-[25px] min-[2000px]:leading-[35px];
+}
+/*  HugeConcentration Section  */
+/*  What-We-Do Page  */
+
+/*  Team Page  */
+/*  Team-Work Section  */
+.TeamWork-Section {
+  @apply h-screen bg-no-repeat bg-cover w-screen px-[10%] pt-[150px] text-white relative;
+  background-image: url("../public/img/BackgroundImage-1.jpg");
+}
+.TeamWork-Box {
+  @apply absolute bottom-[3%];
+}
+.TeamWork-Section h2 {
+  @apply text-[68px] font-extralight w-[25%] leading-[70px] max-[650px]:text-[60px];
+}
+.TeamWork-Section .Second-div {
+  @apply flex gap-10 justify-start items-start;
+}
+.TeamWork-Section .Second-div h3 {
+  @apply text-[170px] font-thin leading-[150px] max-[650px]:text-[120px];
+}
+.TeamWork-Section .Second-div p {
+  @apply text-[15px] w-[250px] pt-[17px] leading-7 text-gray-200;
+}
+/*  Team-Work Section  */
+/*  Expert-Team Section  */
+.Expert-Team-Section {
+  @apply h-screen w-full flex;
+}
+.Expert-Team-Section .Text-Box {
+  @apply bg-[#37719f] pl-[3%] py-[10%] flex flex-col justify-center w-[70%];
+}
+.Expert-Team-Section .Text-Box h4 {
+  @apply text-white text-[48px] pt-[15px] w-[45%] font-extralight leading-[60px] max-[400px]:text-[40px];
+}
+.Expert-Team-Section .Text-Box p {
+  @apply text-gray-200 text-[15px] pt-[15px] w-[40%] font-medium leading-[30px] max-[800px]:w-[80%] max-[800px]:leading-[25px];
+}
+/*  Expert-Team Section  */
+/*  Celebrating-Section */
+.Celebrating-Section {
+  @apply h-screen w-full flex relative;
+}
+.Celebrating-Section .Text-Box {
+  @apply bg-[#37719f] pl-[10%] py-[10%] pt-[15%] flex flex-col justify-center  max-[800px]:w-[80%];
+}
+.Celebrating-Section .Text-Box h4 {
+  @apply text-white text-[48px] pt-[15px] w-[70%] font-extralight leading-[60px] max-[800px]:text-[40px];
+}
+.Celebrating-Section .Text-Box p {
+  @apply text-gray-200 text-[15px] pt-[15px] pr-[10px] w-[80%] font-medium leading-[30px] max-[800px]:w-full;
+}
+/*  Celebrating-Section */
+/*  Team Page  */
+/* Partner-Brand Page  */
+/*  Partner-Brand-Section */
+.Partner-Brand-Section {
+  @apply h-screen bg-no-repeat bg-cover w-screen px-[10%] pt-[150px] text-white relative;
+  background-image: url("../public/img/Partner-Brand-BG.jpg");
+}
+.Partner-Brand-Box {
+  @apply absolute bottom-[5%];
+}
+.Partner-Brand-Section h2 {
+  @apply text-[68px] font-extralight w-[25%] leading-[70px];
+}
+.Partner-Brand-Section .Second-div {
+  @apply flex gap-10 justify-start items-start;
+}
+.Partner-Brand-Section .Second-div h3 {
+  @apply text-[170px] font-thin leading-[150px];
+}
+.Partner-Brand-Section .Second-div p {
+  @apply text-[15px] w-[250px] pt-[17px] leading-7 text-gray-200;
+}
+/*  Partner-Brand-Section */
+/*  Our-Partner Section */
+.Our-Partner-Section {
+  @apply h-screen w-full flex;
+}
+.Our-Partner-Section .Text-Box {
+  @apply bg-[#33806e] pl-[5%] py-[10%] flex flex-col justify-center w-1/2;
+}
+.Our-Partner-Section .Text-Box h4 {
+  @apply text-white text-[48px] pt-[15px] w-[45%] font-extralight leading-[60px];
+}
+.Our-Partner-Section .Text-Box p {
+  @apply text-gray-200 text-[15px] pt-[15px] w-[40%] font-medium leading-[30px];
+}
+/*  Our-Partner Section */
+/*  Our-Brand Section */
+.Our-Brand-Section {
+  @apply h-screen w-full flex relative;
+}
+.Our-Brand-Section .Text-Box {
+  @apply bg-[#33806e] pl-[15%] py-[10%] pt-[15%] flex flex-col justify-center w-[50%];
+}
+.Our-Brand-Section .Text-Box .heading {
+  @apply text-white text-[48px] pt-[15px] w-[50%] font-extralight leading-[60px];
+}
+.Our-Brand-Section .Text-Box > p {
+  @apply text-gray-200 text-[15px] pt-[15px] w-[60%] font-medium leading-[30px];
+}
+.Our-Brand-Section .Second-Text-Box h5 {
+  @apply text-[24px] text-white pt-[5%];
+}
+.Our-Brand-Section .Second-Text-Box h3 {
+  @apply text-[40px] text-white font-light;
+}
+.Our-Brand-Section .Second-Text-Box p {
+  @apply text-[15px]  text-gray-200 font-medium;
+}
+/*  Our-Brand Section */
+/*  Career-Section  */
+.Career-Section {
+  @apply h-screen bg-no-repeat bg-cover w-screen px-[10%] pt-[150px] text-white relative;
+  background-image: url("../public/img/Career-BG.jpg");
+}
+.Career-Box {
+  @apply absolute bottom-[3%];
+}
+.Career-Section h2 {
+  @apply text-[68px] font-extralight w-[25%] leading-[70px];
+}
+.Career-Section .Second-div {
+  @apply flex gap-10 justify-start items-start;
+}
+.Career-Section .Second-div h3 {
+  @apply text-[170px] font-thin leading-[150px];
+}
+.Career-Section .Second-div p {
+  @apply text-[15px] w-[280px] pt-[17px] leading-7;
+}
+/*  Career-Section  */
+/*  Our-Culture Section  */
+.Our-Culture-Section {
+  @apply h-screen w-full flex;
+}
+.Our-Culture-Section .Text-Box {
+  @apply bg-[#33806e] pl-[5%] py-[10%] flex flex-col justify-center w-[75%];
+}
+.Our-Culture-Section .Text-Box h4 {
+  @apply text-white text-[48px] pt-[15px] w-[45%] font-extralight leading-[60px];
+}
+.Our-Culture-Section .Text-Box > p {
+  @apply text-gray-200 text-[15px] pt-[15px] w-[70%] font-medium leading-[20px];
+}
+.Our-Culture-Section .Icons-Section {
+  @apply grid w-[70%] justify-items-start text-[#fff] text-[14px] gap-5 pt-[5%];
+  grid-template-columns: 30% 30% 30%;
+}
+.Icons-Section .Icon-Image {
+  @apply h-[50px] w-[50px];
+}
+/*  Our-Culture Section  */
+/*  Contact Page  */
+/*  Contact Section  */
+.Contact-Section {
+  @apply h-screen bg-no-repeat bg-cover w-screen px-[10%] pt-[150px] text-white relative;
+  background: linear-gradient(to right, #d91820, #f15a24) no-repeat;
+}
+.Contact-Section .Text-Box {
+  @apply absolute bottom-[10%] z-40;
+}
+.Contact-Section h2 {
+  @apply text-[68px] font-extralight w-[25%] leading-[70px];
+}
+.Contact-Section .Second-div {
+  @apply flex gap-10 justify-start items-start flex-wrap;
+}
+.Contact-Section .Second-div h3 {
+  @apply text-[170px] font-thin leading-[150px];
+}
+.Contact-Section .Second-div p {
+  @apply text-[15px] w-[250px] max-[650px]:w-[90%] pt-[17px] max-[450px]:pt-[0px] leading-7 text-gray-200;
+}
+.Contact-Section .Image-Div {
+  @apply absolute right-[15%] top-[150px] max-[800px]:right-[0%];
+}
+/*  Contact Section  */
+/*  Contact-Form Section  */
+.Contact-Form-Section {
+  @apply flex items-center justify-center pt-[100px] max-[425px]:pt-[80px] max-[425px]:flex-col;
+}
+.Contact-Form-Box {
+  @apply flex items-center shadow-md shadow-gray-500 w-[80%] max-[850px]:w-[95%] max-[425px]:w-full max-[425px]:flex-col;
+}
+.Info-Div {
+  @apply w-[35%] py-[48px] px-[38px] max-[425px]:py-0 max-[425px]:h-fit max-[550px]:w-1/2 max-[1000px]:px-[19px] max-[650px]:px-[12px] h-[80vh] grid items-center;
+  background: linear-gradient(to right, #d91820, #f15a24) no-repeat;
+}
+.Info-Div > h4 {
+  @apply text-[28px] text-white font-medium max-[650px]:text-[20px] max-[850px]:text-[24px] min-[1850px]:text-[35px] min-[2050px]:text-[45px];
+}
+.Info-Div > p {
+  @apply text-[16px] text-wrap text-gray-200 max-[650px]:text-[12px] max-[850px]:text-[14px] min-[1850px]:text-[22px] min-[2050px]:text-[28px];
+}
+.Info-Div .Content {
+  @apply flex gap-5 max-[1000px]:gap-2 items-start leading-7;
+}
+.Info-Div .Content .Icon-Div {
+  @apply border border-[#ffffff7a] rounded-full p-[10px] max-[425px]:p-[3px] max-[850px]:p-[6px];
+}
+.Info-Div .Content p {
+  @apply text-[16px] text-gray-100 text-wrap max-[650px]:text-[12px] max-[850px]:text-[14px] min-[1850px]:text-[20px] min-[2050px]:text-[24px];
+}
+.Contact-Form {
+  @apply w-[70%] max-[550px]:w-1/2 p-8 max-[425px]:w-full max-[550px]:py-0 max-[550px]:px-3 leading-10 text-[#f15a24] min-[1850px]:leading-[50px] min-[2050px]:leading-[60px];
+}
+.Contact-Form h4 {
+  @apply text-[28px] max-[550px]:text-[24px] text-black font-medium min-[1850px]:text-[35px] min-[2050px]:text-[45px];
+}
+.Contact-Form .Input-Div {
+  @apply w-full flex gap-5 justify-around max-[550px]:flex-wrap max-[550px]:gap-0;
+}
+.Contact-Form .Input-Div input {
+  @apply focus:border-orange-200 border-b border-gray-200 outline-none font-normal pr-[15px] pt-[10px] pb-[0px] w-1/2 max-[550px]:w-full;
+}
+.Contact-Form > input {
+  @apply focus:border-orange-200 border-b border-gray-200 outline-none font-normal pr-[15px] pt-[10px] pb-[0px] w-full;
+}
+.Contact-Form > textarea {
+  @apply focus:border-orange-200 border-b border-gray-200 outline-none font-normal w-full pr-[15px] pt-[10px] pb-[0px];
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+.Contact-Form-Section button {
+  @apply text-white font-medium rounded-md px-[15px] py-[3px] shadow-none;
+  background: linear-gradient(to top, #d91820, #f15a24) no-repeat;
+}
+.Contact-Form-Section button:hover {
+  @apply transition-all ease-in-out duration-300  shadow-md shadow-gray-400;
+  background: linear-gradient(to bottom, #d91820, #f15a24) no-repeat;
+}
+/*  Contact-Form Section  */
+/*  FAQs Section  */
+.FAQ-Main-Section {
+  @apply pt-[100px] min-[1350px]:pt-[30px] min-[1650px]:pt-[60px] h-screen bg-[#fff] flex justify-between gap-[10%] px-[8%] overflow-hidden max-[1025px]:flex-col max-[1025px]:items-center max-[1280px]:overflow-auto;
+}
+.FAQ-Section {
+  @apply w-[640px] mt-[10%] max-[800px]:mt-[10%]  max-[800px]:w-[95%] max-[500px]:w-full max-[1025px]:mt-0 mx-auto bg-[#f9b79f] h-fit rounded-[10px] max-[1200px]:w-[720px] min-[1850px]:w-[700px] min-[2000px]:w-[820px] min-[2300px]:mt-[10%];
+}
+.FAQ-Section-box {
+  @apply py-[4px] px-[5px] select-none text-[#fff] border-b-[2px] border-[#fff];
+}
+.FAQ-Section-box .answer-question {
+  @apply text-[#2B2D31] flex items-center gap-[10px] justify-between cursor-pointer px-[5px];
+}
+/*  FAQs Section  */
+/*  Contact Page  */
+
+/*  Responsive Media Queries  */
+@media (min-width: 1850px) {
+  .Home-Section .heading p,
+  .About-Section .Second-div p,
+  .Our-Value-Section .Text-Box p,
+  .History-Section .Text-Box .Evolution p,
+  .WWeDo-Section .Second-div p,
+  .Visionaries-Section .Text-Box p,
+  .ScaleRes-Section .Text-Box p,
+  .EmergingMarket-Section .Text-Box p,
+  .HugeConcentration-Section .Text-Box p,
+  .TeamWork-Section .Second-div p,
+  .Expert-Team-Section .Text-Box p,
+  .Celebrating-Section .Text-Box p,
+  .Partner-Brand-Section .Second-div p,
+  .Our-Partner-Section .Text-Box p,
+  .Our-Brand-Section .Text-Box > p,
+  .Our-Brand-Section .Second-Text-Box p,
+  .Career-Section .Second-div p,
+  .Our-Culture-Section .Text-Box > p,
+  .Contact-Section .Second-div p {
+    @apply text-[20px];
+  }
+  .About-Section .Second-div p,
+  .WWeDo-Section .Second-div p,
+  .TeamWork-Section .Second-div p,
+  .Partner-Brand-Section .Second-div p,
+  .Career-Section .Second-div p,
+  .Contact-Section .Second-div p {
+    @apply w-[450px];
+  }
+}
+@media (min-width: 2000px) {
+  .Home-Section .heading p,
+  .About-Section .Second-div p,
+  .Our-Value-Section .Text-Box p,
+  .History-Section .Text-Box .Evolution p,
+  .Invest-Con-Section .Text-Box p,
+  .Work-Place-Section .Text-Box p,
+  .WWeDo-Section .Second-div p,
+  .Visionaries-Section .Text-Box p,
+  .ScaleRes-Section .Text-Box p,
+  .EmergingMarket-Section .Text-Box p,
+  .HugeConcentration-Section .Text-Box p,
+  .TeamWork-Section .Second-div p,
+  .Expert-Team-Section .Text-Box p,
+  .Celebrating-Section .Text-Box p,
+  .Partner-Brand-Section .Second-div p,
+  .Our-Partner-Section .Text-Box p,
+  .Our-Brand-Section .Text-Box > p,
+  .Our-Brand-Section .Second-Text-Box p,
+  .Career-Section .Second-div p,
+  .Our-Culture-Section .Text-Box > p,
+  .Contact-Section .Second-div p {
+    @apply text-[24px];
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.shadow-text {
+  text-shadow: 2px 2px 2px #000;
 }
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+@media (max-width: 451px) and (min-width: 260px) {
+  .Home-Section .heading h2 {
+    font-size: 47px !important;
+    font-weight: 200 !important;
+    line-height: 52px !important;
+  }
+  .About-Section {
+    padding-top: 64px;
+  }
+  .About-Section .Second-div,
+  .WWeDo-Section .Second-div,
+  .TeamWork-Section .Second-div {
+    display: grid;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 1.5rem;
+  }
+  .About-Section .Second-div h3,
+  .WWeDo-Section .Second-div h3,
+  .TeamWork-Section .Second-div h3,
+  .Contact-Section .Second-div h3 {
+    font-size: 102px;
+    font-weight: 100;
+    line-height: 70px;
+  }
+  .About-Section .Second-div p {
+    padding-top: 2px;
+    font-size: 14px;
+  }
+  .WWeDo-Section h2 {
+    font-size: 42px;
+    font-weight: 100;
+    line-height: 70px;
+  }
+  .TeamWork-Section h2 {
+    width: 70%;
+    font-size: 35px;
+    font-weight: 200;
+    line-height: 70px;
+  }
+  .Our-Value-Section div img,
+  .Invest-Con-Section .imgebox,
+  .Visionaries-Section .imagebox,
+  .ScaleRes-Section .imagebox,
+  .EmergingMarket-Section .imagebox,
+  .HugeConcentration-Section .imagebox,
+  .Expert-Team-Section .imagebox,
+  .Celebrating-Section .imagebox {
+    display: none;
+  }
+  .History-Section .Text-Box .Evolution p {
+    width: 82%;
+    font-size: 12px;
+    font-weight: 400;
+    --tw-text-opacity: 1;
+    color: rgb(209 213 219 / var(--tw-text-opacity));
+  }
+  .Visionaries-Section .Text-Box,
+  .ScaleRes-Section .Text-Box,
+  .Expert-Team-Section .Text-Box,
+  .EmergingMarket-Section .Text-Box,
+  .Celebrating-Section .Text-Box,
+  .HugeConcentration-Section .Text-Box {
+    width: 100%;
+  }
+  .Visionaries-Section .Text-Box p,
+  .ScaleRes-Section .Text-Box p,
+  .Expert-Team-Section .Text-Box p {
+    line-height: 40px !important;
+    font-size: 16px;
+  }
+  .Expert-Team-Section .Text-Box p {
+    width: 100%;
+  }
+  .investorReward-Section {
+    @apply px-[30px] py-[20px];
+  }
+  .investorReward-Section .Text-Box h4 {
+    @apply text-3xl;
+  }
+  .investorReward-Section .Text-Box .listbox {
+    @apply w-full;
+  }
+  .investorReward-Section .Text-Box .listbox li {
+    @apply text-[14px] max-[650px]:text-[12px];
+  }
+  .Header a img {
+    @apply !w-[100px] !h-[100px];
+  }
+  .slider-button {
+    top: 86%;
+  }
+  .TeamWork-Box,
+  .Contact-Section .Text-Box,
+  .WWeDo-Box,
+  .About-Box {
+    position: absolute;
+    bottom: 3%;
+  }
+  .slider-section, .Home-Section {
+    height: 100%;
+  }
+  .Contact-Form-Section{
+    @apply block;
+  }
+  .Info-Div{
+    @apply w-full;
+  }
+  .hero-Box-investment h2{
+    @apply w-full text-2xl;
+  }
+  .hero-Box-investment p{
+    @apply w-full;
+  }
+  .tg-det-btn-invpage .det-btn-invpage{
+    @apply w-[85%] gap-1 px-1 text-[16px] flex-col h-fit ;
   }
 }
+/* snaping */
+.conatiner-box {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+  scroll-behavior: smooth;
+}
+
+.sections {
+  height: 100vh;
+  scroll-snap-align: start;
+}
+
