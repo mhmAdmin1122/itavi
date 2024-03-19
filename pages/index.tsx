@@ -111,6 +111,7 @@ export default function Home() {
   {
     /* Opportunity-section */
   }
+  
   {
     /* Documentaion-section */
   }
