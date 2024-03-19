@@ -151,7 +151,6 @@ export default function Home() {
       </Head>
       <nav className="bg-transparent text-white flex items-center justify-around fixed top-0 z-[999999999999999999999] right-0 w-full py-4">
         <Link href="#home" className="w-[90px]">
-          {/* <b>Logo Here</b> */}
           <Image src={Logo} alt="logo-pic" />
         </Link>
 
