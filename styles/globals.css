@@ -574,6 +574,7 @@ html {
 .shadow-text {
   text-shadow: 2px 2px 2px #000;
 }
+
 @media (max-width: 451px) and (min-width: 260px) {
   .Home-Section .heading h2 {
     font-size: 47px !important;
@@ -673,23 +674,24 @@ html {
     position: absolute;
     bottom: 3%;
   }
-  .slider-section, .Home-Section {
+  .slider-section,
+  .Home-Section {
     height: 100%;
   }
-  .Contact-Form-Section{
+  .Contact-Form-Section {
     @apply block;
   }
-  .Info-Div{
+  .Info-Div {
     @apply w-full;
   }
-  .hero-Box-investment h2{
+  .hero-Box-investment h2 {
     @apply w-full text-2xl;
   }
-  .hero-Box-investment p{
+  .hero-Box-investment p {
     @apply w-full;
   }
-  .tg-det-btn-invpage .det-btn-invpage{
-    @apply w-[85%] gap-1 px-1 text-[16px] flex-col h-fit ;
+  .tg-det-btn-invpage .det-btn-invpage {
+    @apply w-[85%] gap-1 px-1 text-[16px] flex-col h-fit;
   }
 }
 /* snaping */
@@ -705,3 +707,6 @@ html {
   scroll-snap-align: start;
 }
 
+.WWeDo-Section {
+  background-image: linear-gradient(120deg, gold, red) !important;
+}

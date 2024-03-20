@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { FaAngleRight, FaAngleLeft } from "react-icons/fa6";
 import Image from "next/image";
 import Logo from "@/public/img/Logo.svg";
@@ -19,6 +19,11 @@ import EMDDownloadBtn from "./components/EMDDownloadBtn";
 import PPMDownloadBtn from "./components/PPMDownloadBtn";
 
 export default function Home() {
+  const handleClick = (event: any) => {
+    const elementId = event.target.id;
+    console.log("Clicked Element ID:", elementId);
+  };
+
   {
     /* About-Us-section */
   }
@@ -144,11 +149,11 @@ export default function Home() {
   {
     /* Documentaion-section */
   }
-
+  
   return (
     <div className="relative">
       <Head>
-        <title>Active Header</title>
+        <title>Itavi Mining</title>
       </Head>
       <nav className="bg-transparent text-white flex items-center justify-around fixed top-0 z-[999999999999999999999] right-0 w-full py-4">
         <Link href="#home" className="w-[90px]">
