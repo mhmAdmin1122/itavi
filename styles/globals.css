@@ -213,7 +213,7 @@ html {
   @apply h-screen w-screen flex bg-[#33245d] text-white relative;
 }
 .Visionaries-Section .Text-Box {
-  @apply flex flex-col justify-center w-[30%] h-full pl-[7%];
+  @apply flex flex-col justify-start w-[30%] h-full pl-[7%];
 }
 .Visionaries-Section .Text-Box h4 {
   @apply text-white text-[48px] pt-[15px] w-[70%] font-extralight leading-[60px];
@@ -707,6 +707,9 @@ html {
   scroll-snap-align: start;
 }
 
-.WWeDo-Section {
+.WWeDo-Section, .Visionaries-Section, .EmergingMarket-Section{
   background-image: linear-gradient(120deg, gold, red) !important;
+}
+.investorReward-Section, .ScaleRes-Section, .HugeConcentration-Section {
+  background-image: linear-gradient(110deg, red, gold) !important;
 }

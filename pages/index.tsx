@@ -7,6 +7,7 @@ import Logo from "@/public/img/Logo.svg";
 import Prisma from "@/public/img/goldQuartz.png";
 import OurValueBG from "@/public/img//Our-Value-BG.png";
 import WorkImage from "@/public/img/InvestWithConviction.jpg";
+import bolivia from "@/public/img/Bolivia Map Image.png";
 import VisionariesImage from "@/public/img/leftopp.jpg";
 import ResoucesImage from "@/public/img/rightopp.jpg";
 import CopperImage from "@/public/img/Copper-Image.png";
@@ -157,7 +158,7 @@ export default function Home() {
       </Head>
 
       {/* Header */}
-      <nav className="bg-transparent text-white flex items-center justify-around fixed top-0 z-[999999999999999999999] right-0 w-full py-4">
+      <nav className="bg-transparent text-white flex items-center justify-around fixed top-0 !z-[999999999999999999999] right-0 w-full py-4">
         <Link href="#home" className="w-[90px]">
           <Image src={Logo} alt="logo-pic" />
         </Link>
@@ -414,7 +415,7 @@ export default function Home() {
         <section className="slider-container sections" id="opportunity">
           <div className="Side-Nav" id="Side-Nav">
             <div className="Uper-div">
-              <h3 className="shadow-text">.03</h3>
+              <h3 className="shadow-text">3</h3>
               <h2 onClick={handleFirst2} className="shadow-text">
                 THE OPPORTUNITY
               </h2>
@@ -456,7 +457,7 @@ export default function Home() {
                   <div className="WWeDo-Box">
                     <h2>The Opportunity</h2>
                     <div className="Second-div">
-                      <h3>.03</h3>
+                      <h3>3</h3>
                       <p>
                         Tap into Bolivia{"'"}s growing mining sector, supported
                         by a pro-development government. Itavi Mining{"'"}s
@@ -473,7 +474,7 @@ export default function Home() {
               </div>
 
               <div className="slider-section">
-                <section className="investorReward-Section bg-[#35235c] h-screen px-[70px] pt-[150px] max-[650px]:pt-[100px] flex flex-col items-center justify-center">
+                <section className="investorReward-Section h-screen px-[70px] pt-[150px] max-[650px]:pt-[100px] flex flex-col items-center justify-center">
                   <div className="Text-Box flex flex-col gap-4 text-[#fff] ">
                     <h4 className="text-5xl text-wrap  max-[650px]:text-4xl">
                       Investor Rewards
@@ -525,14 +526,19 @@ export default function Home() {
 
               <div className="slider-section">
                 <section className="Visionaries-Section">
-                  <div className="Text-Box !w-full">
-                    <h4>Visionaries</h4>
-                    <p className="w-[60%] max-[650px]:w-[90%]">
-                      Our vision extends beyond the current project, subtly
-                      suggesting potential future acquisitions and/or
-                      partnerships with industry giants.
-                    </p>
-                    <p>Join us. Invest in La Gran Española with conviction.</p>
+                  <div className="Text-Box !w-full flex !flex-row items-center justify-start gap-10">
+                    <Image src={bolivia} alt="vis-pic" />
+                    <div className="w-[700px]">
+                      <h4>Visionaries</h4>
+                      <p className="w-[60%] max-[650px]:w-[90%] !text-white">
+                        Our vision extends beyond the current project, subtly
+                        suggesting potential future acquisitions and/or
+                        partnerships with industry giants.
+                      </p>
+                      <p className="!text-white">
+                        Join us. Invest in La Gran Española with conviction.
+                      </p>
+                    </div>
                   </div>
                 </section>
               </div>
@@ -541,7 +547,7 @@ export default function Home() {
                 <section className="ScaleRes-Section">
                   <div className="Text-Box">
                     <h4>Scale of Resources</h4>
-                    <p>
+                    <p className="text-white">
                       Picture 6,000 acres of untamed Bolivian terrain—a canvas
                       for mineral riches waiting to be unearthed. Our past
                       exploration efforts revealed a tantalizing resource of
@@ -572,13 +578,13 @@ export default function Home() {
                   </div>
                   <div className="Text-Box">
                     <h4>Emerging Markets</h4>
-                    <p>
+                    <p className="text-white">
                       Yes, Bolivia is emerging. But we{"’"}re not novices. Our
                       team brings decades of experience. We navigate Bolivian
                       regulations with finesse. Plus, government support fuels
                       our drive.
                     </p>
-                    <p>Join us. Invest in La Gran Española with conviction.</p>
+                    <p  className="text-white">Join us. Invest in La Gran Española with conviction.</p>
                   </div>
                 </section>
               </div>
@@ -587,7 +593,7 @@ export default function Home() {
                 <section className="HugeConcentration-Section">
                   <div className="Text-Box">
                     <h4>Huge Copper Concentration</h4>
-                    <p>
+                    <p className="text-white">
                       While gold and silver glitter on the horizon, it{"'"}s the
                       prominent mention of copper that truly sets this
                       opportunity apart. As the world pivots towards a green
@@ -595,7 +601,7 @@ export default function Home() {
                       positions your investment at the forefront of this
                       essential shift.
                     </p>
-                    <p>Join us. Invest in La Gran Española with conviction.</p>
+                    <p className="text-white">Join us. Invest in La Gran Española with conviction.</p>
                   </div>
                   <div className="w-1/2 imagebox">
                     <Image
@@ -633,7 +639,7 @@ export default function Home() {
         <section className="slider-container sections" id="documentation">
           <div className="Side-Nav" id="Side-Nav">
             <div className="Uper-div">
-              <h3 className="shadow-text">.04</h3>
+              <h3 className="shadow-text">4</h3>
               <h2 onClick={handleFirst3} className="shadow-text">
                 Documentation for Investors
               </h2>
@@ -669,7 +675,7 @@ export default function Home() {
                   <div className="TeamWork-Box">
                     <h2>Documentation</h2>
                     <div className="Second-div">
-                      <h3>.04</h3>
+                      <h3>4</h3>
                       <p>
                         We provide full-transparency with our documentation to
                         our Investors. Make sure you go-through the important
