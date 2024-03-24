@@ -742,3 +742,7 @@ html {
 .carousal-body{
   @apply  flex flex-col gap-4 w-full pl-[30px] pr-[70px];
 }
+
+.carousal-deatail{
+  @apply text-[14px] text-gray-500 pr-[40px] text-justify;
+}
