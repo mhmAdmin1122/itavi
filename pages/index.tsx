@@ -18,6 +18,7 @@ import Diamond from "@/public/img/Diamond-1.png";
 import TRDownloadBtn from "./components/TRDownloadBtn";
 import EMDDownloadBtn from "./components/EMDDownloadBtn";
 import PPMDownloadBtn from "./components/PPMDownloadBtn";
+import { FaAngleDown, FaAngleUp } from "react-icons/fa6";
 
 export default function Home() {
   const handleClick = (event: any) => {
@@ -158,7 +159,7 @@ export default function Home() {
       </Head>
 
       {/* Header */}
-      <nav className="bg-transparent navbar text-white flex items-center justify-around fixed top-0 !z-[999999] right-0 w-full py-4">
+      <nav className="bg-transparent navbar text-white flex items-center justify-between fixed top-0 !z-[999999] right-0 w-full py-4 px-[90px]">
         <Link href="#home" className="w-[90px]">
           <Image src={Logo} alt="logo-pic" />
         </Link>
@@ -194,7 +195,13 @@ export default function Home() {
 
       <div className="conatiner-box">
         {/* Home-hero-section */}
-        <section className="Home-Section sections" id="home">
+        <section className="Home-Section sections relative" id="home">
+          <Link
+            href="#about"
+            className="absolute bottom-0 z-[999999] bg-[#00000070] p-2 text-white right-[45%] rounded-t-md text-3xl"
+          >
+            <FaAngleDown />
+          </Link>
           <div className="heading flex flex-col gap-4">
             <h2>Seize Opportunity</h2>
             <p>
@@ -216,7 +223,19 @@ export default function Home() {
         {/* Home-hero-section */}
 
         {/* About-Us-section */}
-        <section className="slider-container sections" id="about">
+        <section className="slider-container sections relative" id="about">
+          <Link
+            href="#home"
+            className="absolute top-0 z-[999999] bg-[#00000070] p-2 text-white right-[45%] rounded-b-md text-3xl"
+          >
+            <FaAngleUp />
+          </Link>
+          <Link
+            href="#opportunity"
+            className="absolute bottom-0 z-[999999] bg-[#00000070] p-2 text-white right-[45%] rounded-t-md text-3xl"
+          >
+            <FaAngleDown />
+          </Link>
           <div className="Side-Nav" id="Side-Nav">
             <div className="Uper-div">
               <h3 className="shadow-text">2</h3>
@@ -412,7 +431,22 @@ export default function Home() {
         {/* About-Us-section */}
 
         {/* Opportunity-section */}
-        <section className="slider-container sections" id="opportunity">
+        <section
+          className="slider-container sections relative"
+          id="opportunity"
+        >
+          <Link
+            href="#about"
+            className="absolute top-0 z-[999999] bg-[#00000070] p-2 text-white right-[45%] rounded-b-md text-3xl"
+          >
+            <FaAngleUp />
+          </Link>
+          <Link
+            href="#documentation"
+            className="absolute bottom-0 z-[999999] bg-[#00000070] p-2 text-white right-[45%] rounded-t-md text-3xl"
+          >
+            <FaAngleDown />
+          </Link>
           <div className="Side-Nav" id="Side-Nav">
             <div className="Uper-div">
               <h3 className="shadow-text">3</h3>
@@ -444,7 +478,6 @@ export default function Home() {
               </p>
             </div>
           </div>
-
           <div className="slider">
             <div
               className="slider-content"
@@ -584,7 +617,9 @@ export default function Home() {
                       regulations with finesse. Plus, government support fuels
                       our drive.
                     </p>
-                    <p  className="text-white">Join us. Invest in La Gran Española with conviction.</p>
+                    <p className="text-white">
+                      Join us. Invest in La Gran Española with conviction.
+                    </p>
                   </div>
                 </section>
               </div>
@@ -601,7 +636,9 @@ export default function Home() {
                       positions your investment at the forefront of this
                       essential shift.
                     </p>
-                    <p className="text-white">Join us. Invest in La Gran Española with conviction.</p>
+                    <p className="text-white">
+                      Join us. Invest in La Gran Española with conviction.
+                    </p>
                   </div>
                   <div className="w-1/2 imagebox">
                     <Image
@@ -614,7 +651,6 @@ export default function Home() {
               </div>
             </div>
           </div>
-
           <button
             className="slider-button previous"
             onClick={handlePrevious2}
@@ -636,7 +672,22 @@ export default function Home() {
         {/* Opportunity-section */}
 
         {/* Documentation-section */}
-        <section className="slider-container sections" id="documentation">
+        <section
+          className="slider-container sections relative"
+          id="documentation"
+        >
+          <Link
+            href="#opportunity"
+            className="absolute top-0 z-[999999] bg-[#00000070] p-2 text-white right-[45%] rounded-b-md text-3xl"
+          >
+            <FaAngleUp />
+          </Link>
+          <Link
+            href="#contact"
+            className="absolute bottom-0 z-[999999] bg-[#00000070] p-2 text-white right-[45%] rounded-t-md text-3xl"
+          >
+            <FaAngleDown />
+          </Link>
           <div className="Side-Nav" id="Side-Nav">
             <div className="Uper-div">
               <h3 className="shadow-text">4</h3>
@@ -662,7 +713,6 @@ export default function Home() {
               </p>
             </div>
           </div>
-
           <div className="slider">
             <div
               className="slider-content"
@@ -758,7 +808,6 @@ export default function Home() {
               </div>
             </div>
           </div>
-
           <button
             className="slider-button previous"
             onClick={handle3Previous}
@@ -780,7 +829,16 @@ export default function Home() {
         {/* Documentation-section */}
 
         {/* contact-section */}
-        <section className="Contact-Section !w-full sections" id="contact">
+        <section
+          className="Contact-Section !w-full sections relative"
+          id="contact"
+        >
+          <Link
+            href="#documentation"
+            className="absolute top-0 z-[999999] bg-[#00000070] p-2 text-white right-[45%] rounded-b-md text-3xl"
+          >
+            <FaAngleUp />
+          </Link>
           <div className="Text-Box">
             <h2>Contact</h2>
             <div className="Second-div">
