@@ -6,7 +6,7 @@ import Image from "next/image";
 import Logo from "@/public/img/Logo.svg";
 import Prisma from "@/public/img/goldQuartz.png";
 import OurValueBG from "@/public/img//Our-Value-BG.png";
-import WorkImage from "@/public/img/workspace-1.jpg";
+import WorkImage from "@/public/img/InvestWithConviction.jpg";
 import VisionariesImage from "@/public/img/leftopp.jpg";
 import ResoucesImage from "@/public/img/rightopp.jpg";
 import CopperImage from "@/public/img/Copper-Image.png";
@@ -149,12 +149,14 @@ export default function Home() {
   {
     /* Documentaion-section */
   }
-  
+
   return (
     <div className="relative">
       <Head>
         <title>Itavi Mining</title>
       </Head>
+
+      {/* Header */}
       <nav className="bg-transparent text-white flex items-center justify-around fixed top-0 z-[999999999999999999999] right-0 w-full py-4">
         <Link href="#home" className="w-[90px]">
           <Image src={Logo} alt="logo-pic" />
@@ -216,7 +218,7 @@ export default function Home() {
         <section className="slider-container sections" id="about">
           <div className="Side-Nav" id="Side-Nav">
             <div className="Uper-div">
-              <h3 className="shadow-text">.02</h3>
+              <h3 className="shadow-text">2</h3>
               <h2 onClick={handleFirst} className="shadow-text">
                 ABOUT US
               </h2>
@@ -249,9 +251,9 @@ export default function Home() {
               <div className="slider-section">
                 <section className="About-Section">
                   <div className="About-Box">
-                    <h2>about us</h2>
+                    <h2>About Us</h2>
                     <div className="Second-div">
-                      <h3>.02</h3>
+                      <h3>2</h3>
                       <p>
                         We{"'"}re more than prospectors; we{"'"}re visionaries.
                         Our journey begins where the Andean peaks kiss the sky,
