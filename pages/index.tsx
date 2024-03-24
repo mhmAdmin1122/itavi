@@ -158,7 +158,7 @@ export default function Home() {
       </Head>
 
       {/* Header */}
-      <nav className="bg-transparent text-white flex items-center justify-around fixed top-0 !z-[999999999999999999999] right-0 w-full py-4">
+      <nav className="bg-transparent navbar text-white flex items-center justify-around fixed top-0 !z-[999999999999999999999] right-0 w-full py-4">
         <Link href="#home" className="w-[90px]">
           <Image src={Logo} alt="logo-pic" />
         </Link>
@@ -699,7 +699,7 @@ export default function Home() {
                   </div>
                   <div className="Text-Box">
                     <h4>Private Placement Memorándum</h4>
-                    <p>
+                    <p className="!text-white">
                       Itavi Mining Company, S.A., a Wyoming Corporation, is
                       offering a unique investment opportunity in the form of
                       500,000 shares of Common Stock, valued at $1.00 per share,
@@ -714,16 +714,13 @@ export default function Home() {
                 <section className="Celebrating-Section">
                   <div className="Text-Box">
                     <h4>Company PitchDeck</h4>
-                    <p>
+                    <p className="!text-white">
                       Our flagship project, {'"'}La Gran Española,{'"'}
                       holds the promise of becoming one of Bolivia{"'"}s largest
                       gold, copper, and silver mines, with a potential 500,000
                       ounces of gold in resources. Join us in venture!
                     </p>
                     <EMDDownloadBtn />
-                  </div>
-                  <div className="absolute bottom-[10%] right-[65%]">
-                    <Image src={DiamondOne} alt="" className="opacity-30" />
                   </div>
                   <div className="w-full imagebox">
                     <Image
@@ -746,12 +743,12 @@ export default function Home() {
                   </div>
                   <div className="Text-Box">
                     <h4>Property Technical Report</h4>
-                    <p>
+                    <p className="!text-white">
                       The La Gran Española Project is strategically located in
                       Bolivia{"'"}s Western Cordillera, past explorations
                       underscored its geological significance.
                     </p>
-                    <p>
+                    <p className="!text-white">
                       Based on drilling and sampling data, an inferred resource
                       of 269,000 ounces of gold has been estimated.
                     </p>

@@ -707,9 +707,16 @@ html {
   scroll-snap-align: start;
 }
 
-.WWeDo-Section, .Visionaries-Section, .EmergingMarket-Section{
+.WWeDo-Section,
+.Visionaries-Section,
+.EmergingMarket-Section, .Expert-Team-Section .Text-Box {
   background-image: linear-gradient(120deg, gold, red) !important;
 }
-.investorReward-Section, .ScaleRes-Section, .HugeConcentration-Section {
+.investorReward-Section,
+.ScaleRes-Section,
+.HugeConcentration-Section, .Celebrating-Section .Text-Box {
   background-image: linear-gradient(110deg, red, gold) !important;
+}
+.navbar {
+  z-index: 99999999999999999999999999 !important;
 }
