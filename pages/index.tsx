@@ -782,31 +782,24 @@ export default function Home() {
         {/* contact-section */}
         <section className="Contact-Section !w-full sections" id="contact">
           <div className="Text-Box">
-            <h2>contact</h2>
+            <h2>Contact</h2>
             <div className="Second-div">
-              <h3>.05</h3>
-              <p>
+              <h3>5</h3>
+              <p className="!text-white">
                 Do you have an urgent question or request? This{" "}
                 <Link
                   href={"/ContactForm"}
                   className="underline cursor-pointer"
                 >
-                  <b>contact form</b>
+                  <b>Contact Form</b>
                 </Link>{" "}
                 is the fastest way to get in touch. You can also check{" "}
                 <Link href={"/FAQ-s"} className="underline cursor-pointer">
-                  <b>FAQs</b>
+                  <b>FAQ{"'"}s</b>
                 </Link>{" "}
                 to get your answers.
               </p>
             </div>
-          </div>
-          <div className="Image-Div">
-            <Image
-              src={Diamond}
-              alt="d-pic"
-              className="h-[350px] w-[500px] opacity-30 select-none max-[650px]:h-[300px] max-[450px]:h-[250px]"
-            />
           </div>
         </section>
         {/* contact-section */}

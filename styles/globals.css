@@ -709,14 +709,14 @@ html {
 
 .WWeDo-Section,
 .Visionaries-Section,
-.EmergingMarket-Section, .Expert-Team-Section .Text-Box {
+.EmergingMarket-Section,
+.Expert-Team-Section .Text-Box,
+.Contact-Section {
   background-image: linear-gradient(120deg, gold, red) !important;
 }
 .investorReward-Section,
 .ScaleRes-Section,
-.HugeConcentration-Section, .Celebrating-Section .Text-Box {
+.HugeConcentration-Section,
+.Celebrating-Section .Text-Box {
   background-image: linear-gradient(110deg, red, gold) !important;
 }
-/* .navbar {
-  z-index: 999999 !important;
-} */
