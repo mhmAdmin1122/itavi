@@ -161,7 +161,7 @@ export default function Home() {
       {/* Header */}
       <nav className="bg-transparent navbar text-white flex items-center justify-between fixed top-0 !z-[999999] right-0 w-full py-4 px-[90px]">
         <Link href="#home" className="w-[90px]">
-          <Image src={Logo} alt="logo-pic" />
+          <Image src={Logo} alt="logo-pic" className="logo-pic" />
         </Link>
 
         <ul className="flex justify-center space-x-4">
@@ -846,13 +846,13 @@ export default function Home() {
               <p className="!text-white">
                 Do you have an urgent question or request? This{" "}
                 <Link
-                  href={"/ContactForm"}
+                  href={"/contact"}
                   className="underline cursor-pointer"
                 >
                   <b>Contact Form</b>
                 </Link>{" "}
                 is the fastest way to get in touch. You can also check{" "}
-                <Link href={"/FAQ-s"} className="underline cursor-pointer">
+                <Link href={"/faqs"} className="underline cursor-pointer">
                   <b>FAQ{"'"}s</b>
                 </Link>{" "}
                 to get your answers.

@@ -444,12 +444,7 @@ html {
 }
 /*  Contact Section  */
 /*  Contact-Form Section  */
-.Contact-Form-Section {
-  @apply flex items-center justify-center pt-[100px] max-[425px]:pt-[80px] max-[425px]:flex-col;
-}
-.Contact-Form-Box {
-  @apply flex items-center shadow-md shadow-gray-500 w-[80%] max-[850px]:w-[95%] max-[425px]:w-full max-[425px]:flex-col;
-}
+
 .Info-Div {
   @apply w-[35%] py-[48px] px-[38px] max-[425px]:py-0 max-[425px]:h-fit max-[550px]:w-1/2 max-[1000px]:px-[19px] max-[650px]:px-[12px] h-[80vh] grid items-center;
   background: linear-gradient(to right, #d91820, #f15a24) no-repeat;
@@ -470,7 +465,7 @@ html {
   @apply text-[16px] text-gray-100 text-wrap max-[650px]:text-[12px] max-[850px]:text-[14px] min-[1850px]:text-[20px] min-[2050px]:text-[24px];
 }
 .Contact-Form {
-  @apply w-[70%] max-[550px]:w-1/2 p-8 max-[425px]:w-full max-[550px]:py-0 max-[550px]:px-3 leading-10 text-[#f15a24] min-[1850px]:leading-[50px] min-[2050px]:leading-[60px];
+  @apply w-[100%] leading-10 text-[#f15a24];
 }
 .Contact-Form h4 {
   @apply text-[28px] max-[550px]:text-[24px] text-black font-medium min-[1850px]:text-[35px] min-[2050px]:text-[45px];
@@ -488,11 +483,11 @@ html {
   @apply focus:border-orange-200 border-b border-gray-200 outline-none font-normal w-full pr-[15px] pt-[10px] pb-[0px];
 }
 
-.Contact-Form-Section button {
+.Contact-Form button {
   @apply text-white font-medium rounded-md px-[15px] py-[3px] shadow-none;
   background: linear-gradient(to top, #d91820, #f15a24) no-repeat;
 }
-.Contact-Form-Section button:hover {
+.Contact-Form button:hover {
   @apply transition-all ease-in-out duration-300  shadow-md shadow-gray-400;
   background: linear-gradient(to bottom, #d91820, #f15a24) no-repeat;
 }
@@ -711,7 +706,8 @@ html {
 .Visionaries-Section,
 .EmergingMarket-Section,
 .Expert-Team-Section .Text-Box,
-.Contact-Section {
+.Contact-Section,
+.side-bar-section {
   background-image: linear-gradient(120deg, gold, red) !important;
 }
 .investorReward-Section,
@@ -719,4 +715,30 @@ html {
 .HugeConcentration-Section,
 .Celebrating-Section .Text-Box {
   background-image: linear-gradient(110deg, red, gold) !important;
+}
+
+.logo-pic-side,
+.logo-pic {
+  filter: drop-shadow(2px 2px 0.1rem #000);
+}
+
+.section-page-side-box::-webkit-scrollbar {
+  width: 2px;
+}
+
+.sidebar-tabs a {
+  text-transform: uppercase;
+}
+
+::selection {
+  background: red;
+  color: gold;
+}
+
+.carousal-head {
+  @apply text-gray-600 flex items-center justify-between text-lg gap-4;
+}
+
+.carousal-body{
+  @apply  flex flex-col gap-4 w-full pl-[30px] pr-[70px];
 }
