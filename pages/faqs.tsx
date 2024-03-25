@@ -168,8 +168,8 @@ const FaqsPage = () => {
       </Head>
       <PageLayout>
         <div className="flex flex-col items-center justify-center gap-4 min-h-screen max-h-full">
-          <h2 className="text-4xl font-medium outline-double px-[10px] py-[6px] rounded-md">
-            &#x2022; FAQs
+          <h2 className="text-4xl font-medium px-[10px] py-[6px] rounded-md">
+            FAQs
           </h2>
 
           {/* Carousals */}
