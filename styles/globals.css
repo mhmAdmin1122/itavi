@@ -5,7 +5,9 @@
 * {
   @apply m-0 p-0 box-border;
 }
-
+body {
+  counter-reset: section;
+}
 :root {
   --Yellow-color: #ffd500;
   --Background-color: #2b2d31;
@@ -754,12 +756,19 @@ html {
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;    
 }
-.disclaimer-box{
+.disclaimer-box, .termsCondition-box{
   @apply flex flex-col gap-4
 }
-.disclaimer-box h2{
+.disclaimer-box ul, .termsCondition-box ul{
+  @apply list-disc pl-10 pr-[60px] py-5;
+}
+.disclaimer-box h2, .termsCondition-box h3, .termsCondition-box h2{
   @apply text-lg font-bold;
 }
-.disclaimer-box p a{
+.disclaimer-box p a, .termsCondition-box p a{
  @apply text-blue-500 font-medium hover:text-blue-600 hover:underline;
+}
+.termsCondition-box h3::before {
+  counter-increment: section;
+  content: counter(section) ". ";
 }

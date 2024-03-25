@@ -22,7 +22,7 @@ const DisclaimerPage = () => {
             could adversely affect the Company{"'"}s business and financial
             performance include, but are not limited to:
           </p>
-          <ul className="list-disc pl-10 pr-[60px] py-5">
+          <ul>
             <li>
               Exploration risks: No assurance that exploration will result in
               the discovery of commercially viable mineral deposits.
