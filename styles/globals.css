@@ -485,14 +485,6 @@ html {
   @apply focus:border-orange-200 border-b border-gray-200 outline-none font-normal w-full pr-[15px] pt-[10px] pb-[0px];
 }
 
-/* .Contact-Form button {
-  @apply text-white font-medium rounded-md px-[15px] py-[3px] shadow-none;
-  background: linear-gradient(to top, #d91820, #f15a24) no-repeat;
-}
-.Contact-Form button:hover {
-  @apply transition-all ease-in-out duration-300  shadow-md shadow-gray-400;
-  background: linear-gradient(to bottom, #d91820, #f15a24) no-repeat;
-} */
 /*  Contact-Form Section  */
 /*  FAQs Section  */
 .FAQ-Main-Section {
