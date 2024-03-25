@@ -746,3 +746,11 @@ html {
 .carousal-deatail{
   @apply text-[14px] text-gray-500 pr-[40px] text-justify;
 }
+
+
+.mask1 {
+  -webkit-mask-image: url(/img/contactText.png);
+  mask-image: url(/img/contactText.png);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;    
+}
