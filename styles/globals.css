@@ -790,3 +790,8 @@ html {
 .btn-design {
   @apply bg-[#00000070] p-2 text-white text-3xl;
 }
+.btnshadow{
+  margin-top: 15px;
+  /* box-shadow: 2px 2px 32px rgba(9, 9, 9, 0.7); */
+  border: 2px solid #e6c407;
+}

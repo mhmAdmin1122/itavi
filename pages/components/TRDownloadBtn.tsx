@@ -14,7 +14,7 @@ const TRDownloadBtn = () => {
   return (
     <button
       onClick={handleDownload}
-      className="bg-blue-500 w-fit hover:bg-blue-700 text-white font-bold py-2 px-4 rounded relative z-[9999999999]"
+      className="bg-[#ca8a04] w-fit hover:bg-[#ca8b04] text-white btnshadow font-bold py-2 px-4 rounded relative z-[9999999999]"
     >
       Download Report
     </button>
