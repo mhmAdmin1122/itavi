@@ -467,7 +467,7 @@ html {
   @apply text-[16px] text-gray-100 text-wrap max-[650px]:text-[12px] max-[850px]:text-[14px] min-[1850px]:text-[20px] min-[2050px]:text-[24px];
 }
 .Contact-Form {
-  @apply w-[100%] leading-10 text-[#f15a24];
+  @apply w-[100%] leading-10 text-[#000];
 }
 .Contact-Form h4 {
   @apply text-[28px] max-[550px]:text-[24px] text-black font-medium min-[1850px]:text-[35px] min-[2050px]:text-[45px];
@@ -485,14 +485,14 @@ html {
   @apply focus:border-orange-200 border-b border-gray-200 outline-none font-normal w-full pr-[15px] pt-[10px] pb-[0px];
 }
 
-.Contact-Form button {
+/* .Contact-Form button {
   @apply text-white font-medium rounded-md px-[15px] py-[3px] shadow-none;
   background: linear-gradient(to top, #d91820, #f15a24) no-repeat;
 }
 .Contact-Form button:hover {
   @apply transition-all ease-in-out duration-300  shadow-md shadow-gray-400;
   background: linear-gradient(to bottom, #d91820, #f15a24) no-repeat;
-}
+} */
 /*  Contact-Form Section  */
 /*  FAQs Section  */
 .FAQ-Main-Section {

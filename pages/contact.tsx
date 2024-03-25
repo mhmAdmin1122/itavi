@@ -33,9 +33,9 @@ const ContactPage = () => {
         <div className="flex items-center flex-col justify-center">
           {/* <ImageWithTextMask imageUrl={cover} /> */}
 
-          <form action="post" className="Contact-Form px-20 py-10">
+          <form className="Contact-Form px-20 py-10">
             <h4>Get In touch</h4>
-            <p>We{"'"}re open for any suggestion or just to have a chat</p>
+            <p className="!text-gray-600">We{"'"}re open for any suggestion or just to have a chat</p>
             <div className="Input-Div">
               <input type="text" placeholder="Name" />{" "}
               <input type="email" placeholder="Email" />
@@ -49,8 +49,10 @@ const ContactPage = () => {
               placeholder="Message"
               className=""
             ></textarea>
-            <div className="flex justify-center">
-              <button>Send Message</button>
+            <div className="flex justify-center ">
+              <button className="bg-[#ca8a04] w-fit hover:bg-[#ca8b04] text-white font-bold py-1 px-6 rounded relative z-[9999999999]" type="submit">
+                Send Message
+              </button>
             </div>
           </form>
 
