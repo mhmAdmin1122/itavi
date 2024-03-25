@@ -198,7 +198,7 @@ export default function Home() {
         <section className="Home-Section sections relative" id="home">
           <Link
             href="#about"
-            className="absolute bottom-0 z-[999999] bg-[#00000070] p-2 text-white right-[45%] rounded-t-md text-3xl"
+            className="absolute bottom-0 z-[999999] btn-design-bottom btn-design"
           >
             <FaAngleDown />
           </Link>
@@ -226,13 +226,13 @@ export default function Home() {
         <section className="slider-container sections relative" id="about">
           <Link
             href="#home"
-            className="absolute top-0 z-[999999] bg-[#00000070] p-2 text-white right-[45%] rounded-b-md text-3xl"
+            className="absolute top-0 z-[999999] btn-design-top btn-design"
           >
             <FaAngleUp />
           </Link>
           <Link
             href="#opportunity"
-            className="absolute bottom-0 z-[999999] bg-[#00000070] p-2 text-white right-[45%] rounded-t-md text-3xl"
+            className="absolute bottom-0 z-[999999] btn-design-bottom btn-design"
           >
             <FaAngleDown />
           </Link>
@@ -437,13 +437,13 @@ export default function Home() {
         >
           <Link
             href="#about"
-            className="absolute top-0 z-[999999] bg-[#00000070] p-2 text-white right-[45%] rounded-b-md text-3xl"
+            className="absolute top-0 z-[999999] btn-design-top btn-design"
           >
             <FaAngleUp />
           </Link>
           <Link
             href="#documentation"
-            className="absolute bottom-0 z-[999999] bg-[#00000070] p-2 text-white right-[45%] rounded-t-md text-3xl"
+            className="absolute bottom-0 z-[999999] btn-design-bottom btn-design"
           >
             <FaAngleDown />
           </Link>
@@ -678,13 +678,13 @@ export default function Home() {
         >
           <Link
             href="#opportunity"
-            className="absolute top-0 z-[999999] bg-[#00000070] p-2 text-white right-[45%] rounded-b-md text-3xl"
+            className="absolute top-0 z-[999999] btn-design-top btn-design"
           >
             <FaAngleUp />
           </Link>
           <Link
             href="#contact"
-            className="absolute bottom-0 z-[999999] bg-[#00000070] p-2 text-white right-[45%] rounded-t-md text-3xl"
+            className="absolute bottom-0 z-[999999] btn-design-bottom btn-design"
           >
             <FaAngleDown />
           </Link>
@@ -835,7 +835,7 @@ export default function Home() {
         >
           <Link
             href="#documentation"
-            className="absolute top-0 z-[999999] bg-[#00000070] p-2 text-white right-[45%] rounded-b-md text-3xl"
+            className="absolute top-0 z-[999999] btn-design-top btn-design"
           >
             <FaAngleUp />
           </Link>
@@ -845,10 +845,7 @@ export default function Home() {
               <h3>5</h3>
               <p className="!text-white">
                 Do you have an urgent question or request? This{" "}
-                <Link
-                  href={"/contact"}
-                  className="underline cursor-pointer"
-                >
+                <Link href={"/contact"} className="underline cursor-pointer">
                   <b>Contact Form</b>
                 </Link>{" "}
                 is the fastest way to get in touch. You can also check{" "}

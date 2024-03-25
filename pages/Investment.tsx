@@ -21,10 +21,10 @@ import Head from "next/head";
 import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import ProjectImage1 from "@/public/img/ProjectImage1.jpeg"
-import ProjectImage2 from "@/public/img/ProjectImage2.jpeg"
-import ProjectImage3 from "@/public/img/ProjectImage3.jpeg"
-import ProjectImage4 from "@/public/img/ProjectImage4.jpeg"
+import ProjectImage1 from "@/public/img/ProjectImage1.jpeg";
+import ProjectImage2 from "@/public/img/ProjectImage2.jpeg";
+import ProjectImage3 from "@/public/img/ProjectImage3.jpeg";
+import ProjectImage4 from "@/public/img/ProjectImage4.jpeg";
 
 const InvestmentPage = () => {
   const [button01, setButton01] = useState(true);
@@ -83,7 +83,7 @@ const InvestmentPage = () => {
               <b>NOTE:</b> Thorough due diligence is recommended before
               investing, as with any mining venture.
             </p>
-            <button className="w-fit bg-[#fff] px-6 py-2 text-[#212121] font-bold rounded-sm hover:text-[#fff] hover:bg-[#212121] hover:border-[#fff] transition-all ease-in-out duration-700 border-2">
+            <button className="w-fit bg-[#ca8a04] px-6 py-2 text-[#fff] font-bold rounded-sm hover:text-[#ca8a04] hover:bg-[#000] hover:border-[#ca8a04] transition-all ease-in-out duration-700 border-2 border-[#ca8a04]">
               Invest Now!
             </button>
           </div>
@@ -182,10 +182,26 @@ const InvestmentPage = () => {
               <div>
                 <h2 className="font-bold text-[24px]">Our Projects:</h2>
                 <div className="flex gap-5 flex-wrap">
-                  <Image src={ProjectImage2} alt="" className="w-[350px] h-[350px]" />
-                  <Image src={ProjectImage3} alt="" className="w-[350px] h-[350px]" />
-                  <Image src={ProjectImage4} alt="" className="w-[350px] h-[350px]" />
-                  <Image src={ProjectImage1} alt="" className="w-[350px] h-[350px]" />
+                  <Image
+                    src={ProjectImage2}
+                    alt=""
+                    className="w-[350px] h-[350px]"
+                  />
+                  <Image
+                    src={ProjectImage3}
+                    alt=""
+                    className="w-[350px] h-[350px]"
+                  />
+                  <Image
+                    src={ProjectImage4}
+                    alt=""
+                    className="w-[350px] h-[350px]"
+                  />
+                  <Image
+                    src={ProjectImage1}
+                    alt=""
+                    className="w-[350px] h-[350px]"
+                  />
                 </div>
               </div>
             </div>

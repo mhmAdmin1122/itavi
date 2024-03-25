@@ -733,43 +733,60 @@ html {
 }
 
 ::selection {
-  background: red;
-  color: gold;
+  background: #ca8a04;
+  color: #000;
 }
 
 .carousal-head {
   @apply text-gray-600 flex items-center justify-between text-lg gap-4;
 }
 
-.carousal-body{
-  @apply  flex flex-col gap-4 w-full pl-[30px] pr-[70px];
+.carousal-body {
+  @apply flex flex-col gap-4 w-full pl-[30px] pr-[70px];
 }
 
-.carousal-deatail{
+.carousal-deatail {
   @apply text-[14px] text-gray-500 pr-[40px] text-justify;
 }
-
 
 .mask1 {
   -webkit-mask-image: url(/img/contactText.png);
   mask-image: url(/img/contactText.png);
   -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;    
+  mask-repeat: no-repeat;
 }
-.disclaimer-box, .termsCondition-box, .privacy-Policy-box{
-  @apply flex flex-col gap-4
+.disclaimer-box,
+.termsCondition-box,
+.privacy-Policy-box {
+  @apply flex flex-col gap-4;
 }
-.disclaimer-box ul, .termsCondition-box ul, .privacy-Policy-box ul{
+.disclaimer-box ul,
+.termsCondition-box ul,
+.privacy-Policy-box ul {
   @apply list-disc pl-10 pr-[60px] py-5;
 }
 
-.disclaimer-box h2, .termsCondition-box h3, .termsCondition-box h2, .privacy-Policy-box h2{
+.disclaimer-box h2,
+.termsCondition-box h3,
+.termsCondition-box h2,
+.privacy-Policy-box h2 {
   @apply text-lg font-bold;
 }
-.disclaimer-box p a, .termsCondition-box p a, .privacy-Policy-box p a{
- @apply text-blue-500 font-medium hover:text-blue-600 hover:underline;
+.disclaimer-box p a,
+.termsCondition-box p a,
+.privacy-Policy-box p a {
+  @apply text-blue-500 font-medium hover:text-blue-600 hover:underline;
 }
 .termsCondition-box h3::before {
   counter-increment: section;
   content: counter(section) ". ";
+}
+.btn-design-top {
+  @apply rounded-b-md right-[45%];
+}
+.btn-design-bottom {
+  @apply rounded-t-md right-[45%];
+}
+.btn-design {
+  @apply bg-[#00000070] p-2 text-white text-3xl;
 }
