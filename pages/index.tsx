@@ -738,14 +738,7 @@ export default function Home() {
 
               <div className="slider-section">
                 <section className="Expert-Team-Section">
-                  <div className="w-[30%]  max-[800px]:w-1/2 imagebox">
-                    <Image
-                      src={ExpertTeamImage}
-                      alt="Background-Image"
-                      className="h-screen w-full"
-                    />
-                  </div>
-                  <div className="Text-Box">
+                  <div className="Text-Box !w-[100%]">
                     <h4>Private Placement Memorándum</h4>
                     <p className="!text-white">
                       Itavi Mining Company, S.A., a Wyoming Corporation, is
@@ -760,7 +753,7 @@ export default function Home() {
 
               <div className="slider-section">
                 <section className="Celebrating-Section">
-                  <div className="Text-Box">
+                  <div className="Text-Box !w-[100%]">
                     <h4>Company PitchDeck</h4>
                     <p className="!text-white">
                       Our flagship project, {'"'}La Gran Española,{'"'}
@@ -770,26 +763,12 @@ export default function Home() {
                     </p>
                     <EMDDownloadBtn />
                   </div>
-                  <div className="w-full imagebox">
-                    <Image
-                      src={CelebratingImage}
-                      alt="Background-Image"
-                      className="h-screen w-full"
-                    />
-                  </div>
                 </section>
               </div>
 
               <div className="slider-section">
                 <section className="Expert-Team-Section">
-                  <div className="w-[30%] max-[800px]:w-1/2 imagebox">
-                    <Image
-                      src={ExpertTeamImage}
-                      alt="Background-Image"
-                      className="h-screen w-full"
-                    />
-                  </div>
-                  <div className="Text-Box">
+                  <div className="Text-Box !w-[100%]">
                     <h4>Property Technical Report</h4>
                     <p className="!text-white">
                       The La Gran Española Project is strategically located in
