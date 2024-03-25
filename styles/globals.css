@@ -719,7 +719,7 @@ html {
 
 .logo-pic-side,
 .logo-pic {
-  filter: drop-shadow(2px 2px 0.1rem #000);
+  filter: drop-shadow(4px 2px 0.1rem #000);
 }
 
 .section-page-side-box::-webkit-scrollbar {
