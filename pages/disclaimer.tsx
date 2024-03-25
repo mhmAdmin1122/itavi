@@ -64,7 +64,7 @@ const DisclaimerPage = () => {
           </p>
           <h2>Use of Information</h2>
           <p>
-            Information on this website is provided "as is" without warranty of
+            Information on this website is provided {'"'}as is{'"'} without warranty of
             any kind. The Company makes no representations about the
             suitability, reliability, timeliness, or accuracy of the information
             for any purpose. The Company will not be liable for any losses or

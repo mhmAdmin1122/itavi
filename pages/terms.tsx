@@ -40,7 +40,7 @@ const TermsPage = () => {
           <ul>
             <li>
               All content on the website, including text, images, logos, and
-              software is the Company's property and protected by copyright and
+              software is the Company{"'"}s property and protected by copyright and
               trademark laws.
             </li>
             <li>
@@ -79,7 +79,7 @@ const TermsPage = () => {
           <h3>Disclaimer of Warranties</h3>
           <ul>
             <li>
-              THE WEBSITE AND ITS CONTENT ARE PROVIDED "AS IS" WITHOUT
+              THE WEBSITE AND ITS CONTENT ARE PROVIDED {'"'}AS IS{'"'} WITHOUT
               WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED. WE DISCLAIM ALL
               WARRANTIES, INCLUDING WARRANTIES OF MERCHANTABILITY, FITNESS FOR A
               PARTICULAR PURPOSE, AND NON-INFRINGEMENT.
