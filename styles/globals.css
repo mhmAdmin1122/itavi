@@ -272,7 +272,7 @@ html {
 /*  Team-Work Section  */
 .TeamWork-Section {
   @apply h-screen bg-no-repeat bg-cover w-screen px-[10%] pt-[150px] text-white relative;
-  background-image: url("../public/img/BackgroundImage-1.jpg");
+  background-image: url("../public/img/goldbg.webp");
 }
 .TeamWork-Box {
   @apply absolute bottom-[3%];
@@ -786,10 +786,16 @@ html {
   @apply rounded-l-md top-[48%] right-0;
 }
 .btn-design {
-  @apply bg-[#00000070] p-2 text-white text-3xl;
+  @apply bg-[#00000070] p-2 text-white text-3xl opacity-55 transition-all duration-700 delay-200 ease-in-out hover:opacity-100;
 }
-.btnshadow{
+.btnshadow {
   margin-top: 15px;
   /* box-shadow: 2px 2px 32px rgba(9, 9, 9, 0.7); */
   border: 2px solid #e6c407;
+}
+
+.shadow-text-2 {
+  text-shadow: -2px 2px 2px gold;
+  color: #000 !important;
+  font-weight: bold;
 }

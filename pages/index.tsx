@@ -721,10 +721,10 @@ export default function Home() {
               <div className="slider-section">
                 <section className="TeamWork-Section">
                   <div className="TeamWork-Box">
-                    <h2>Documentation</h2>
+                    <h2 className="shadow-text">Documentation</h2>
                     <div className="Second-div">
-                      <h3>4</h3>
-                      <p>
+                      <h3 className="shadow-text">4</h3>
+                      <p className="shadow-text-2">
                         We provide full-transparency with our documentation to
                         our Investors. Make sure you go-through the important
                         information highlighted in the documents. In the next
