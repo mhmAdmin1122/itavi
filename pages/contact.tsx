@@ -58,10 +58,9 @@ const ContactPage = () => {
 
           <div className="flex items-center gap-10 flex-wrap w-full justify-center">
             <div className="flex items-center gap-4">
-              <FaLocationDot className="text-7xl p-2 border-2 border-black rounded-full" />
+              <FaLocationDot className="text-4xl p-1 border-2 border-black rounded-full" />
               <p className="cursor-context-menu">
-                99 Wall Street, Suite <br /> #5014 New York,
-                <br /> NY 10005
+                99 Wall Street, Suite #5014 <br /> New York, NY 10005
               </p>
             </div>
             <div className="flex flex-col gap-3">
@@ -70,7 +69,7 @@ const ContactPage = () => {
                 target="_blank"
                 className="flex items-center gap-2"
               >
-                <FaPhone className="text-4xl p-2 border-2 border-black rounded-full cursor-pointer" />
+                <FaPhone className="text-2xl p-1 border-2 border-black rounded-full cursor-pointer" />
                 <p>
                   {"("}646{")"} 770-0628
                 </p>
@@ -80,7 +79,7 @@ const ContactPage = () => {
                 target="_blank"
                 className="flex items-center gap-2"
               >
-                <FaEnvelope className="text-4xl p-1 border-2 border-black rounded-full cursor-pointer" />
+                <FaEnvelope className="text-2xl p-1 border-2 border-black rounded-full cursor-pointer" />
                 <p>william@itavimining.com</p>
               </Link>
             </div>
