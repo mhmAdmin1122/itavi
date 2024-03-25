@@ -754,3 +754,12 @@ html {
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;    
 }
+.disclaimer-box{
+  @apply flex flex-col gap-4
+}
+.disclaimer-box h2{
+  @apply text-lg font-bold;
+}
+.disclaimer-box p a{
+ @apply text-blue-500 font-medium hover:text-blue-600 hover:underline;
+}
