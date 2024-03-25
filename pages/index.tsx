@@ -755,7 +755,7 @@ export default function Home() {
                 <section className="Celebrating-Section">
                   <div className="Text-Box !w-[100%]">
                     <h4>Company PitchDeck</h4>
-                    <p className="!text-white">
+                    <p className="!text-white !w-[550px]">
                       Our flagship project, {'"'}La Gran Española,{'"'}
                       holds the promise of becoming one of Bolivia{"'"}s largest
                       gold, copper, and silver mines, with a potential 500,000
