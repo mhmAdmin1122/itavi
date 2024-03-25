@@ -11,10 +11,8 @@ import bolivia from "@/public/img/Bolivia Map Image.png";
 import VisionariesImage from "@/public/img/leftopp.jpg";
 import ResoucesImage from "@/public/img/rightopp.jpg";
 import CopperImage from "@/public/img/Copper-Image.png";
-import DiamondOne from "@/public/img/Diamond-1.png";
 import ExpertTeamImage from "@/public/img/Expert-Team-BG.png";
 import CelebratingImage from "@/public/img/Celebrating-BG.png";
-import Diamond from "@/public/img/Diamond-1.png";
 import TRDownloadBtn from "./components/TRDownloadBtn";
 import EMDDownloadBtn from "./components/EMDDownloadBtn";
 import PPMDownloadBtn from "./components/PPMDownloadBtn";
@@ -411,14 +409,14 @@ export default function Home() {
             </div>
           </div>
           <button
-            className="slider-button previous"
+            className="slider-button btn-design-right btn-design"
             onClick={handlePrevious}
             style={{ visibility: currentSection === 1 ? "hidden" : "visible" }}
           >
             <FaAngleLeft />
           </button>
           <button
-            className="slider-button next"
+            className="slider-button btn-design-left btn-design"
             onClick={handleNext}
             style={{
               visibility:
@@ -652,14 +650,14 @@ export default function Home() {
             </div>
           </div>
           <button
-            className="slider-button previous"
+            className="slider-button btn-design-right btn-design"
             onClick={handlePrevious2}
             style={{ visibility: current2Section === 1 ? "hidden" : "visible" }}
           >
             <FaAngleLeft />
           </button>
           <button
-            className="slider-button next"
+            className="slider-button btn-design-left btn-design"
             onClick={handleNext2}
             style={{
               visibility:
@@ -809,14 +807,14 @@ export default function Home() {
             </div>
           </div>
           <button
-            className="slider-button previous"
+            className="slider-button btn-design-right btn-design"
             onClick={handle3Previous}
             style={{ visibility: current3Section === 1 ? "hidden" : "visible" }}
           >
             <FaAngleLeft />
           </button>
           <button
-            className="slider-button next"
+            className="slider-button btn-design-left btn-design"
             onClick={handle3Next}
             style={{
               visibility:
