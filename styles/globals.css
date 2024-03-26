@@ -609,8 +609,11 @@ html {
   .addressbox svg{
     @apply text-2xl;
   }
+  .sidebar-tabs{
+    @apply text-[9px] pr-[2px];
+  }
 }
-@media (max-width: 451px) and (min-width: 260px) {
+@media (max-width: 450px) and (min-width: 260px) {
   .Home-Section .heading h2 {
     font-size: 47px !important;
     font-weight: 200 !important;
@@ -727,6 +730,9 @@ html {
   }
   .tg-det-btn-invpage .det-btn-invpage {
     @apply w-[85%] gap-1 px-1 text-[16px] flex-col h-fit;
+  }
+  .sidebar-tabs{
+    @apply text-[12px];
   }
 }
 /* snaping */
