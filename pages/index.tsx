@@ -7,8 +7,6 @@ import Prisma from "@/public/img/goldQuartz.png";
 import OurValueBG from "@/public/img//Our-Value-BG.png";
 import WorkImage from "@/public/img/InvestWithConviction.jpg";
 import bolivia from "@/public/img/Bolivia Map Image.png";
-import VisionariesImage from "@/public/img/leftopp.jpg";
-import ResoucesImage from "@/public/img/rightopp.jpg";
 import CopperImage from "@/public/img/Copper-Image.png";
 import TRDownloadBtn from "./components/TRDownloadBtn";
 import EMDDownloadBtn from "./components/EMDDownloadBtn";
