@@ -13,6 +13,8 @@ import CopperImage from "@/public/img/Copper-Image.png";
 import TRDownloadBtn from "./components/TRDownloadBtn";
 import EMDDownloadBtn from "./components/EMDDownloadBtn";
 import PPMDownloadBtn from "./components/PPMDownloadBtn";
+import ScaleRes from "@/public/img/LaGranEspañolaleft.png";
+import EmergingMarket from "@/public/img/LaGranEspañolaright.png";
 import {
   FaAngleDown,
   FaAngleUp,
@@ -166,37 +168,37 @@ export default function Home() {
         </Link>
 
         <div className="flex justify-center space-x-4">
-          <Link href="#home" className="hover:underline">
+          <Link href="#home" className="hover:underline shadow-text">
             Home
           </Link>
 
-          <Link href="#about" className="hover:underline">
+          <Link href="#about" className="hover:underline shadow-text">
             About
           </Link>
 
-          <Link href="#opportunity" className="hover:underline">
+          <Link href="#opportunity" className="hover:underline shadow-text">
             Opportunity
           </Link>
 
-          <Link href="#documentation" className="hover:underline">
+          <Link href="#documentation" className="hover:underline shadow-text">
             Documentation
           </Link>
 
-          <Link href="#contact" className="hover:underline">
+          <Link href="#contact" className="hover:underline shadow-text">
             Contact
           </Link>
         </div>
 
         <div className="flex items-center justify-end gap-8">
           <Link
-            className="text-xl hover:text-[#ca8a04] transition-all duration-700 ease-in-out"
+            className="text-xl hover:text-[#ca8a04] transition-all duration-700 ease-in-out btnshadow2"
             href="https://www.facebook.com/itavimining"
             target="blank"
           >
             <FaFacebook />
           </Link>
           <Link
-            className="text-xl hover:text-[#ca8a04] transition-all duration-700 ease-in-out"
+            className="text-xl hover:text-[#ca8a04] transition-all duration-700 ease-in-out btnshadow2"
             href="https://www.linkedin.com/company/itavi-mining-company"
             target="blank"
           >
@@ -499,7 +501,18 @@ export default function Home() {
             >
               <div className="slider-section">
                 <section className="WWeDo-Section">
-                  <div className="WWeDo-Box">
+                  <div className="video-container">
+                    <video
+                      className="absolute top-0 left-0 w-full h-full object-cover z-0"
+                      autoPlay
+                      loop
+                      muted
+                    >
+                      <source src="/video/dron2video.mp4" type="video/mp4" />
+                    </video>
+                    <div className="absolute top-0 left-0 w-full h-full object-cover z-4 bg-[#0000009a]"></div>
+                  </div>
+                  <div className="WWeDo-Box relative z-10">
                     <h2>The Opportunity</h2>
                     <div className="Second-div">
                       <h3>03</h3>
@@ -604,9 +617,9 @@ export default function Home() {
                   </div>
                   <div className="w-1/2 imagebox">
                     <Image
-                      src={ResoucesImage}
+                      src={ScaleRes}
                       alt=""
-                      className="h-full w-full select-none"
+                      className="h-full w-full select-none object-fill"
                     />
                   </div>
                 </section>
@@ -616,9 +629,9 @@ export default function Home() {
                 <section className="EmergingMarket-Section">
                   <div className="w-1/3 imagebox">
                     <Image
-                      src={VisionariesImage}
+                      src={EmergingMarket}
                       alt=""
-                      className="h-full w-full select-none"
+                      className="h-full w-full select-none object-fill"
                     />
                   </div>
                   <div className="Text-Box">
@@ -830,7 +843,18 @@ export default function Home() {
           >
             <FaAngleUp />
           </Link>
-          <div className="Text-Box">
+          <div className="video-container">
+            <video
+              className="absolute top-0 left-0 w-full h-full object-cover z-0"
+              autoPlay
+              loop
+              muted
+            >
+              <source src="/video/ilamavideodron4.mp4" type="video/mp4" />
+            </video>
+            <div className="absolute top-0 left-0 w-full h-full object-cover z-4 bg-[#0000009a]"></div>
+          </div>
+          <div className="Text-Box relative z-10">
             <h2>Contact</h2>
             <div className="Second-div">
               <h3>05</h3>

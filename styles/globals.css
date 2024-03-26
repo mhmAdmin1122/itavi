@@ -794,8 +794,11 @@ html {
   border: 2px solid #e6c407;
 }
 
-.shadow-text-2 {
-  text-shadow: -2px 2px 2px gold;
-  color: #000 !important;
-  font-weight: bold;
+.btnshadow2{
+  filter: drop-shadow(2px 2px 2px #000);
+}
+
+.TeamWork-Section {
+  @apply h-screen bg-no-repeat bg-cover w-screen px-[10%] pt-[150px] text-white relative;
+  background-image: linear-gradient(rgba(0, 0, 1, 0.7), rgba(0, 0, 1, 0.7)), url("../public/img/goldbg.webp");
 }
