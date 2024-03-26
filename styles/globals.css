@@ -847,7 +847,7 @@ html {
   @apply top-[48%] right-0;
 }
 .btn-design {
-  @apply bg-[#000000] p-2 text-white text-xl opacity-40 hover:opacity-100;
+  @apply bg-[#000000] p-2 text-white text-xl opacity-30 hover:opacity-85;
 }
 .btnshadow {
   margin-top: 15px;
