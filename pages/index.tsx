@@ -15,12 +15,7 @@ import EMDDownloadBtn from "./components/EMDDownloadBtn";
 import PPMDownloadBtn from "./components/PPMDownloadBtn";
 import ScaleRes from "@/public/img/LaGranEspañolaleft.png";
 import EmergingMarket from "@/public/img/LaGranEspañolaright.png";
-import {
-  FaAngleDown,
-  FaAngleUp,
-  FaAngleRight,
-  FaAngleLeft,
-} from "react-icons/fa6";
+import { TfiAngleDown, TfiAngleUp, TfiAngleLeft, TfiAngleRight } from "react-icons/tfi";
 import { FaFacebook, FaLinkedinIn } from "react-icons/fa";
 
 export default function Home() {
@@ -214,10 +209,12 @@ export default function Home() {
             href="#about"
             className="absolute bottom-0 z-[999999] btn-design-bottom btn-design"
           >
-            <FaAngleDown />
+            <TfiAngleDown />
           </Link>
           <div className="heading flex flex-col gap-4">
-            <h2>Seize Opportunity</h2>
+            <h2>
+              Invest In <b>Possibility</b>
+            </h2>
             <p>
               Invest in Bolivia{"'"}s Next Major Gold, Silver, and Copper
               Discovery with Itavi Mining Company{"'"}s Flagship Project -{" "}
@@ -242,13 +239,13 @@ export default function Home() {
             href="#home"
             className="absolute top-0 z-[999999] btn-design-top btn-design"
           >
-            <FaAngleUp />
+            <TfiAngleUp  />
           </Link>
           <Link
             href="#opportunity"
             className="absolute bottom-0 z-[999999] btn-design-bottom btn-design"
           >
-            <FaAngleDown />
+            <TfiAngleDown />
           </Link>
           <div className="Side-Nav" id="Side-Nav">
             <div className="Uper-div">
@@ -429,7 +426,7 @@ export default function Home() {
             onClick={handlePrevious}
             style={{ visibility: currentSection === 1 ? "hidden" : "visible" }}
           >
-            <FaAngleLeft />
+            <TfiAngleLeft  />
           </button>
           <button
             className="slider-button btn-design-left btn-design"
@@ -439,7 +436,7 @@ export default function Home() {
                 currentSection === totalSections ? "hidden" : "visible",
             }}
           >
-            <FaAngleRight />
+            <TfiAngleRight  />
           </button>
         </section>
         {/* About-Us-section */}
@@ -453,13 +450,13 @@ export default function Home() {
             href="#about"
             className="absolute top-0 z-[999999] btn-design-top btn-design"
           >
-            <FaAngleUp />
+            <TfiAngleUp  />
           </Link>
           <Link
             href="#documentation"
             className="absolute bottom-0 z-[999999] btn-design-bottom btn-design"
           >
-            <FaAngleDown />
+            <TfiAngleDown />
           </Link>
           <div className="Side-Nav" id="Side-Nav">
             <div className="Uper-div">
@@ -681,7 +678,7 @@ export default function Home() {
             onClick={handlePrevious2}
             style={{ visibility: current2Section === 1 ? "hidden" : "visible" }}
           >
-            <FaAngleLeft />
+            <TfiAngleLeft  />
           </button>
           <button
             className="slider-button btn-design-left btn-design"
@@ -691,7 +688,7 @@ export default function Home() {
                 current2Section === total2Sections ? "hidden" : "visible",
             }}
           >
-            <FaAngleRight />
+            <TfiAngleRight  />
           </button>
         </section>
         {/* Opportunity-section */}
@@ -705,13 +702,13 @@ export default function Home() {
             href="#opportunity"
             className="absolute top-0 z-[999999] btn-design-top btn-design"
           >
-            <FaAngleUp />
+            <TfiAngleUp  />
           </Link>
           <Link
             href="#contact"
             className="absolute bottom-0 z-[999999] btn-design-bottom btn-design"
           >
-            <FaAngleDown />
+            <TfiAngleDown />
           </Link>
           <div className="Side-Nav" id="Side-Nav">
             <div className="Uper-div">
@@ -817,7 +814,7 @@ export default function Home() {
             onClick={handle3Previous}
             style={{ visibility: current3Section === 1 ? "hidden" : "visible" }}
           >
-            <FaAngleLeft />
+            <TfiAngleLeft  />
           </button>
           <button
             className="slider-button btn-design-left btn-design"
@@ -827,7 +824,7 @@ export default function Home() {
                 current3Section === total3Sections ? "hidden" : "visible",
             }}
           >
-            <FaAngleRight />
+            <TfiAngleRight  />
           </button>
         </section>
         {/* Documentation-section */}
@@ -841,7 +838,7 @@ export default function Home() {
             href="#documentation"
             className="absolute top-0 z-[999999] btn-design-top btn-design"
           >
-            <FaAngleUp />
+            <TfiAngleUp  />
           </Link>
           <div className="video-container">
             <video

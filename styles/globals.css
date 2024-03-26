@@ -734,6 +734,15 @@ html {
   .sidebar-tabs{
     @apply text-[12px];
   }
+  .pagelayout{
+    @apply flex-col;
+  }
+  .side-bar-section{
+    @apply w-full flex flex-col items-center justify-center max-h-[90px] min-h-[90px] h-[90px];
+  }
+  .side-bar-section .logoBox img{
+    @apply w-[100px]
+  }
 }
 /* snaping */
 .conatiner-box {
@@ -826,10 +835,10 @@ html {
   content: counter(section) ". ";
 }
 .btn-design-top {
-  @apply rounded-b-md right-[45%];
+  @apply rounded-b-md right-[48%];
 }
 .btn-design-bottom {
-  @apply rounded-t-md right-[45%];
+  @apply rounded-t-md right-[48%];
 }
 .btn-design-right {
   @apply rounded-r-md top-[48%] left-0;
@@ -838,7 +847,7 @@ html {
   @apply rounded-l-md top-[48%] right-0;
 }
 .btn-design {
-  @apply bg-[#00000070] p-2 text-white text-3xl opacity-55 hover:opacity-100;
+  @apply bg-[#000000] p-2 text-white text-xl opacity-40 hover:opacity-100;
 }
 .btnshadow {
   margin-top: 15px;
@@ -855,3 +864,11 @@ html {
   background-image: linear-gradient(rgba(0, 0, 1, 0.7), rgba(0, 0, 1, 0.7)), url("../public/img/goldbg.webp");
 }
 
+
+
+body::-webkit-scrollbar {
+  width: 2px;
+}
+body::-webkit-scrollbar-thumb {
+  width: 2px;
+}
