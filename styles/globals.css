@@ -587,7 +587,29 @@ html {
     @apply text-2xl;
   }
 }
-
+@media (max-width: 749px) and (min-width: 451px) {
+  .pagelayout{
+    @apply gap-4
+  }
+  .Contact-Form{
+    @apply px-3 py-3;
+  }
+  .Contact-Form h4{
+    @apply text-4xl;
+  }
+  .Contact-Form div button{
+    @apply text-[12px] px-4 py-0;
+  }
+  .contactdetails{
+    @apply flex-col gap-2 mt-4;
+  }
+  .addressbox{
+    @apply gap-[0.5rem]
+  }
+  .addressbox svg{
+    @apply text-2xl;
+  }
+}
 @media (max-width: 451px) and (min-width: 260px) {
   .Home-Section .heading h2 {
     font-size: 47px !important;
