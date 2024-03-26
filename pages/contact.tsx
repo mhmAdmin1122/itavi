@@ -56,8 +56,8 @@ const ContactPage = () => {
             </div>
           </form>
 
-          <div className="flex items-center gap-10 flex-wrap w-full justify-center">
-            <div className="flex items-center gap-4">
+          <div className="flex items-center gap-10 flex-wrap w-full justify-center contactdetails">
+            <div className="flex items-center gap-4 addressbox">
               <FaLocationDot className="text-4xl p-1 border-2 border-black rounded-full" />
               <p className="cursor-context-menu">
                 99 Wall Street, Suite #5014 <br /> New York, NY 10005

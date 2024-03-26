@@ -564,6 +564,30 @@ html {
   text-shadow: 2px 2px 2px #000;
 }
 
+@media (max-width: 890px) and (min-width: 750px) {
+  .pagelayout{
+    @apply gap-4
+  }
+  .Contact-Form{
+    @apply px-3 py-3;
+  }
+  .Contact-Form h4{
+    @apply text-4xl;
+  }
+  .Contact-Form div button{
+    @apply text-[12px] px-4 py-0;
+  }
+  .contactdetails{
+    @apply flex-col gap-2 mt-4;
+  }
+  .addressbox{
+    @apply gap-[0.5rem]
+  }
+  .addressbox svg{
+    @apply text-2xl;
+  }
+}
+
 @media (max-width: 451px) and (min-width: 260px) {
   .Home-Section .heading h2 {
     font-size: 47px !important;
@@ -730,7 +754,7 @@ html {
 }
 
 .carousal-head {
-  @apply text-gray-600 flex items-center justify-between text-lg gap-4;
+  @apply text-[#000] flex items-center justify-between text-lg gap-4;
 }
 
 .carousal-body {
@@ -738,7 +762,7 @@ html {
 }
 
 .carousal-deatail {
-  @apply text-[14px] text-gray-500 pr-[40px] text-justify;
+  @apply text-[14px] text-[#000] pr-[40px] text-justify;
 }
 
 .mask1 {
@@ -802,3 +826,4 @@ html {
   @apply h-screen bg-no-repeat bg-cover w-screen px-[10%] pt-[150px] text-white relative;
   background-image: linear-gradient(rgba(0, 0, 1, 0.7), rgba(0, 0, 1, 0.7)), url("../public/img/goldbg.webp");
 }
+
