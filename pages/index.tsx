@@ -791,7 +791,7 @@ export default function Home() {
                     </p>
                     <p className="!text-white">
                       Based on drilling and sampling data, an inferred resource
-                      of 269,000 ounces of gold has been estimated.
+                      of 500,000 ounces of gold has been estimated.
                     </p>
                     <TRDownloadBtn />
                   </div>
