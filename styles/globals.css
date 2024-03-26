@@ -835,16 +835,16 @@ html {
   content: counter(section) ". ";
 }
 .btn-design-top {
-  @apply rounded-b-md right-[48%];
+  @apply right-[48%];
 }
 .btn-design-bottom {
-  @apply rounded-t-md right-[48%];
+  @apply right-[48%];
 }
 .btn-design-right {
-  @apply rounded-r-md top-[48%] left-0;
+  @apply top-[48%] left-0;
 }
 .btn-design-left {
-  @apply rounded-l-md top-[48%] right-0;
+  @apply top-[48%] right-0;
 }
 .btn-design {
   @apply bg-[#000000] p-2 text-white text-xl opacity-40 hover:opacity-100;
