@@ -1,7 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
-import { FaAngleRight, FaAngleLeft } from "react-icons/fa6";
 import Image from "next/image";
 import Logo from "@/public/img/Logo.svg";
 import Prisma from "@/public/img/goldQuartz.png";
@@ -11,12 +10,16 @@ import bolivia from "@/public/img/Bolivia Map Image.png";
 import VisionariesImage from "@/public/img/leftopp.jpg";
 import ResoucesImage from "@/public/img/rightopp.jpg";
 import CopperImage from "@/public/img/Copper-Image.png";
-import ExpertTeamImage from "@/public/img/Expert-Team-BG.png";
-import CelebratingImage from "@/public/img/Celebrating-BG.png";
 import TRDownloadBtn from "./components/TRDownloadBtn";
 import EMDDownloadBtn from "./components/EMDDownloadBtn";
 import PPMDownloadBtn from "./components/PPMDownloadBtn";
-import { FaAngleDown, FaAngleUp } from "react-icons/fa6";
+import {
+  FaAngleDown,
+  FaAngleUp,
+  FaAngleRight,
+  FaAngleLeft,
+} from "react-icons/fa6";
+import { FaFacebook, FaLinkedinIn } from "react-icons/fa";
 
 export default function Home() {
   const handleClick = (event: any) => {
@@ -157,39 +160,50 @@ export default function Home() {
       </Head>
 
       {/* Header */}
-      <nav className="bg-transparent navbar text-white flex items-center justify-between fixed top-0 !z-[999999] right-0 w-full py-4 px-[90px]">
+      <header className="bg-transparent navbar text-white flex items-center justify-between fixed top-0 !z-[999999] right-0 w-full py-4 px-[90px]">
         <Link href="#home" className="w-[90px]">
           <Image src={Logo} alt="logo-pic" className="logo-pic" />
         </Link>
 
-        <ul className="flex justify-center space-x-4">
-          <li>
-            <Link href="#home">
-              <b className="hover:underline">Home</b>
-            </Link>
-          </li>
-          <li>
-            <Link href="#about">
-              <b className="hover:underline">About</b>
-            </Link>
-          </li>
-          <li>
-            <Link href="#opportunity">
-              <b className="hover:underline">Opportunity</b>
-            </Link>
-          </li>
-          <li>
-            <Link href="#documentation">
-              <b className="hover:underline">Documentation</b>
-            </Link>
-          </li>
-          <li>
-            <Link href="#contact">
-              <b className="hover:underline">Contact</b>
-            </Link>
-          </li>
-        </ul>
-      </nav>
+        <div className="flex justify-center space-x-4">
+          <Link href="#home" className="hover:underline">
+            Home
+          </Link>
+
+          <Link href="#about" className="hover:underline">
+            About
+          </Link>
+
+          <Link href="#opportunity" className="hover:underline">
+            Opportunity
+          </Link>
+
+          <Link href="#documentation" className="hover:underline">
+            Documentation
+          </Link>
+
+          <Link href="#contact" className="hover:underline">
+            Contact
+          </Link>
+        </div>
+
+        <div className="flex items-center justify-end gap-8">
+          <Link
+            className="text-xl hover:text-[#ca8a04] transition-all duration-700 ease-in-out"
+            href="https://www.facebook.com/itavimining"
+            target="blank"
+          >
+            <FaFacebook />
+          </Link>
+          <Link
+            className="text-xl hover:text-[#ca8a04] transition-all duration-700 ease-in-out"
+            href="https://www.linkedin.com/company/itavi-mining-company"
+            target="blank"
+          >
+            <FaLinkedinIn />
+          </Link>
+        </div>
+      </header>
 
       <div className="conatiner-box">
         {/* Home-hero-section */}
@@ -236,7 +250,7 @@ export default function Home() {
           </Link>
           <div className="Side-Nav" id="Side-Nav">
             <div className="Uper-div">
-              <h3 className="shadow-text">2</h3>
+              <h3 className="shadow-text">02</h3>
               <h2 onClick={handleFirst} className="shadow-text">
                 ABOUT US
               </h2>
@@ -271,7 +285,7 @@ export default function Home() {
                   <div className="About-Box">
                     <h2>About Us</h2>
                     <div className="Second-div">
-                      <h3>2</h3>
+                      <h3>02</h3>
                       <p>
                         We{"'"}re more than prospectors; we{"'"}re visionaries.
                         Our journey begins where the Andean peaks kiss the sky,
@@ -447,7 +461,7 @@ export default function Home() {
           </Link>
           <div className="Side-Nav" id="Side-Nav">
             <div className="Uper-div">
-              <h3 className="shadow-text">3</h3>
+              <h3 className="shadow-text">03</h3>
               <h2 onClick={handleFirst2} className="shadow-text">
                 THE OPPORTUNITY
               </h2>
@@ -488,7 +502,7 @@ export default function Home() {
                   <div className="WWeDo-Box">
                     <h2>The Opportunity</h2>
                     <div className="Second-div">
-                      <h3>3</h3>
+                      <h3>03</h3>
                       <p>
                         Tap into Bolivia{"'"}s growing mining sector, supported
                         by a pro-development government. Itavi Mining{"'"}s
@@ -688,7 +702,7 @@ export default function Home() {
           </Link>
           <div className="Side-Nav" id="Side-Nav">
             <div className="Uper-div">
-              <h3 className="shadow-text">4</h3>
+              <h3 className="shadow-text">04</h3>
               <h2 onClick={handleFirst3} className="shadow-text">
                 Documentation for Investors
               </h2>
@@ -723,7 +737,7 @@ export default function Home() {
                   <div className="TeamWork-Box">
                     <h2 className="shadow-text">Documentation</h2>
                     <div className="Second-div">
-                      <h3 className="shadow-text">4</h3>
+                      <h3 className="shadow-text">04</h3>
                       <p className="shadow-text-2">
                         We provide full-transparency with our documentation to
                         our Investors. Make sure you go-through the important
@@ -819,7 +833,7 @@ export default function Home() {
           <div className="Text-Box">
             <h2>Contact</h2>
             <div className="Second-div">
-              <h3>5</h3>
+              <h3>05</h3>
               <p className="!text-white">
                 Do you have an urgent question or request? This{" "}
                 <Link href={"/contact"} className="underline cursor-pointer">
