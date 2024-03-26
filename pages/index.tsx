@@ -13,7 +13,12 @@ import EMDDownloadBtn from "./components/EMDDownloadBtn";
 import PPMDownloadBtn from "./components/PPMDownloadBtn";
 import ScaleRes from "@/public/img/LaGranEspañolaleft.png";
 import EmergingMarket from "@/public/img/LaGranEspañolaright.png";
-import { TfiAngleDown, TfiAngleUp, TfiAngleLeft, TfiAngleRight } from "react-icons/tfi";
+import {
+  TfiAngleDown,
+  TfiAngleUp,
+  TfiAngleLeft,
+  TfiAngleRight,
+} from "react-icons/tfi";
 import { FaFacebook, FaLinkedinIn } from "react-icons/fa";
 
 export default function Home() {
@@ -182,21 +187,24 @@ export default function Home() {
           </Link>
         </div>
 
-        <div className="flex items-center justify-end gap-8">
-          <Link
-            className="text-xl hover:text-[#ca8a04] transition-all duration-700 ease-in-out btnshadow2"
-            href="https://www.facebook.com/itavimining"
-            target="blank"
-          >
-            <FaFacebook />
-          </Link>
-          <Link
-            className="text-xl hover:text-[#ca8a04] transition-all duration-700 ease-in-out btnshadow2"
-            href="https://www.linkedin.com/company/itavi-mining-company"
-            target="blank"
-          >
-            <FaLinkedinIn />
-          </Link>
+        <div className="flex items-center justify-end gap-2">
+          <b>Follow us :</b>
+          <div className="flex items-center justify-end gap-8">
+            <Link
+              className="text-xl hover:text-[#ca8a04] transition-all duration-700 ease-in-out btnshadow2"
+              href="https://www.facebook.com/itavimining"
+              target="blank"
+            >
+              <FaFacebook />
+            </Link>
+            <Link
+              className="text-xl hover:text-[#ca8a04] transition-all duration-700 ease-in-out btnshadow2"
+              href="https://www.linkedin.com/company/itavi-mining-company"
+              target="blank"
+            >
+              <FaLinkedinIn />
+            </Link>
+          </div>
         </div>
       </header>
 
@@ -237,7 +245,7 @@ export default function Home() {
             href="#home"
             className="absolute top-0 z-[999999] btn-design-top btn-design"
           >
-            <TfiAngleUp  />
+            <TfiAngleUp />
           </Link>
           <Link
             href="#opportunity"
@@ -424,7 +432,7 @@ export default function Home() {
             onClick={handlePrevious}
             style={{ visibility: currentSection === 1 ? "hidden" : "visible" }}
           >
-            <TfiAngleLeft  />
+            <TfiAngleLeft />
           </button>
           <button
             className="slider-button btn-design-left btn-design"
@@ -434,7 +442,7 @@ export default function Home() {
                 currentSection === totalSections ? "hidden" : "visible",
             }}
           >
-            <TfiAngleRight  />
+            <TfiAngleRight />
           </button>
         </section>
         {/* About-Us-section */}
@@ -448,7 +456,7 @@ export default function Home() {
             href="#about"
             className="absolute top-0 z-[999999] btn-design-top btn-design"
           >
-            <TfiAngleUp  />
+            <TfiAngleUp />
           </Link>
           <Link
             href="#documentation"
@@ -676,7 +684,7 @@ export default function Home() {
             onClick={handlePrevious2}
             style={{ visibility: current2Section === 1 ? "hidden" : "visible" }}
           >
-            <TfiAngleLeft  />
+            <TfiAngleLeft />
           </button>
           <button
             className="slider-button btn-design-left btn-design"
@@ -686,7 +694,7 @@ export default function Home() {
                 current2Section === total2Sections ? "hidden" : "visible",
             }}
           >
-            <TfiAngleRight  />
+            <TfiAngleRight />
           </button>
         </section>
         {/* Opportunity-section */}
@@ -700,7 +708,7 @@ export default function Home() {
             href="#opportunity"
             className="absolute top-0 z-[999999] btn-design-top btn-design"
           >
-            <TfiAngleUp  />
+            <TfiAngleUp />
           </Link>
           <Link
             href="#contact"
@@ -812,7 +820,7 @@ export default function Home() {
             onClick={handle3Previous}
             style={{ visibility: current3Section === 1 ? "hidden" : "visible" }}
           >
-            <TfiAngleLeft  />
+            <TfiAngleLeft />
           </button>
           <button
             className="slider-button btn-design-left btn-design"
@@ -822,7 +830,7 @@ export default function Home() {
                 current3Section === total3Sections ? "hidden" : "visible",
             }}
           >
-            <TfiAngleRight  />
+            <TfiAngleRight />
           </button>
         </section>
         {/* Documentation-section */}
@@ -836,7 +844,7 @@ export default function Home() {
             href="#documentation"
             className="absolute top-0 z-[999999] btn-design-top btn-design"
           >
-            <TfiAngleUp  />
+            <TfiAngleUp />
           </Link>
           <div className="video-container">
             <video
