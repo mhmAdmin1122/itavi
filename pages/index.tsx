@@ -13,7 +13,7 @@ import EMDDownloadBtn from "./components/EMDDownloadBtn";
 import PPMDownloadBtn from "./components/PPMDownloadBtn";
 import ScaleRes from "@/public/img/LaGranEspañolaleft.png";
 import EmergingMarket from "@/public/img/LaGranEspañolaright.png";
-import weFunderIco from "@/public/img/wefunder.png";
+import weFunderIco from "@/public/img/wefunder.jpg";
 import {
   TfiAngleDown,
   TfiAngleUp,
@@ -217,11 +217,11 @@ export default function Home() {
               <FaSquareXTwitter />
             </Link>
             <Link
-              className="text-xl btnshadow2"
-              href="https://www.linkedin.com/company/itavi-mining-company"
+              className="text-xl btnshadow2 "
+              href="https://wefunder.com/itavimining"
               target="blank"
             >
-              <Image src={weFunderIco} alt="weFunder-Ico" className="w-[20px]" />
+              <Image src={weFunderIco} alt="weFunder-Ico" className="w-[20px] rounded-[2px]" />
             </Link>
           </div>
         </div>
