@@ -932,10 +932,16 @@ html {
   .carousal-body {
     padding-left: 25px !important;
     padding-right: 25px !important;
-}
-.details-handle-box, .trigerring-btn-box{
-  @apply px-[30px] !important;
-}
+  }
+  .details-handle-box,
+  .trigerring-btn-box {
+    @apply px-[30px] !important;
+  }
+  .trigerring-btn-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 /* snaping */
 .conatiner-box {
