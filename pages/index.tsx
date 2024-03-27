@@ -397,8 +397,8 @@ export default function Home() {
                     <div className="Second-div">
                       <h3>02</h3>
                       <p>
-                        We{"'"}re more than prospectors; we{"'"}re visionaries.
-                        Our journey begins where the Andean peaks kiss the sky,
+                      We are more than prospectors; We are visionaries.
+                        Our journey begins where the Andean peaks kiss the sky
                         and the earth cradles untold riches. We are a Bolivian
                         mining company driven by a passion for discovery and a
                         commitment to responsible development. Our flagship
@@ -428,21 +428,20 @@ export default function Home() {
                       At the core of Itavi Mining lie our values, the bedrock of
                       our commitment to responsible mining. <br />
                       <b>Ambition:</b> To reach beyond the horizon. Our passion
-                      fuels our pursuit of mineral treasures, and our ambition
+                      fuels our pursuit of mineral treasures and our ambition
                       knows no bounds. <br />
                       <b>Investor Focus:</b> We believe in delivering strong
                       returns through the strategic development of our assets.{" "}
                       <br />
                       <b>Sustainability:</b> We respect the land, leaving a
-                      legacy of responsible mining. We{"'"}ve a strong
+                      legacy of responsible mining. We have a strong
                       commitment to minimizing our environmental footprint.{" "}
                       <br />
                       <b>Innovation:</b> Pioneering modern methods to explore,
                       delineate, and develop with a sustainable touch. <br />
-                      <b>Integrity:</b> Navigating the mining industry and
+                      <b>Integrity:</b> We uphold the highest standards navigating the mining industry and
                       Bolivian legislation with transparency, ethical practices,
-                      and a steadfast commitment to legal compliance. We uphold
-                      the highest standards. <br />
+                      and a steadfast commitment to legal compliance. <br />
                     </p>
                   </div>
                 </section>
@@ -511,7 +510,7 @@ export default function Home() {
                     </p>
                     <p>
                       Expertise: Our team brings decades of experience in
-                      successful Bolivian mining projects, and our flagship La
+                      successful Bolivian mining projects and our flagship La
                       Gran Española prospect boasts documented potential
                       validated by past exploration by major industry players.
                     </p>
@@ -749,7 +748,7 @@ export default function Home() {
                   <div className="Text-Box">
                     <h4>Emerging Markets</h4>
                     <p className="text-white">
-                      Yes, Bolivia is emerging. But we{"’"}re not novices. Our
+                      Yes, Bolivia is emerging. But we are not novices. Our
                       team brings decades of experience. We navigate Bolivian
                       regulations with finesse. Plus, government support fuels
                       our drive.
@@ -843,7 +842,7 @@ export default function Home() {
                 Private Placement Memorándum
               </p>
               <p onClick={handleThird3} className="shadow-text">
-                Company PitchDeck
+                Company Pitch Deck
               </p>
               <p onClick={handlefour3} className="shadow-text">
                 Property Technical Report
@@ -867,7 +866,7 @@ export default function Home() {
                         We provide full-transparency with our documentation to
                         our Investors. Make sure you go-through the important
                         information highlighted in the documents. In the next
-                        pages you{"'"}ll find Memorándum and Subscription
+                        pages you{"'"}ll find a Memorándum and Subscription
                         Agreement, Pitch Deck, and Technical Report.
                       </p>
                     </div>
@@ -893,9 +892,9 @@ export default function Home() {
               <div className="slider-section">
                 <section className="Celebrating-Section">
                   <div className="Text-Box !w-[100%]">
-                    <h4>Company PitchDeck</h4>
+                    <h4>Company Pitch Deck</h4>
                     <p className="!text-white !w-[550px]">
-                      Our flagship project, {'"'}La Gran Española,{'"'}
+                      Our flagship project, {'"'}La Gran Española{'"'},
                       holds the promise of becoming one of Bolivia{"'"}s largest
                       gold, copper, and silver mines, with a potential 500,000
                       ounces of gold in resources. Join us in venture!
