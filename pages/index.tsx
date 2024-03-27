@@ -693,7 +693,7 @@ export default function Home() {
               <div className="slider-section">
                 <section className="Visionaries-Section">
                   <div className="Text-Box !w-full flex !flex-row items-center justify-start gap-10">
-                    <Image src={bolivia} alt="vis-pic" />
+                    <Image src={bolivia} alt="vis-pic" className="visionaries-image" />
                     <div className="w-[700px]">
                       <h4>Visionaries</h4>
                       <p className="w-[60%] max-[650px]:w-[90%] !text-white">
