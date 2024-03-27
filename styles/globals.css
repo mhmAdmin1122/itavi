@@ -499,10 +499,11 @@ html {
 .FAQ-Section-box .answer-question {
   @apply text-[#2B2D31] flex items-center gap-[10px] justify-between cursor-pointer px-[5px];
 }
-.menu-sidebar-hamburger, .btn-txt-mob {
+.menu-sidebar-hamburger,
+.btn-txt-mob {
   @apply hidden;
 }
-.Home-Section .heading p{
+.Home-Section .heading p {
   @apply pt-0;
 }
 /*  FAQs Section  */
@@ -730,7 +731,7 @@ html {
     bottom: 10%;
   }
   .TeamWork-Section .Second-div p {
-    width: 210px;
+    width: 90%;
     padding-top: 17px;
     font-size: 15px;
     line-height: 1.75rem;
@@ -738,6 +739,10 @@ html {
   .Contact-Section .Second-div p {
     font-size: 12px;
     line-height: 1.5rem;
+  }
+  .About-Box {
+    position: absolute;
+    bottom: 20%;
   }
   .Contact-Section h2 {
     width: 25%;
@@ -864,6 +869,9 @@ html {
   .btn-txt-mob,
   .Home-Section .heading p {
     @apply p-0;
+  }
+  .btn-txt-mob {
+    @apply flex;
   }
   .About-Section h2 {
     font-size: 42px;
