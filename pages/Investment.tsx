@@ -113,7 +113,7 @@ const InvestmentPage = () => {
 
         <div className="details-handle-box px-[60px] w-full max-[450px]:px-[10px]">
           <div className="flex items-center gap-4 justify-center">
-            <div className="bg-[#ca8a04] mt-[-25px] w-[55%] px-[30px] py-[10px] flex items-center justify-center gap-12 max-[1250px]:gap-2 max-[1050px]:w-[80%] max-[700px]:w-[90%] max-[700px]:text-[12px] max-[600px]:w-[140%] max-[600px]:text-[10px] max-[450px]:w-[95%] text-[#fff] font-bold rounded-md">
+            <div className="opner-btn-tabs bg-[#ca8a04] mt-[-25px] w-[55%] px-[30px] py-[10px] flex items-center justify-center gap-12 max-[1250px]:gap-2 max-[1050px]:w-[80%] max-[700px]:w-[90%] max-[700px]:text-[12px] max-[600px]:w-[140%] max-[600px]:text-[10px] max-[450px]:w-[95%] text-[#fff] font-bold rounded-md">
               <button
                 onClick={btn01click}
                 className={`!w-[109px] px-6 py-2 text-[#ffffff] font-bold rounded-md hover:text-[#fff] transition-all ease-in-out duration-700 ${
@@ -147,7 +147,7 @@ const InvestmentPage = () => {
           </div>
 
           {button01 && (
-            <div className="flex flex-col items-start gap-2 pt-10">
+            <div className="text-shower-box flex flex-col items-start gap-2 pt-10">
               <h2>
                 <b>The La Gran Española Project</b>
               </h2>
@@ -215,7 +215,7 @@ const InvestmentPage = () => {
           )}
 
           {button02 && (
-            <div className="flex flex-col items-start gap-2 pt-10">
+            <div className="text-shower-box flex flex-col items-start gap-2 pt-10">
               <h2>
                 <b>Meet The Experts</b>
               </h2>
@@ -287,7 +287,7 @@ const InvestmentPage = () => {
 
           {button03 && (
             <div>
-              <div className="flex flex-col items-start gap-5 pt-10">
+              <div className="text-shower-box flex flex-col items-start gap-5 pt-10">
                 <p>
                   <h2>
                     <b>Investment Options</b>

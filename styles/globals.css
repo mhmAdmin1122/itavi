@@ -935,12 +935,18 @@ html {
   }
   .details-handle-box,
   .trigerring-btn-box {
-    @apply px-[30px] !important;
+    @apply px-[10px] !important;
+  }
+  .opner-btn-tabs{
+    @apply w-full !important;
   }
   .trigerring-btn-box {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .text-shower-box{
+    @apply px-[20px]
   }
 }
 /* snaping */
