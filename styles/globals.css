@@ -927,9 +927,12 @@ html {
     @apply right-[45%] !important;
   }
   .btn-design-bottom {
-    right: 45% !important;
-    bottom: 30px;
+    @apply right-[45%] !important;
   }
+  .carousal-body {
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+}
 }
 /* snaping */
 .conatiner-box {
