@@ -499,6 +499,9 @@ html {
 .FAQ-Section-box .answer-question {
   @apply text-[#2B2D31] flex items-center gap-[10px] justify-between cursor-pointer px-[5px];
 }
+.menu-sidebar-hamburger {
+  @apply hidden;
+}
 /*  FAQs Section  */
 /*  Contact Page  */
 
@@ -565,51 +568,51 @@ html {
 }
 
 @media (max-width: 890px) and (min-width: 750px) {
-  .pagelayout{
-    @apply gap-4
+  .pagelayout {
+    @apply gap-4;
   }
-  .Contact-Form{
+  .Contact-Form {
     @apply px-3 py-3;
   }
-  .Contact-Form h4{
+  .Contact-Form h4 {
     @apply text-4xl;
   }
-  .Contact-Form div button{
+  .Contact-Form div button {
     @apply text-[12px] px-4 py-0;
   }
-  .contactdetails{
+  .contactdetails {
     @apply flex-col gap-2 mt-4;
   }
-  .addressbox{
-    @apply gap-[0.5rem]
+  .addressbox {
+    @apply gap-[0.5rem];
   }
-  .addressbox svg{
+  .addressbox svg {
     @apply text-2xl;
   }
 }
 @media (max-width: 749px) and (min-width: 451px) {
-  .pagelayout{
-    @apply gap-4
+  .pagelayout {
+    @apply gap-4;
   }
-  .Contact-Form{
+  .Contact-Form {
     @apply px-3 py-3;
   }
-  .Contact-Form h4{
+  .Contact-Form h4 {
     @apply text-4xl;
   }
-  .Contact-Form div button{
+  .Contact-Form div button {
     @apply text-[12px] px-4 py-0;
   }
-  .contactdetails{
+  .contactdetails {
     @apply flex-col gap-2 mt-4;
   }
-  .addressbox{
-    @apply gap-[0.5rem]
+  .addressbox {
+    @apply gap-[0.5rem];
   }
-  .addressbox svg{
+  .addressbox svg {
     @apply text-2xl;
   }
-  .sidebar-tabs{
+  .sidebar-tabs {
     @apply text-[9px] pr-[2px];
   }
 }
@@ -731,17 +734,61 @@ html {
   .tg-det-btn-invpage .det-btn-invpage {
     @apply w-[85%] gap-1 px-1 text-[16px] flex-col h-fit;
   }
-  .sidebar-tabs{
+  .sidebar-tabs {
+    @apply hidden;
+  }
+  .pagelayout {
+    @apply flex-col gap-2;
+  }
+  .side-bar-section {
+    @apply w-full flex items-center justify-between max-h-[60px] min-h-[60px] h-[60px];
+  }
+  .side-bar-section .logoBox img {
+    @apply w-[60px];
+  }
+  .menu-sidebar-hamburger {
+    @apply flex text-3xl text-white cursor-pointer;
+  }
+  .router-back-link-toster {
+    @apply hidden;
+  }
+  .mob-router-back-link-toster {
+    @apply block bottom-10 -left-2 text-lg;
+  }
+  .mob-router-back-link-toster button {
+    @apply text-lg px-1 py-1;
+  }
+  .section-page-side-box {
+    @apply w-full px-4 py-0;
+  }
+  .disclaimer-box ul,
+  .termsCondition-box ul,
+  .privacy-Policy-box ul {
+    @apply !py-2 !pl-7 !pr-0;
+  }
+  .Contact-Form{
+    @apply px-0 py-2;
+  }
+  .contactdetails {
+    @apply flex-col gap-2 mt-4;
+  }
+  .addressbox {
+    @apply gap-[0.5rem] text-[12px] pl-2;
+  }
+  .addressbox svg, .contactdetails div a svg {
+    @apply text-xl;
+  }
+  .Contact-Form div button {
+    @apply text-[12px] px-4 py-0;
+  }
+  .Contact-Form h4{
+    @apply text-[18px] leading-6;
+  }
+  .Contact-Form p{
+    @apply text-[12px] leading-3;
+  }
+  .contactdetails div a{
     @apply text-[12px];
-  }
-  .pagelayout{
-    @apply flex-col;
-  }
-  .side-bar-section{
-    @apply w-full flex flex-col items-center justify-center max-h-[90px] min-h-[90px] h-[90px];
-  }
-  .side-bar-section .logoBox img{
-    @apply w-[100px]
   }
 }
 /* snaping */
@@ -855,16 +902,15 @@ html {
   border: 2px solid #e6c407;
 }
 
-.btnshadow2{
+.btnshadow2 {
   filter: drop-shadow(2px 2px 2px #000);
 }
 
 .TeamWork-Section {
   @apply h-screen bg-no-repeat bg-cover w-screen px-[10%] pt-[150px] text-white relative;
-  background-image: linear-gradient(rgba(0, 0, 1, 0.7), rgba(0, 0, 1, 0.7)), url("../public/img/goldbg.webp");
+  background-image: linear-gradient(rgba(0, 0, 1, 0.7), rgba(0, 0, 1, 0.7)),
+    url("../public/img/goldbg.webp");
 }
-
-
 
 body::-webkit-scrollbar {
   width: 2px;

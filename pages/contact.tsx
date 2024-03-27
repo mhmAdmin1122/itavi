@@ -51,7 +51,7 @@ const ContactPage = () => {
             ></textarea>
             <div className="flex justify-center ">
               <button className="bg-[#ca8a04] w-fit hover:bg-[#ca8b04] text-white font-bold py-1 px-6 rounded relative z-[9999999999]" type="submit">
-                Send Message
+                Message
               </button>
             </div>
           </form>

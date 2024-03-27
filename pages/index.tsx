@@ -13,13 +13,18 @@ import EMDDownloadBtn from "./components/EMDDownloadBtn";
 import PPMDownloadBtn from "./components/PPMDownloadBtn";
 import ScaleRes from "@/public/img/LaGranEspañolaleft.png";
 import EmergingMarket from "@/public/img/LaGranEspañolaright.png";
+import weFunderIco from "@/public/img/wefunder.png";
 import {
   TfiAngleDown,
   TfiAngleUp,
   TfiAngleLeft,
   TfiAngleRight,
 } from "react-icons/tfi";
-import { FaFacebook, FaLinkedinIn } from "react-icons/fa";
+import {
+  FaLinkedin,
+  FaSquareFacebook,
+  FaSquareXTwitter,
+} from "react-icons/fa6";
 
 export default function Home() {
   const handleClick = (event: any) => {
@@ -187,22 +192,36 @@ export default function Home() {
           </Link>
         </div>
 
-        <div className="flex items-center justify-end gap-2">
-          <b>Follow us :</b>
-          <div className="flex items-center justify-end gap-8">
+        <div className="flex items-center justify-end gap-4">
+          <p>Follow us :</p>
+          <div className="flex items-center justify-end gap-4">
             <Link
-              className="text-xl hover:text-[#ca8a04] transition-all duration-700 ease-in-out btnshadow2"
+              className="text-xl text-[#ca8a04] btnshadow2"
               href="https://www.facebook.com/itavimining"
               target="blank"
             >
-              <FaFacebook />
+              <FaSquareFacebook />
             </Link>
             <Link
-              className="text-xl hover:text-[#ca8a04] transition-all duration-700 ease-in-out btnshadow2"
+              className="text-xl text-[#ca8a04] btnshadow2"
               href="https://www.linkedin.com/company/itavi-mining-company"
               target="blank"
             >
-              <FaLinkedinIn />
+              <FaLinkedin />
+            </Link>
+            <Link
+              className="text-xl text-[#ca8a04] btnshadow2"
+              href="https://www.twitter.com/@itavimining"
+              target="blank"
+            >
+              <FaSquareXTwitter />
+            </Link>
+            <Link
+              className="text-xl btnshadow2"
+              href="https://www.linkedin.com/company/itavi-mining-company"
+              target="blank"
+            >
+              <Image src={weFunderIco} alt="weFunder-Ico" className="w-[20px]" />
             </Link>
           </div>
         </div>
