@@ -101,7 +101,8 @@ html {
   background-image: url("../public/img/GoldSilver.jpg");
 }
 .Home-Section .heading {
-  @apply w-[250px] z-[10] min-[1850px]:w-[500px];
+  z-index: 10;
+  width: 284px;
 }
 .Home-Section .heading h2 {
   @apply text-[68px] leading-[80px] font-extralight;

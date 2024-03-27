@@ -25,6 +25,7 @@ import ProjectImage1 from "@/public/img/ProjectImage1.jpeg";
 import ProjectImage2 from "@/public/img/ProjectImage2.jpeg";
 import ProjectImage3 from "@/public/img/ProjectImage3.jpeg";
 import ProjectImage4 from "@/public/img/ProjectImage4.jpeg";
+import RouterBack from "./components/RouterBack";
 
 const InvestmentPage = () => {
   const [button01, setButton01] = useState(true);
@@ -347,6 +348,10 @@ const InvestmentPage = () => {
             </Link>
           </button>
         </div>
+      </div>
+
+      <div className="fixed mob-router-back-link-toster">
+        <RouterBack />
       </div>
     </div>
   );
