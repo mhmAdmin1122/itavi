@@ -362,7 +362,7 @@ export default function Home() {
                 ABOUT US
               </h2> */}
               <h2 onClick={handleFirst} className="shadow-text">
-                Contact <b>Us</b>
+                About <b>Us</b>
               </h2>
             </div>
             <div className="Progress-Bar">
