@@ -328,13 +328,13 @@ const InvestmentPage = () => {
 
         <div className="trigerring-btn-box px-[60px] py-[12px] flex items-center gap-4 justify-end">
           <button className="w-fit bg-[#fff] px-6 py-2 text-[#212121] font-bold rounded-sm hover:text-[#fff] hover:bg-[#212121] hover:border-[#fff] transition-all ease-in-out duration-700 border-2">
-            <Link href="/">Invest</Link>
+            <Link href="https://wefunder.com/itavimining">Invest</Link>
           </button>
           <button className="w-fit bg-[#fff] px-6 py-2 text-[#212121] font-bold rounded-sm hover:text-[#fff] hover:bg-[#212121] hover:border-[#fff] transition-all ease-in-out duration-700 border-2">
             <Link href="/">La Gran Española</Link>
           </button>
           <button className="w-fit bg-[#fff] px-6 py-2 text-[#212121] font-bold rounded-sm hover:text-[#fff] hover:bg-[#212121] hover:border-[#fff] transition-all ease-in-out duration-700 border-2">
-            <Link href="/">Contact Us</Link>
+            <Link href="/contact">Contact Us</Link>
           </button>
         </div>
       </div>
