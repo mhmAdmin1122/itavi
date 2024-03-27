@@ -649,9 +649,16 @@ html {
   .WWeDo-Section .Second-div h3,
   .TeamWork-Section .Second-div h3,
   .Contact-Section .Second-div h3 {
-    font-size: 67px;
+    font-size: 40px;
     font-weight: 100;
     line-height: 52px;
+  }
+  .home-para {
+    @apply text-[12px];
+  }
+  .Home-Section .heading {
+    z-index: 10;
+    width: 90%;
   }
   .About-Section .Second-div p {
     padding-top: 2px;
@@ -736,7 +743,8 @@ html {
     font-size: 12px;
     line-height: 1.5rem;
   }
-  .About-Box, .TeamWork-Box {
+  .About-Box,
+  .TeamWork-Box {
     position: absolute;
     bottom: 20%;
   }
@@ -760,7 +768,8 @@ html {
   }
   .Visionaries-Section .Text-Box h4,
   .Expert-Team-Section .Text-Box h4,
-  .Celebrating-Section .Text-Box h4 {
+  .Celebrating-Section .Text-Box h4,
+  .investorReward-Section .Text-Box h4 {
     width: 100%;
     padding-top: 15px;
     font-size: 30px;
@@ -918,7 +927,8 @@ html {
     @apply right-[45%] !important;
   }
   .btn-design-bottom {
-    @apply right-[45%] !important;
+    right: 45% !important;
+    bottom: 30px;
   }
 }
 /* snaping */
