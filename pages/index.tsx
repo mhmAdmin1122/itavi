@@ -328,7 +328,7 @@ export default function Home() {
               <b>La Gran Española</b>
             </p>
             <Link
-              href="/Investment"
+              href="https://wefunder.com/itavimining"
               className="bg-yellow-600 w-fit px-4 py-2 rounded-sm font-medium"
             >
               <p className="btn-txt-desctop">Invest Now</p>
