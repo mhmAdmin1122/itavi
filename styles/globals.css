@@ -499,8 +499,11 @@ html {
 .FAQ-Section-box .answer-question {
   @apply text-[#2B2D31] flex items-center gap-[10px] justify-between cursor-pointer px-[5px];
 }
-.menu-sidebar-hamburger {
+.menu-sidebar-hamburger, .btn-txt-mob {
   @apply hidden;
+}
+.Home-Section .heading p{
+  @apply pt-0;
 }
 /*  FAQs Section  */
 /*  Contact Page  */
