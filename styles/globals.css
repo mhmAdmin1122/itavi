@@ -566,8 +566,13 @@ html {
 .shadow-text {
   text-shadow: 2px 2px 2px #000;
 }
-
+.mob-router-back-link-toster {
+  @apply block bottom-10 -left-2 text-lg;
+}
 @media (max-width: 890px) and (min-width: 750px) {
+  .mob-router-back-link-toster {
+    @apply block bottom-10 -left-2 text-lg;
+  }
   .pagelayout {
     @apply gap-4;
   }
@@ -591,6 +596,9 @@ html {
   }
 }
 @media (max-width: 749px) and (min-width: 451px) {
+  .mob-router-back-link-toster {
+    @apply block bottom-10 -left-2 text-lg;
+  }
   .pagelayout {
     @apply gap-4;
   }
