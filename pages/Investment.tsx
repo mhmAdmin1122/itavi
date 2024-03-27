@@ -84,7 +84,7 @@ const InvestmentPage = () => {
               investing, as with any mining venture.
             </p>
             <button className="w-fit bg-[#ca8a04] px-6 py-2 text-[#fff] font-bold rounded-sm hover:text-[#ca8a04] hover:bg-[#000] hover:border-[#ca8a04] transition-all ease-in-out duration-700 border-2 border-[#ca8a04]">
-              Invest Now!
+              <a href="https://wefunder.com/itavimining">Invest Now!</a>
             </button>
           </div>
           <div className="flex justify-center max-[900px]:w-full">
