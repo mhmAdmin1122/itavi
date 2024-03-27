@@ -103,7 +103,7 @@ const InvestmentPage = () => {
                 <br />
                 Share Price: <b>$1.00 USD per share</b>
                 <br />
-                Total Number of Shares: <b>50,000</b>
+                Total Number of Shares: <b>500,000</b>
                 <br />
                 Minimum Investment: <b>$500 USD</b>
                 <br />
