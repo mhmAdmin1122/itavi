@@ -322,7 +322,7 @@ export default function Home() {
             <h2>
               Seize the <b>Opportunity</b>
             </h2>
-            <p>
+            <p className="home-para">
               Invest in Bolivia{"'"}s Next Major Gold, Silver, and Copper
               Discovery with Itavi Mining Company{"'"}s Flagship Project -{" "}
               <b>La Gran Española</b>

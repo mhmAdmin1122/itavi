@@ -726,10 +726,6 @@ html {
   .slider-button {
     top: 86%;
   }
-  .TeamWork-Box {
-    position: absolute;
-    bottom: 10%;
-  }
   .TeamWork-Section .Second-div p {
     width: 90%;
     padding-top: 17px;
@@ -740,7 +736,7 @@ html {
     font-size: 12px;
     line-height: 1.5rem;
   }
-  .About-Box {
+  .About-Box, .TeamWork-Box {
     position: absolute;
     bottom: 20%;
   }
