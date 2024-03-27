@@ -933,6 +933,9 @@ html {
     padding-left: 25px !important;
     padding-right: 25px !important;
 }
+.details-handle-box, .trigerring-btn-box{
+  @apply px-[30px] !important;
+}
 }
 /* snaping */
 .conatiner-box {

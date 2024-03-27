@@ -84,9 +84,13 @@ const InvestmentPage = () => {
               investing, as with any mining venture.
             </p>
             <button className="w-fit bg-[#ca8a04] px-6 py-2 text-[#fff] font-bold rounded-sm hover:text-[#ca8a04] hover:bg-[#000] hover:border-[#ca8a04] transition-all ease-in-out duration-700 border-2 border-[#ca8a04]">
-              <a href="https://wefunder.com/itavimining">Invest Now!</a>
+              <a href="https://wefunder.com/itavimining">
+                <p className="btn-txt-desctop">Invest Now!</p>
+                <p className="btn-txt-mob">Invest</p>
+              </a>
             </button>
           </div>
+
           <div className="flex justify-center max-[900px]:w-full">
             <div className="max-[900px]:mt-[50px] min-w-[220px] min-[1600px]:h-[220px] border border-[#000] rounded-md px-[20px]">
               <div className="flex justify-center mt-[-22px]">
@@ -116,7 +120,8 @@ const InvestmentPage = () => {
                   button01 ? "bg-[#212121]" : ""
                 }`}
               >
-                The Opportunity
+                <p className="btn-txt-desctop">The Opportunity</p>
+                <p className="btn-txt-mob">Opportunity</p>
               </button>
               |
               <button
@@ -125,7 +130,8 @@ const InvestmentPage = () => {
                   button02 ? "bg-[#212121]" : ""
                 }`}
               >
-                Leadership & Governance
+                <p className="btn-txt-desctop">Leadership & Governance</p>
+                <p className="btn-txt-mob">Leadership</p>
               </button>
               |
               <button
@@ -134,7 +140,8 @@ const InvestmentPage = () => {
                   button03 ? "bg-[#212121]" : ""
                 }`}
               >
-                Invest With Conviction
+                <p className="btn-txt-desctop">Invest With Conviction</p>
+                <p className="btn-txt-mob">Invest</p>
               </button>
             </div>
           </div>
@@ -334,7 +341,10 @@ const InvestmentPage = () => {
             <Link href="/">La Gran Española</Link>
           </button>
           <button className="w-fit bg-[#fff] px-6 py-2 text-[#212121] font-bold rounded-sm hover:text-[#fff] hover:bg-[#212121] hover:border-[#fff] transition-all ease-in-out duration-700 border-2">
-            <Link href="/contact">Contact Us</Link>
+            <Link href="/contact">
+              <p className="btn-txt-desctop">Contact Us</p>
+              <p className="btn-txt-mob">Contact</p>
+            </Link>
           </button>
         </div>
       </div>
