@@ -92,13 +92,13 @@ const InvestmentPage = () => {
           </div>
 
           <div className="flex justify-center max-[900px]:w-full">
-            <div className="max-[900px]:mt-[50px] min-w-[220px] min-[1600px]:h-[220px] border border-[#000] rounded-md px-[20px]">
+            <div className="max-[900px]:mt-[50px] min-w-[220px] min-[1600px]:h-[220px] border border-[#ca8a04] rounded-md px-[20px]">
               <div className="flex justify-center mt-[-22px]">
-                <h4 className="w-[90%] text-white bg-[#ca8a04] text-center py-[10px] rounded-md font-semibold">
+                <h4 className="w-[90%] text-white border-2 bg-[#212121] border-[#ca8a04] text-center py-[10px] rounded-md font-semibold">
                   Share Details
                 </h4>
               </div>
-              <p className="mt-[-7px] min-[1600px]:text-[20px] min-[1600px]:leading-[35px]">
+              <p className="mt-[-7px] min-[1600px]:text-[20px] min-[1600px]:leading-[35px] pb-3">
                 <br />
                 Share Price: <b>$1.00 USD per share</b>
                 <br />
@@ -116,7 +116,7 @@ const InvestmentPage = () => {
             <div className="bg-[#ca8a04] mt-[-25px] w-[55%] px-[30px] py-[10px] flex items-center justify-center gap-12 max-[1250px]:gap-2 max-[1050px]:w-[80%] max-[700px]:w-[90%] max-[700px]:text-[12px] max-[600px]:w-[140%] max-[600px]:text-[10px] max-[450px]:w-[95%] text-[#fff] font-bold rounded-md">
               <button
                 onClick={btn01click}
-                className={`w-fit px-6 py-2 text-[#ffffff] font-bold rounded-md hover:text-[#fff] transition-all ease-in-out duration-700 ${
+                className={`!w-[109px] px-6 py-2 text-[#ffffff] font-bold rounded-md hover:text-[#fff] transition-all ease-in-out duration-700 ${
                   button01 ? "bg-[#212121]" : ""
                 }`}
               >
@@ -126,7 +126,7 @@ const InvestmentPage = () => {
               |
               <button
                 onClick={btn02click}
-                className={`w-fit px-6 py-2 text-[#ffffff] font-bold rounded-md hover:text-[#fff] hover:bg-[#212121] transition-all ease-in-out duration-700 ${
+                className={`!w-[109px] px-6 py-2 text-[#ffffff] font-bold rounded-md hover:text-[#fff] hover:bg-[#212121] transition-all ease-in-out duration-700 ${
                   button02 ? "bg-[#212121]" : ""
                 }`}
               >
@@ -136,7 +136,7 @@ const InvestmentPage = () => {
               |
               <button
                 onClick={btn03click}
-                className={`w-fit px-6 py-2 text-[#ffffff] font-bold rounded-md hover:text-[#fff] hover:bg-[#212121] transition-all ease-in-out duration-700 ${
+                className={`!w-[109px] px-6 py-2 text-[#ffffff] font-bold rounded-md hover:text-[#fff] hover:bg-[#212121] transition-all ease-in-out duration-700 ${
                   button03 ? "bg-[#212121]" : ""
                 }`}
               >
