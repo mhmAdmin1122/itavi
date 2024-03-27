@@ -626,9 +626,9 @@ html {
 }
 @media (max-width: 450px) and (min-width: 260px) {
   .Home-Section .heading h2 {
-    font-size: 47px !important;
+    font-size: 39px !important;
     font-weight: 200 !important;
-    line-height: 52px !important;
+    line-height: 38px !important;
   }
   .About-Section {
     padding-top: 64px;
@@ -774,7 +774,7 @@ html {
   .privacy-Policy-box ul {
     @apply !py-2 !pl-7 !pr-0;
   }
-  .Contact-Form{
+  .Contact-Form {
     @apply px-0 py-2;
   }
   .contactdetails {
@@ -783,20 +783,40 @@ html {
   .addressbox {
     @apply gap-[0.5rem] text-[12px] pl-2;
   }
-  .addressbox svg, .contactdetails div a svg {
+  .addressbox svg,
+  .contactdetails div a svg {
     @apply text-xl;
   }
   .Contact-Form div button {
     @apply text-[12px] px-4 py-0;
   }
-  .Contact-Form h4{
+  .Contact-Form h4 {
     @apply text-[18px] leading-6;
   }
-  .Contact-Form p{
+  .Contact-Form p {
     @apply text-[12px] leading-3;
   }
-  .contactdetails div a{
+  .contactdetails div a {
     @apply text-[12px];
+  }
+  .socail-icons-screen,
+  .main-tabs,
+  .btn-txt-desctop {
+    @apply hidden;
+  }
+  .navbar {
+    @apply px-4;
+  }
+  .navbar .logo-main-page {
+    @apply w-[60px];
+  }
+  .Home-Section {
+    padding-left: 6%;
+    padding-right: 8%;
+    padding-top: 80px;
+  }
+  .btn-txt-mob, .Home-Section .heading p{
+    @apply p-0;
   }
 }
 /* snaping */

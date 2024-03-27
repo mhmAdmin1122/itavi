@@ -25,11 +25,17 @@ import {
   FaSquareFacebook,
   FaSquareXTwitter,
 } from "react-icons/fa6";
+import { RxHamburgerMenu } from "react-icons/rx";
+import { IoCloseOutline } from "react-icons/io5";
 
 export default function Home() {
   const handleClick = (event: any) => {
     const elementId = event.target.id;
     console.log("Clicked Element ID:", elementId);
+  };
+  const [showTabs, setShowTabs] = useState(false);
+  const handleShowTabs = () => {
+    setShowTabs((current) => !current);
   };
 
   {
@@ -166,11 +172,83 @@ export default function Home() {
 
       {/* Header */}
       <header className="bg-transparent navbar text-white flex items-center justify-between fixed top-0 !z-[999999] right-0 w-full py-4 px-[90px]">
-        <Link href="#home" className="w-[90px]">
+        <Link href="#home" className="w-[90px] logo-main-page">
           <Image src={Logo} alt="logo-pic" className="logo-pic" />
         </Link>
 
-        <div className="flex justify-center space-x-4">
+        <div className="menu-sidebar-hamburger" onClick={handleShowTabs}>
+          {showTabs ? "" : <RxHamburgerMenu />}
+        </div>
+
+        {showTabs && (
+          <div
+            onClick={handleShowTabs}
+            className="mobile-sidebar-tabs absolute top-0 min-h-screen left-0 w-full bg-[#0000009a] flex flex-col gap-2 font-normal text-white text-right items-end px-4 pt-7 text-[0.85rem]"
+          >
+            <div className="text-4xl text-[#fff]">
+              <IoCloseOutline />
+            </div>
+            <Link href="#home" className="hover:underline shadow-text">
+              Home
+            </Link>
+
+            <Link href="#about" className="hover:underline shadow-text">
+              About
+            </Link>
+
+            <Link href="#opportunity" className="hover:underline shadow-text">
+              Opportunity
+            </Link>
+
+            <Link href="#documentation" className="hover:underline shadow-text">
+              Documentation
+            </Link>
+
+            <Link href="#contact" className="hover:underline shadow-text">
+              Contact
+            </Link>
+
+            <div className="flex items-center justify-end gap-4 pt-12">
+              <p>Follow us :</p>
+              <div className="flex items-center justify-end gap-4">
+                <Link
+                  className="text-xl text-[#ca8a04] btnshadow2"
+                  href="https://www.facebook.com/itavimining"
+                  target="blank"
+                >
+                  <FaSquareFacebook />
+                </Link>
+                <Link
+                  className="text-xl text-[#ca8a04] btnshadow2"
+                  href="https://www.linkedin.com/company/itavi-mining-company"
+                  target="blank"
+                >
+                  <FaLinkedin />
+                </Link>
+                <Link
+                  className="text-xl text-[#ca8a04] btnshadow2"
+                  href="https://www.twitter.com/@itavimining"
+                  target="blank"
+                >
+                  <FaSquareXTwitter />
+                </Link>
+                <Link
+                  className="text-xl btnshadow2 "
+                  href="https://wefunder.com/itavimining"
+                  target="blank"
+                >
+                  <Image
+                    src={weFunderIco}
+                    alt="weFunder-Ico"
+                    className="w-[20px] rounded-[2px]"
+                  />
+                </Link>
+              </div>
+            </div>
+          </div>
+        )}
+
+        <div className="flex justify-center space-x-4 main-tabs">
           <Link href="#home" className="hover:underline shadow-text">
             Home
           </Link>
@@ -192,7 +270,7 @@ export default function Home() {
           </Link>
         </div>
 
-        <div className="flex items-center justify-end gap-4">
+        <div className="flex items-center justify-end gap-4 socail-icons-screen">
           <p>Follow us :</p>
           <div className="flex items-center justify-end gap-4">
             <Link
@@ -221,7 +299,11 @@ export default function Home() {
               href="https://wefunder.com/itavimining"
               target="blank"
             >
-              <Image src={weFunderIco} alt="weFunder-Ico" className="w-[20px] rounded-[2px]" />
+              <Image
+                src={weFunderIco}
+                alt="weFunder-Ico"
+                className="w-[20px] rounded-[2px]"
+              />
             </Link>
           </div>
         </div>
@@ -249,7 +331,8 @@ export default function Home() {
               href="/Investment"
               className="bg-yellow-600 w-fit px-4 py-2 rounded-sm font-medium"
             >
-              Invest Now
+              <p className="btn-txt-desctop">Invest Now</p>
+              <p className="btn-txt-mob">Invest</p>
             </Link>
           </div>
           <div className="pr-[15%] mt-[-15%] w-fit">
@@ -275,12 +358,12 @@ export default function Home() {
           <div className="Side-Nav" id="Side-Nav">
             <div className="Uper-div">
               <h3 className="shadow-text">02</h3>
-{/*               <h2 onClick={handleFirst} className="shadow-text">
+              {/*               <h2 onClick={handleFirst} className="shadow-text">
                 ABOUT US
               </h2> */}
               <h2 onClick={handleFirst} className="shadow-text">
-              Contact <b>Us</b>
-            </h2>
+                Contact <b>Us</b>
+              </h2>
             </div>
             <div className="Progress-Bar">
               <div
