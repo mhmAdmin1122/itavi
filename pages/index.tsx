@@ -219,7 +219,7 @@ export default function Home() {
           </Link>
           <div className="heading flex flex-col gap-4">
             <h2>
-              Invest In <b>Possibility</b>
+              Seize the <b>Opportunity</b>
             </h2>
             <p>
               Invest in Bolivia{"'"}s Next Major Gold, Silver, and Copper
