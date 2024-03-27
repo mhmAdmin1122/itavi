@@ -256,9 +256,12 @@ export default function Home() {
           <div className="Side-Nav" id="Side-Nav">
             <div className="Uper-div">
               <h3 className="shadow-text">02</h3>
-              <h2 onClick={handleFirst} className="shadow-text">
+{/*               <h2 onClick={handleFirst} className="shadow-text">
                 ABOUT US
-              </h2>
+              </h2> */}
+              <h2 onClick={handleFirst} className="shadow-text">
+              Contact <b>Us</b>
+            </h2>
             </div>
             <div className="Progress-Bar">
               <div
