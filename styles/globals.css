@@ -907,6 +907,12 @@ html {
   .Invest-Con-Section .Text-Box p {
     font-size: 11px;
   }
+  .btn-design-top {
+    @apply right-[45%] !important;
+  }
+  .btn-design-bottom {
+    @apply right-[45%] !important;
+  }
 }
 /* snaping */
 .conatiner-box {
