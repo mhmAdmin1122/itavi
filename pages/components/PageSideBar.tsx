@@ -33,9 +33,9 @@ const PageSideBar = () => {
         <Link className='shadow-text' href="/terms">Terms & Conditions</Link>
         <Link className='shadow-text' href="/privacy">Privacy Policy</Link>
       </div>}
-      <div className='absolute router-back-link-toster'>
+      {/* <div className='absolute router-back-link-toster'>
         <RouterBack />
-      </div>
+      </div> */}
     </div>
   )
 }
