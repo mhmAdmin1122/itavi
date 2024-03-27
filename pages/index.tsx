@@ -13,7 +13,7 @@ import EMDDownloadBtn from "./components/EMDDownloadBtn";
 import PPMDownloadBtn from "./components/PPMDownloadBtn";
 import ScaleRes from "@/public/img/LaGranEspañolaleft.png";
 import EmergingMarket from "@/public/img/LaGranEspañolaright.png";
-import weFunderIco from "@/public/img/wefunder.jpg";
+import weFunderIco from "@/public/img/wefunder.png";
 import {
   TfiAngleDown,
   TfiAngleUp,
