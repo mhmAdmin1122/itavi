@@ -97,7 +97,7 @@ html {
 
 /*  Home-Page  */
 .Home-Section {
-  @apply h-screen bg-no-repeat bg-cover px-[10%] pt-[150px] text-white flex justify-between items-center flex-wrap;
+  @apply h-screen bg-no-repeat bg-cover px-[10%] pt-[110px] text-white flex justify-between items-center flex-wrap;
   background-image: url("../public/img/GoldSilver.jpg");
 }
 .Home-Section .heading {
@@ -110,6 +110,18 @@ html {
 .Home-Section .heading p {
   @apply text-[15px] pt-[17px] font-normal text-gray-200;
 }
+.newlatter-form {
+  @apply w-full flex gap-2 items-center justify-center flex-wrap;
+}
+.newlatter-form input {
+  @apply px-[12px] py-[6px] rounded-[2px] outline-none;
+}
+.newlatter-input1{
+  @apply w-[120px];
+}
+.newlatter-form button {
+  @apply bg-[#ca8a04] px-[12px] py-[6px] rounded-sm text-[#fff] font-medium;
+}
 /*  Home-Page  */
 
 /*  About-Page  */
@@ -120,7 +132,7 @@ html {
   background-image: url("../public/img/BackgroundImage-2.jpg");
 }
 .About-Box {
-  @apply absolute bottom-[3%];
+  @apply absolute bottom-[15%];
 }
 .About-Section h2 {
   @apply text-[68px] font-extralight w-min leading-[70px];
@@ -196,7 +208,7 @@ html {
   @apply h-screen w-screen bg-[#33245d] px-[10%] pt-[150px] text-white relative;
 }
 .WWeDo-Box {
-  @apply absolute bottom-[3%];
+  @apply absolute bottom-[15%];
 }
 .WWeDo-Section h2 {
   @apply text-[68px] font-extralight w-[50%] leading-[70px] max-[651px]:text-[60px];
@@ -276,7 +288,7 @@ html {
   background-image: url("../public/img/goldbg.webp");
 }
 .TeamWork-Box {
-  @apply absolute bottom-[3%];
+  @apply absolute bottom-[20%];
 }
 .TeamWork-Section h2 {
   @apply text-[68px] font-extralight w-[25%] leading-[70px] max-[650px]:text-[60px];
@@ -428,7 +440,7 @@ html {
   background: linear-gradient(to right, #d91820, #f15a24) no-repeat;
 }
 .Contact-Section .Text-Box {
-  @apply absolute bottom-[10%] z-40;
+  @apply absolute bottom-[30%] z-40;
 }
 .Contact-Section h2 {
   @apply text-[68px] font-extralight w-[25%] leading-[70px];
@@ -574,6 +586,7 @@ html {
 .mob-router-back-link-toster {
   @apply block bottom-10 -left-2 text-lg;
 }
+
 @media (max-width: 890px) and (min-width: 750px) {
   .mob-router-back-link-toster {
     @apply block bottom-10 -left-2 text-lg;
@@ -629,11 +642,20 @@ html {
     @apply text-[9px] pr-[2px];
   }
 }
+.WWeDo-Section .Second-div h3,
+.About-Section .Second-div h3,
+.TeamWork-Section .Second-div h3,
+.Contact-Section .Second-div h3 {
+  @apply text-9xl;
+}
 @media (max-width: 450px) and (min-width: 260px) {
   .Home-Section .heading h2 {
     font-size: 39px !important;
     font-weight: 200 !important;
     line-height: 38px !important;
+  }
+  .home-vector-box{
+    @apply hidden;
   }
   .About-Section {
     padding-top: 64px;
@@ -868,6 +890,10 @@ html {
     @apply w-[60px];
   }
   .Home-Section {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
     padding-left: 6%;
     padding-right: 8%;
     padding-top: 80px;
@@ -938,7 +964,7 @@ html {
   .trigerring-btn-box {
     @apply px-[10px] !important;
   }
-  .opner-btn-tabs{
+  .opner-btn-tabs {
     @apply w-full !important;
   }
   .trigerring-btn-box {
@@ -946,8 +972,8 @@ html {
     justify-content: center;
     align-items: center;
   }
-  .text-shower-box{
-    @apply px-[20px]
+  .text-shower-box {
+    @apply px-[20px];
   }
 }
 /* snaping */

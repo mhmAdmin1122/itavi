@@ -335,9 +335,18 @@ export default function Home() {
               <p className="btn-txt-mob">Invest</p>
             </Link>
           </div>
-          <div className="pr-[15%] mt-[-15%] w-fit">
+          <div className="pr-[15%] mt-[-15%] w-fit home-vector-box">
             <Image src={Prisma} alt="Prisma" height={"250"} width={"250"} />
           </div>
+          <form className="w-full newlatter-form">
+            <input type="text" className="newlatter-input1" placeholder="Name" />
+            <input
+              type="text"
+              className="newlatter-input2"
+              placeholder="Email"
+            />
+            <button type="submit">Subscribe</button>
+          </form>
         </section>
         {/* Home-hero-section */}
 
@@ -357,10 +366,6 @@ export default function Home() {
           </Link>
           <div className="Side-Nav" id="Side-Nav">
             <div className="Uper-div">
-              <h3 className="shadow-text">02</h3>
-              {/*               <h2 onClick={handleFirst} className="shadow-text">
-                ABOUT US
-              </h2> */}
               <h2 onClick={handleFirst} className="shadow-text">
                 Contact <b>Us</b>
               </h2>
@@ -571,7 +576,6 @@ export default function Home() {
           </Link>
           <div className="Side-Nav" id="Side-Nav">
             <div className="Uper-div">
-              <h3 className="shadow-text">03</h3>
               <h2 onClick={handleFirst2} className="shadow-text">
                 THE OPPORTUNITY
               </h2>
@@ -623,7 +627,15 @@ export default function Home() {
                   <div className="WWeDo-Box relative z-10">
                     <h2>The Opportunity</h2>
                     <div className="Second-div">
-                      <h3>03</h3>
+                      <div className="flex flex-col items-start gap-6">
+                        <h3>03</h3>
+                        <Link
+                          href="/Investment"
+                          className="bg-yellow-600 w-fit px-6 py-3 rounded-sm font-medium"
+                        >
+                          Investment detail
+                        </Link>
+                      </div>
                       <p>
                         Tap into Bolivia{"'"}s growing mining sector, supported
                         by a pro-development government. Itavi Mining{"'"}s
@@ -827,7 +839,6 @@ export default function Home() {
           </Link>
           <div className="Side-Nav" id="Side-Nav">
             <div className="Uper-div">
-              <h3 className="shadow-text">04</h3>
               <h2 onClick={handleFirst3} className="shadow-text">
                 Documentation for Investors
               </h2>
