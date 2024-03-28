@@ -114,7 +114,7 @@ html {
   @apply w-full flex gap-2 items-center justify-center flex-wrap;
 }
 .newlatter-form input {
-  @apply px-[12px] py-[6px] rounded-[2px] outline-none;
+  @apply px-[12px] py-[6px] rounded-[2px] outline-none text-[#000];
 }
 .newlatter-input1 {
   @apply w-[120px];
