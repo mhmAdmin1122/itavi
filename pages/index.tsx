@@ -271,7 +271,7 @@ export default function Home() {
         </div>
 
         <div className="flex items-center justify-end gap-4 socail-icons-screen">
-          <p>Follow us :</p>
+          <p>Follow:</p>
           <div className="flex items-center justify-end gap-4">
             <Link
               className="text-xl text-[#ca8a04] btnshadow2"
@@ -435,7 +435,7 @@ export default function Home() {
                     />
                   </div>
                   <div className="Text-Box">
-                    <h4>Our values</h4>
+                    <h4>Our <b>Values</b></h4>
                     <p>
                       At the core of Itavi Mining lie our values, the bedrock of
                       our commitment to responsible mining. <br />
@@ -583,7 +583,7 @@ export default function Home() {
           <div className="Side-Nav" id="Side-Nav">
             <div className="Uper-div">
               <h2 onClick={handleFirst2} className="shadow-text">
-                THE OPPORTUNITY
+                The <b>Opportunity</b>
               </h2>
             </div>
             <div className="Progress-Bar">
@@ -846,7 +846,7 @@ export default function Home() {
           <div className="Side-Nav" id="Side-Nav">
             <div className="Uper-div">
               <h2 onClick={handleFirst3} className="shadow-text">
-                Documentation for Investors
+                Documentation for <b>Investors</b>
               </h2>
             </div>
             <div className="Progress-Bar">
