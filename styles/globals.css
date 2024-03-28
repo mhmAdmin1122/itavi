@@ -136,7 +136,7 @@ html {
   @apply absolute bottom-[15%];
 }
 .About-Section h2 {
-  @apply text-[68px] font-extralight w-min leading-[70px];
+  @apply text-[68px] font-extralight leading-[70px] !w-full;
 }
 .About-Section .Second-div {
   @apply flex gap-6 justify-start items-start;
@@ -591,9 +591,12 @@ html {
   @apply block bottom-10 -left-2 text-lg;
 }
 
-@media (max-width: 890px) and (min-width: 750px) {
+@media (max-width: 920px) and (min-width: 750px) {
   .mob-router-back-link-toster {
     @apply block bottom-10 -left-2 text-lg;
+  }
+  .About-Section h2 {
+    @apply w-full;
   }
   .pagelayout {
     @apply gap-4;
@@ -615,6 +618,18 @@ html {
   }
   .addressbox svg {
     @apply text-2xl;
+  }
+  .navbar {
+    @apply px-[20px];
+  }
+  .main-tabs, .socail-icons-screen p{
+    @apply text-[12px];
+  }
+  .logo-main-page .logo-pic{
+    @apply !w-[70px];
+  }
+  .home-vector-box{
+    @apply hidden
   }
 }
 @media (max-width: 749px) and (min-width: 451px) {
@@ -688,6 +703,9 @@ html {
     font-weight: 200;
     line-height: 52px;
   }
+  .About-Section h2 {
+    @apply w-full;
+  }
   .newlatter-input2 {
     @apply w-[150px];
   }
@@ -758,6 +776,9 @@ html {
     font-size: 39px !important;
     font-weight: 200 !important;
     line-height: 38px !important;
+  }
+  .About-Section h2 {
+    @apply w-full;
   }
   .home-vector-box {
     @apply hidden;
