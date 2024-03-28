@@ -657,6 +657,95 @@ html {
   .btn-image-proj img {
     @apply w-[240px] h-[240px];
   }
+  /* Header */
+  .socail-icons-screen,
+  .main-tabs,
+  .btn-txt-desctop,
+  .home-vector-box {
+    @apply hidden;
+  }
+  .navbar {
+    @apply px-4;
+  }
+  .menu-sidebar-hamburger {
+    @apply flex text-3xl;
+  }
+  /* Header */
+  /* Home Section */
+  .Home-Section .heading h2,
+  .About-Section h2,
+  .WWeDo-Section h2,
+  .TeamWork-Section h2,
+  .Contact-Section h2,
+  .investorReward-Section div h4,
+  .Visionaries-Section .Text-Box h4,
+  .ScaleRes-Section .Text-Box h4,
+  .EmergingMarket-Section .Text-Box h4,
+  .Expert-Team-Section .Text-Box h4,
+  .Celebrating-Section .Text-Box h4,
+  .Expert-Team-Section .Text-Box h4 {
+    font-size: 60px;
+    font-weight: 200;
+    line-height: 52px;
+  }
+  .newlatter-input2 {
+    @apply w-[150px];
+  }
+  .Expert-Team-Section .Text-Box h4 {
+    @apply w-full;
+  }
+  .newlatter-form button {
+    @apply text-[12px];
+  }
+  .WWeDo-Section .Second-div h3,
+  .About-Section .Second-div h3,
+  .TeamWork-Section .Second-div h3,
+  .Contact-Section .Second-div h3 {
+    font-size: 6rem !important;
+  }
+  .About-Section .Second-div p,
+  .WWeDo-Section .Second-div p,
+  .TeamWork-Section .Second-div p,
+  .Contact-Section .Second-div p,
+  .Our-Value-Section .Text-Box p,
+  .investorReward-Section div p,
+  .Visionaries-Section .Text-Box p,
+  .ScaleRes-Section .Text-Box p,
+  .EmergingMarket-Section .Text-Box p,
+  .HugeConcentration-Section .Text-Box p,
+  .History-Section .Text-Box .Evolution p,
+  .Invest-Con-Section .Text-Box p,
+  .Expert-Team-Section .Text-Box p,
+  .Celebrating-Section .Text-Box p {
+    width: 260px !important;
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .History-Section .Text-Box .Evolution p,
+  .Expert-Team-Section .Text-Box p,
+  .Celebrating-Section .Text-Box p {
+    @apply !w-full pr-[8px];
+  }
+  .visionaries-image {
+    width: 140px !important;
+    display: flex;
+  }
+  .Visionaries-Section .Text-Box {
+    @apply gap-[2px];
+  }
+  .listbox li {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .WWeDo-Section .Second-div,
+  .TeamWork-Section .Second-div,
+  .Contact-Section .Second-div {
+    @apply gap-[2px];
+  }
+  a[href="/Investment"] {
+    @apply px-2 text-[10px];
+  }
+  /* Home Section */
 }
 .WWeDo-Section .Second-div h3,
 .About-Section .Second-div h3,
