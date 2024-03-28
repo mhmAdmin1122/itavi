@@ -9,7 +9,7 @@ body {
   counter-reset: section;
 }
 ::-webkit-scrollbar {
-  display: none; 
+  display: none;
 }
 
 :root {
@@ -43,7 +43,7 @@ html {
   @apply text-[20px] min-[1900px]:text-[32px];
 }
 /*  Header  */
-.btn-txt-desctop{
+.btn-txt-desctop {
   @apply !pt-0 !w-fit;
 }
 /*  Slider-Section  */
@@ -647,10 +647,10 @@ html {
     font-weight: 200;
     line-height: 54px;
   }
-  .listbox li{
-    @apply text-[13px]
+  .listbox li {
+    @apply text-[13px];
   }
-  .investorReward-Section{
+  .investorReward-Section {
     @apply pt-[65px];
   }
 }
@@ -1133,6 +1133,9 @@ html {
   }
   .text-shower-box {
     @apply px-[20px];
+  }
+  .btn-txt-mob {
+    @apply !pb-0 !w-fit !text-[16px] !px-0;
   }
 }
 /* snaping */
