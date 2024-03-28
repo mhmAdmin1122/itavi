@@ -8,6 +8,16 @@
 body {
   counter-reset: section;
 }
+body::-webkit-scrollbar{
+  width: 2px !important;
+}
+body::-webkit-scrollbar-thumb{
+  width: 2px !important;
+  background-color: red;
+}
+body::-webkit-scrollbar-track{
+  width: 2px !important;
+}
 :root {
   --Yellow-color: #ffd500;
   --Background-color: #2b2d31;
