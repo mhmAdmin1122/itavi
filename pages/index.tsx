@@ -339,7 +339,7 @@ export default function Home() {
             <Image src={Prisma} alt="Prisma" height={"250"} width={"250"} />
           </div>
           <form className="w-full newlatter-form flex-col">
-            <h3 className="text-2xl font-bold">We keep our investors updated with our newsletter.</h3>
+            <h3 className="text-center">We keep our investors updated with our newsletter.</h3>
             <div className="flex gap-3 items-center">
               <input
                 type="text"

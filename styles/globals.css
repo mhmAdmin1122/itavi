@@ -119,8 +119,9 @@ html {
 .newlatter-input1 {
   @apply w-[120px];
 }
+
 .newlatter-form button {
-  @apply bg-[#ca8a04] px-[12px] py-[6px] rounded-sm text-[#fff] font-medium;
+  @apply bg-[#ca8a04] px-[12px] py-[6px] rounded-sm text-[#fff];
 }
 /*  Home-Page  */
 
@@ -519,7 +520,7 @@ html {
 .Home-Section .heading p {
   @apply pt-0;
 }
-.btn-image-proj{
+.btn-image-proj {
   @apply justify-center;
 }
 /*  FAQs Section  */
@@ -650,10 +651,10 @@ html {
   .btn-txt-mob {
     @apply flex;
   }
-  .btn-image-proj{
+  .btn-image-proj {
     @apply justify-center;
   }
-  .btn-image-proj img{
+  .btn-image-proj img {
     @apply w-[240px] h-[240px];
   }
 }
@@ -671,6 +672,15 @@ html {
   }
   .home-vector-box {
     @apply hidden;
+  }
+  .newlatter-form button {
+    font-size: 13px;
+  }
+  .newlatter-input1 {
+    @apply w-[100px];
+  }
+  .newlatter-input2 {
+    @apply w-[130px];
   }
   .About-Section {
     padding-top: 64px;
