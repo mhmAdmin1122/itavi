@@ -622,14 +622,30 @@ html {
   .navbar {
     @apply px-[20px];
   }
-  .main-tabs, .socail-icons-screen p{
+  .main-tabs,
+  .socail-icons-screen p {
     @apply text-[12px];
   }
-  .logo-main-page .logo-pic{
+  .logo-main-page .logo-pic {
     @apply !w-[70px];
   }
-  .home-vector-box{
-    @apply hidden
+  .home-vector-box {
+    @apply hidden;
+  }
+  .btn-txt-desctop {
+    @apply !pt-0 !w-fit;
+  }
+  .WWeDo-Section h2 {
+    width: 50%;
+    font-size: 62px;
+    font-weight: 200;
+    line-height: 54px;
+  }
+  .listbox li{
+    @apply text-[13px]
+  }
+  .investorReward-Section{
+    @apply pt-[65px];
   }
 }
 @media (max-width: 749px) and (min-width: 451px) {

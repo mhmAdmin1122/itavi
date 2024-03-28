@@ -352,7 +352,9 @@ export default function Home() {
               />
               <button type="submit">Get Updates</button>
             </div>
-            <h3 className="text-center">We keep our investors updated with our newsletter.</h3>
+            <h3 className="text-center">
+              We keep our investors updated with our newsletter.
+            </h3>
           </form>
         </section>
         {/* Home-hero-section */}
@@ -435,7 +437,9 @@ export default function Home() {
                     />
                   </div>
                   <div className="Text-Box">
-                    <h4>Our <b>Values</b></h4>
+                    <h4>
+                      Our <b>Values</b>
+                    </h4>
                     <p>
                       At the core of Itavi Mining lie our values, the bedrock of
                       our commitment to responsible mining. <br />
@@ -639,7 +643,8 @@ export default function Home() {
                           href="/Investment"
                           className="bg-yellow-600 w-fit px-6 py-3 rounded-sm font-medium"
                         >
-                          Investment detail
+                          <p className="btn-txt-desctop">Investment Details</p>
+                          <p className="btn-txt-mob">Details</p>
                         </Link>
                       </div>
                       <p>
