@@ -43,7 +43,9 @@ html {
   @apply text-[20px] min-[1900px]:text-[32px];
 }
 /*  Header  */
-
+.btn-txt-desctop{
+  @apply !pt-0 !w-fit;
+}
 /*  Slider-Section  */
 .Progress-Bar {
   @apply bg-white w-[100%] absolute;
