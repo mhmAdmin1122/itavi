@@ -781,12 +781,14 @@ html {
   }
   /* Home Section */
 }
+
 .WWeDo-Section .Second-div h3,
 .About-Section .Second-div h3,
 .TeamWork-Section .Second-div h3,
 .Contact-Section .Second-div h3 {
   @apply text-9xl;
 }
+
 @media (max-width: 450px) and (min-width: 260px) {
   .Home-Section .heading h2 {
     font-size: 39px !important;
