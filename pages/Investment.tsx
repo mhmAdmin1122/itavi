@@ -114,10 +114,10 @@ const InvestmentPage = () => {
 
         <div className="details-handle-box px-[60px] w-full max-[450px]:px-[10px]">
           <div className="flex items-center gap-4 justify-center">
-            <div className="opner-btn-tabs bg-[#ca8a04] mt-[-25px] w-[55%] px-[30px] py-[10px] flex items-center justify-center gap-12 max-[1250px]:gap-2 max-[1050px]:w-[80%] max-[700px]:w-[90%] max-[700px]:text-[12px] max-[600px]:w-[140%] max-[600px]:text-[10px] max-[450px]:w-[95%] text-[#fff] font-bold rounded-md">
+            <div className="opner-btn-tabs bg-[#ca8a04] mt-[-25px] w-full px-[30px] py-[10px] flex items-center justify-around gap-12 text-[#fff] font-bold rounded-md">
               <button
                 onClick={btn01click}
-                className={`!w-[109px] px-6 py-2 text-[#ffffff] font-bold rounded-md hover:text-[#fff] transition-all ease-in-out duration-700 ${
+                className={`!w-fit px-6 py-2 text-[#ffffff] font-bold rounded-md hover:text-[#fff] transition-all ease-in-out duration-700 ${
                   button01 ? "bg-[#212121]" : ""
                 }`}
               >
@@ -127,7 +127,7 @@ const InvestmentPage = () => {
               |
               <button
                 onClick={btn02click}
-                className={`!w-[109px] px-6 py-2 text-[#ffffff] font-bold rounded-md hover:text-[#fff] hover:bg-[#212121] transition-all ease-in-out duration-700 ${
+                className={`!w-fit px-6 py-2 text-[#ffffff] font-bold rounded-md hover:text-[#fff] hover:bg-[#212121] transition-all ease-in-out duration-700 ${
                   button02 ? "bg-[#212121]" : ""
                 }`}
               >
@@ -137,7 +137,7 @@ const InvestmentPage = () => {
               |
               <button
                 onClick={btn03click}
-                className={`!w-[109px] px-6 py-2 text-[#ffffff] font-bold rounded-md hover:text-[#fff] hover:bg-[#212121] transition-all ease-in-out duration-700 ${
+                className={`!w-fit px-6 py-2 text-[#ffffff] font-bold rounded-md hover:text-[#fff] hover:bg-[#212121] transition-all ease-in-out duration-700 ${
                   button03 ? "bg-[#212121]" : ""
                 }`}
               >
@@ -189,7 +189,7 @@ const InvestmentPage = () => {
               </p>
               <div>
                 <h2 className="font-bold text-[24px]">Our Projects:</h2>
-                <div className="flex gap-5 flex-wrap">
+                <div className="flex gap-5 flex-wrap btn-image-proj">
                   <Image
                     src={ProjectImage2}
                     alt=""

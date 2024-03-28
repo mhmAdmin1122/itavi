@@ -97,7 +97,7 @@ html {
 
 /*  Home-Page  */
 .Home-Section {
-  @apply h-screen bg-no-repeat bg-cover px-[10%] pt-[110px] text-white flex justify-between items-center flex-wrap;
+  @apply h-screen bg-no-repeat bg-cover px-[10%] pt-[70px] text-white flex justify-between items-center flex-wrap;
   background-image: url("../public/img/GoldSilver.jpg");
 }
 .Home-Section .heading {
@@ -116,7 +116,7 @@ html {
 .newlatter-form input {
   @apply px-[12px] py-[6px] rounded-[2px] outline-none;
 }
-.newlatter-input1{
+.newlatter-input1 {
   @apply w-[120px];
 }
 .newlatter-form button {
@@ -519,6 +519,9 @@ html {
 .Home-Section .heading p {
   @apply pt-0;
 }
+.btn-image-proj{
+  @apply justify-center;
+}
 /*  FAQs Section  */
 /*  Contact Page  */
 
@@ -641,6 +644,18 @@ html {
   .sidebar-tabs {
     @apply text-[9px] pr-[2px];
   }
+  .btn-txt-desctop {
+    @apply hidden;
+  }
+  .btn-txt-mob {
+    @apply flex;
+  }
+  .btn-image-proj{
+    @apply justify-center;
+  }
+  .btn-image-proj img{
+    @apply w-[240px] h-[240px];
+  }
 }
 .WWeDo-Section .Second-div h3,
 .About-Section .Second-div h3,
@@ -654,7 +669,7 @@ html {
     font-weight: 200 !important;
     line-height: 38px !important;
   }
-  .home-vector-box{
+  .home-vector-box {
     @apply hidden;
   }
   .About-Section {

@@ -338,14 +338,21 @@ export default function Home() {
           <div className="pr-[15%] mt-[-15%] w-fit home-vector-box">
             <Image src={Prisma} alt="Prisma" height={"250"} width={"250"} />
           </div>
-          <form className="w-full newlatter-form">
-            <input type="text" className="newlatter-input1" placeholder="Name" />
-            <input
-              type="text"
-              className="newlatter-input2"
-              placeholder="Email"
-            />
-            <button type="submit">Subscribe</button>
+          <form className="w-full newlatter-form flex-col">
+            <h3 className="text-2xl font-bold">We keep our investors updated with our newsletter.</h3>
+            <div className="flex gap-3 items-center">
+              <input
+                type="text"
+                className="newlatter-input1"
+                placeholder="Name"
+              />
+              <input
+                type="text"
+                className="newlatter-input2"
+                placeholder="Email"
+              />
+              <button type="submit">Get Updates</button>
+            </div>
           </form>
         </section>
         {/* Home-hero-section */}
@@ -402,9 +409,9 @@ export default function Home() {
                     <div className="Second-div">
                       <h3>02</h3>
                       <p>
-                      We are more than prospectors; We are visionaries.
-                        Our journey begins where the Andean peaks kiss the sky
-                        and the earth cradles untold riches. We are a Bolivian
+                        We are more than prospectors; We are visionaries. Our
+                        journey begins where the Andean peaks kiss the sky and
+                        the earth cradles untold riches. We are a Bolivian
                         mining company driven by a passion for discovery and a
                         commitment to responsible development. Our flagship
                         project, La Gran Española, <b>spans over 6,000 acres</b>
@@ -439,14 +446,14 @@ export default function Home() {
                       returns through the strategic development of our assets.{" "}
                       <br />
                       <b>Sustainability:</b> We respect the land, leaving a
-                      legacy of responsible mining. We have a strong
-                      commitment to minimizing our environmental footprint.{" "}
-                      <br />
+                      legacy of responsible mining. We have a strong commitment
+                      to minimizing our environmental footprint. <br />
                       <b>Innovation:</b> Pioneering modern methods to explore,
                       delineate, and develop with a sustainable touch. <br />
-                      <b>Integrity:</b> We uphold the highest standards navigating the mining industry and
-                      Bolivian legislation with transparency, ethical practices,
-                      and a steadfast commitment to legal compliance. <br />
+                      <b>Integrity:</b> We uphold the highest standards
+                      navigating the mining industry and Bolivian legislation
+                      with transparency, ethical practices, and a steadfast
+                      commitment to legal compliance. <br />
                     </p>
                   </div>
                 </section>
@@ -760,8 +767,8 @@ export default function Home() {
                   <div className="Text-Box">
                     <h4>Emerging Markets</h4>
                     <p className="text-white">
-                      Yes, Bolivia is emerging. But we are not novices. Our
-                      team brings decades of experience. We navigate Bolivian
+                      Yes, Bolivia is emerging. But we are not novices. Our team
+                      brings decades of experience. We navigate Bolivian
                       regulations with finesse. Plus, government support fuels
                       our drive.
                     </p>
@@ -905,10 +912,10 @@ export default function Home() {
                   <div className="Text-Box !w-[100%]">
                     <h4>Company Pitch Deck</h4>
                     <p className="!text-white !w-[550px]">
-                      Our flagship project, {'"'}La Gran Española{'"'},
-                      holds the promise of becoming one of Bolivia{"'"}s largest
-                      gold, copper, and silver mines, with a potential 500,000
-                      ounces of gold in resources. Join us in venture!
+                      Our flagship project, {'"'}La Gran Española{'"'}, holds
+                      the promise of becoming one of Bolivia{"'"}s largest gold,
+                      copper, and silver mines, with a potential 500,000 ounces
+                      of gold in resources. Join us in venture!
                     </p>
                     <EMDDownloadBtn />
                   </div>
