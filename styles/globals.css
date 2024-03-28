@@ -831,9 +831,7 @@ html {
   .WWeDo-Section .Second-div h3,
   .TeamWork-Section .Second-div h3,
   .Contact-Section .Second-div h3 {
-    font-size: 40px;
-    font-weight: 100;
-    line-height: 52px;
+    display: none !important;
   }
   .home-para {
     @apply text-[12px];
@@ -850,6 +848,7 @@ html {
     font-size: 30px;
     font-weight: 100;
     line-height: 30px;
+    margin-bottom: 12px;
   }
   .TeamWork-Section h2 {
     width: 70%;
@@ -928,7 +927,7 @@ html {
   .About-Box,
   .TeamWork-Box {
     position: absolute;
-    bottom: 20%;
+    bottom: 30%;
   }
   .Contact-Section h2 {
     width: 25%;
@@ -1067,6 +1066,7 @@ html {
   .About-Section h2 {
     font-size: 42px;
     line-height: 40px;
+    margin-bottom: 12px;
   }
   .About-Section .Second-div p,
   .WWeDo-Section .Second-div p {
