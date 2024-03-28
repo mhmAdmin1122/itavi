@@ -1258,10 +1258,3 @@ html {
   background-image: linear-gradient(rgba(0, 0, 1, 0.7), rgba(0, 0, 1, 0.7)),
     url("../public/img/goldbg.webp");
 }
-
-body::-webkit-scrollbar {
-  width: 2px;
-}
-body::-webkit-scrollbar-thumb {
-  width: 2px;
-}
