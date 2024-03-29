@@ -172,7 +172,7 @@ export default function Home() {
 
       {/* Header */}
       <header className="bg-transparent navbar text-white flex items-center justify-between fixed top-0 !z-[999999] right-0 w-full py-4 px-[90px]">
-        <Link href="#home" className="w-[90px] logo-main-page">
+        <Link href="#home" className="w-[110px] logo-main-page">
           <Image src={Logo} alt="logo-pic" className="logo-pic" />
         </Link>
 
