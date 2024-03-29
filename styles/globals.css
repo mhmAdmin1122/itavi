@@ -103,21 +103,23 @@ html {
 
 /*  Home-Page  */
 .Home-Section {
-  @apply h-screen bg-no-repeat bg-cover px-[10%] pt-[70px] text-white flex justify-between items-center flex-wrap;
   background-image: url("../public/img/GoldSilver.jpg");
+  @apply flex flex-col items-center justify-center text-[#fff] text-center bg-no-repeat bg-cover;
 }
-.Home-Section .heading {
-  z-index: 10;
-  width: 284px;
+.heading-deatilBox-home-Section h2 {
+  @apply text-5xl font-bold;
 }
-.Home-Section .heading h2 {
-  @apply text-[68px] leading-[80px] font-extralight;
+.heading-deatilBox-home-Section{
+  @apply flex-col !gap-8;
 }
-.Home-Section .heading p {
-  @apply text-[15px] pt-[17px] font-normal text-gray-200;
+.btn-box-Home-Section, .heading-deatilBox-home-Section{
+  @apply flex items-center gap-4;
+}
+.btn-box-Home-Section a {
+  @apply bg-[#ca8a04] mb-8 px-4 py-2 rounded-sm;
 }
 .newlatter-form {
-  @apply w-full flex gap-2 items-center justify-center flex-wrap;
+  @apply w-full flex flex-col gap-2 items-center justify-center flex-wrap;
 }
 .newlatter-form input {
   @apply px-[12px] py-[6px] rounded-[2px] outline-none text-[#000];
@@ -125,7 +127,6 @@ html {
 .newlatter-input1 {
   @apply w-[120px];
 }
-
 .newlatter-form button {
   @apply bg-[#ca8a04] px-[12px] py-[6px] rounded-sm text-[#fff];
 }

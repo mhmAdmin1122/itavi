@@ -271,41 +271,38 @@ export default function Home() {
         </div>
 
         <div className="flex items-center justify-end gap-4 socail-icons-screen">
-          <p>Follow:</p>
-          <div className="flex items-center justify-end gap-4">
-            <Link
-              className="text-xl text-[#ca8a04] btnshadow2"
-              href="https://www.facebook.com/itavimining"
-              target="blank"
-            >
-              <FaSquareFacebook />
-            </Link>
-            <Link
-              className="text-xl text-[#ca8a04] btnshadow2"
-              href="https://www.linkedin.com/company/itavi-mining-company"
-              target="blank"
-            >
-              <FaLinkedin />
-            </Link>
-            <Link
-              className="text-xl text-[#ca8a04] btnshadow2"
-              href="https://www.twitter.com/@itavimining"
-              target="blank"
-            >
-              <FaSquareXTwitter />
-            </Link>
-            <Link
-              className="text-xl btnshadow2 "
-              href="https://wefunder.com/itavimining"
-              target="blank"
-            >
-              <Image
-                src={weFunderIco}
-                alt="weFunder-Ico"
-                className="w-[20px] rounded-[2px]"
-              />
-            </Link>
-          </div>
+          <Link
+            className="text-xl text-[#ca8a04] btnshadow2"
+            href="https://www.facebook.com/itavimining"
+            target="blank"
+          >
+            <FaSquareFacebook />
+          </Link>
+          <Link
+            className="text-xl text-[#ca8a04] btnshadow2"
+            href="https://www.linkedin.com/company/itavi-mining-company"
+            target="blank"
+          >
+            <FaLinkedin />
+          </Link>
+          <Link
+            className="text-xl text-[#ca8a04] btnshadow2"
+            href="https://www.twitter.com/@itavimining"
+            target="blank"
+          >
+            <FaSquareXTwitter />
+          </Link>
+          <Link
+            className="text-xl btnshadow2 "
+            href="https://wefunder.com/itavimining"
+            target="blank"
+          >
+            <Image
+              src={weFunderIco}
+              alt="weFunder-Ico"
+              className="w-[20px] rounded-[2px]"
+            />
+          </Link>
         </div>
       </header>
 
@@ -318,33 +315,28 @@ export default function Home() {
           >
             <TfiAngleDown />
           </Link>
-          <div className="heading flex flex-col gap-4">
-            <h2>
-              <b>Seize The Opportunity</b>
-            </h2>
-            <p className="home-para">
+
+          <div className="heading-deatilBox-home-Section">
+            <h2>Seize The Opportunity</h2>
+            <p className="w-[70%]">
               Invest in Bolivia{"'"}s Next Major Gold, Silver, and Copper
               Discovery with Itavi Mining Company{"'"}s Flagship Project -{" "}
               <b>La Gran Española</b>
             </p>
-            <Link
-              href="https://wefunder.com/itavimining"
-              className="bg-yellow-600 w-fit px-4 py-2 rounded-sm font-medium"
-            >
-              <p className="btn-txt-desctop">Invest Now</p>
-              <p className="btn-txt-mob">Invest</p>
-            </Link>
+            <div className="btn-box-Home-Section">
+              <Link href="https://wefunder.com/itavimining">
+                <p className="btn-txt-desctop">Invest Now</p>
+                <p className="btn-txt-mob">Invest</p>
+              </Link>
+              <Link href="/Investment">
+                <p className="btn-txt-desctop">Investment Details</p>
+                <p className="btn-txt-mob">Details</p>
+              </Link>
+            </div>
           </div>
-          <div className="pr-[15%] mt-[-15%] w-fit home-vector-box">
-            <Image src={Prisma} alt="Prisma" height={"250"} width={"250"} />
-          </div>
-          <form className="w-full newlatter-form flex-col">
+
+          <form className="newlatter-form">
             <div className="flex gap-3 items-center">
-              <input
-                type="text"
-                className="newlatter-input1"
-                placeholder="Name"
-              />
               <input
                 type="text"
                 className="newlatter-input2"
@@ -353,9 +345,13 @@ export default function Home() {
               <button type="submit">Get Updates</button>
             </div>
             <h3 className="text-center">
-              We keep our investors updated with our newsletter.
+              Enter your Email to keep up with Investor information.
             </h3>
           </form>
+
+          {/* <div className="home-vector-box">
+            <Image src={Prisma} alt="Prisma" height={"250"} width={"250"} />
+          </div> */}
         </section>
         {/* Home-hero-section */}
 
@@ -639,13 +635,6 @@ export default function Home() {
                     <div className="Second-div">
                       <div className="flex flex-col items-start gap-6">
                         <h3>03</h3>
-                        <Link
-                          href="/Investment"
-                          className="bg-yellow-600 w-fit px-6 py-3 rounded-sm font-medium"
-                        >
-                          <p className="btn-txt-desctop">Investment Details</p>
-                          <p className="btn-txt-mob">Details</p>
-                        </Link>
                       </div>
                       <p>
                         Tap into Bolivia{"'"}s growing mining sector, supported
