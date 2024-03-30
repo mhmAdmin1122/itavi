@@ -105,7 +105,7 @@ const InvestmentPage = () => {
                 <br />
                 Total Number of Shares: <b>500,000</b>
                 <br />
-                Minimum Investment: <b>$500 USD</b>
+                Minimum Investment: <b>$1,000 USD</b>
                 <br />
               </p>
             </div>
