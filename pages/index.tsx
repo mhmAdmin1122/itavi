@@ -729,7 +729,7 @@ export default function Home() {
                     <ol className="list-decimal w-[60%] listbox max-[800px]:w-[90%] max-[651px]:w-[100%]">
                       <li>
                         <b>Humanitarian Impact:</b> For every investment of at
-                        least $500, a donation will be made in your (the
+                        least $1000, a donation will be made in your (the
                         investor{"’"}s) name to the impoverished indigenous
                         people of Bolivia. These communities, including the
                         Highland Quechua and Armara tribes, provide our labor
