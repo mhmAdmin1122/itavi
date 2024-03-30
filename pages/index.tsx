@@ -25,7 +25,7 @@ import {
   FaSquareFacebook,
   FaSquareXTwitter,
   FaAngleDown,
-  FaAngleUp,
+  FaAngleRight,
 } from "react-icons/fa6";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoCloseOutline } from "react-icons/io5";
@@ -262,7 +262,8 @@ export default function Home() {
               className="about-dropbtn hover:underline shadow-text flex items-center gap-2"
             >
               <p>About</p>
-              <FaAngleDown />
+              <FaAngleDown className="down-drop-ico" />
+              <FaAngleRight className="right-drop-ico" />
             </Link>
             <div className="about-dropdown-content">
               <Link href="#about" onClick={handleSecond}>
@@ -284,7 +285,8 @@ export default function Home() {
               className="opportunity-dropbtn hover:underline shadow-text flex items-center gap-2"
             >
               <p>Opportunity</p>
-              <FaAngleDown />
+              <FaAngleDown className="down-drop-ico" />
+              <FaAngleRight className="right-drop-ico" />
             </Link>
             <div className="opportunity-dropdown-content">
               <Link href="#opportunity" onClick={handleSixth2}>
@@ -309,9 +311,11 @@ export default function Home() {
             <Link
               href="#documentation"
               onClick={handleFirst3}
-              className="documentation-dropbtn hover:underline shadow-text"
+              className="documentation-dropbtn hover:underline shadow-text flex items-center gap-2"
             >
-              Documentation
+              <p>Documentation</p>
+              <FaAngleDown className="down-drop-ico" />
+              <FaAngleRight className="right-drop-ico" />
             </Link>
             <div className="documentation-dropdown-content">
               <Link href="#documentation" onClick={handleSecond3}>

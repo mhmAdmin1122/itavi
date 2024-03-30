@@ -104,7 +104,7 @@ html {
 /*  Home-Page  */
 .Home-Section {
   background-image: url("../public/img/GoldSilver.jpg");
-  @apply flex flex-col items-center justify-center text-[#fff] text-center bg-no-repeat bg-cover;
+  @apply flex flex-col items-center justify-around pt-20 text-[#fff] text-center bg-no-repeat bg-cover;
 }
 .heading-deatilBox-home-Section h2 {
   @apply text-5xl font-bold;
@@ -112,12 +112,15 @@ html {
 .heading-deatilBox-home-Section {
   @apply flex-col !gap-8;
 }
+.btn-box-Home-Section{
+  @apply flex-col;
+}
 .btn-box-Home-Section,
 .heading-deatilBox-home-Section {
   @apply flex items-center gap-4;
 }
 .btn-box-Home-Section a {
-  @apply bg-[#ca8a04] mb-8 px-4 py-2 rounded-sm;
+  @apply bg-[#ca8a04] px-4 py-2 rounded-sm;
 }
 .newlatter-form {
   @apply w-full flex flex-col gap-2 items-center justify-center flex-wrap;
@@ -581,6 +584,24 @@ html {
 .opportunity-dropdown:hover .opportunity-dropdown-content,
 .documentation-dropdown:hover .documentation-dropdown-content {
   display: block;
+}
+.about-dropbtn .right-drop-ico,
+.opportunity-dropbtn .right-drop-ico,
+.documentation-dropbtn .right-drop-ico
+ {
+  @apply hidden;
+}
+.about-dropbtn:hover .right-drop-ico,
+.opportunity-dropbtn:hover .right-drop-ico,
+.documentation-dropbtn:hover .right-drop-ico
+ {
+  @apply flex;
+}
+.about-dropbtn:hover .down-drop-ico,
+.opportunity-dropbtn:hover .down-drop-ico,
+.documentation-dropbtn:hover .down-drop-ico
+ {
+  @apply hidden;
 }
 
 /*  Responsive Media Queries  */
