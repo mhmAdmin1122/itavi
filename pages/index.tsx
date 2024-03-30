@@ -24,6 +24,8 @@ import {
   FaLinkedin,
   FaSquareFacebook,
   FaSquareXTwitter,
+  FaAngleDown,
+  FaAngleUp,
 } from "react-icons/fa6";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoCloseOutline } from "react-icons/io5";
@@ -253,17 +255,76 @@ export default function Home() {
             Home
           </Link>
 
-          <Link href="#about" className="hover:underline shadow-text">
-            About
-          </Link>
+          <div className="about-dropdown">
+            <Link
+              href="#about"
+              onClick={handleFirst}
+              className="about-dropbtn hover:underline shadow-text flex items-center gap-2"
+            >
+              <p>About</p>
+              <FaAngleDown />
+            </Link>
+            <div className="about-dropdown-content">
+              <Link href="#about" onClick={handleSecond}>
+                Our Value
+              </Link>
+              <Link href="#about" onClick={handleThird}>
+                History
+              </Link>
+              <Link href="#about" onClick={handleForth}>
+                Invest with conviction
+              </Link>
+            </div>
+          </div>
 
-          <Link href="#opportunity" className="hover:underline shadow-text">
-            Opportunity
-          </Link>
+          <div className="opportunity-dropdown">
+            <Link
+              href="#opportunity"
+              onClick={handleFirst2}
+              className="opportunity-dropbtn hover:underline shadow-text flex items-center gap-2"
+            >
+              <p>Opportunity</p>
+              <FaAngleDown />
+            </Link>
+            <div className="opportunity-dropdown-content">
+              <Link href="#opportunity" onClick={handleSixth2}>
+                Investor Rewards
+              </Link>
+              <Link href="#opportunity" onClick={handleSecond2}>
+                Visionaries
+              </Link>
+              <Link href="#opportunity" onClick={handleThird2}>
+                Scale of Resources
+              </Link>
+              <Link href="#opportunity" onClick={handleFourth2}>
+                Emerging Markets
+              </Link>
+              <Link href="#opportunity" onClick={handleFifth2}>
+                Copper Concentration
+              </Link>
+            </div>
+          </div>
 
-          <Link href="#documentation" className="hover:underline shadow-text">
-            Documentation
-          </Link>
+          <div className="documentation-dropdown">
+            <Link
+              href="#documentation"
+              onClick={handleFirst3}
+              className="documentation-dropbtn hover:underline shadow-text"
+            >
+              Documentation
+            </Link>
+            <div className="documentation-dropdown-content">
+              <Link href="#documentation" onClick={handleSecond3}>
+                Private Placement Memorandum
+              </Link>
+              <Link href="#documentation" onClick={handleThird3}>
+                Company Pitch Deck
+              </Link>
+              <Link href="#documentation" onClick={handlefour3}>
+                Property Technical Report
+              </Link>
+            </div>
+          </div>
 
           <Link href="#contact" className="hover:underline shadow-text">
             Contact

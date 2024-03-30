@@ -109,10 +109,11 @@ html {
 .heading-deatilBox-home-Section h2 {
   @apply text-5xl font-bold;
 }
-.heading-deatilBox-home-Section{
+.heading-deatilBox-home-Section {
   @apply flex-col !gap-8;
 }
-.btn-box-Home-Section, .heading-deatilBox-home-Section{
+.btn-box-Home-Section,
+.heading-deatilBox-home-Section {
   @apply flex items-center gap-4;
 }
 .btn-box-Home-Section a {
@@ -532,6 +533,55 @@ html {
 }
 /*  FAQs Section  */
 /*  Contact Page  */
+
+/* Dropdown Box */
+
+.about-dropbtn,
+.opportunity-dropbtn,
+.documentation-dropbtn {
+  color: white;
+  font-size: 16px;
+  border: none;
+}
+
+.about-dropdown,
+.opportunity-dropdown,
+.documentation-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.about-dropdown-content,
+.opportunity-dropdown-content,
+.documentation-dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.about-dropdown-content a,
+.opportunity-dropdown-content a,
+.documentation-dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.about-dropdown-content a:hover,
+.opportunity-dropdown-content a:hover,
+.documentation-dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.about-dropdown:hover .about-dropdown-content,
+.opportunity-dropdown:hover .opportunity-dropdown-content,
+.documentation-dropdown:hover .documentation-dropdown-content {
+  display: block;
+}
 
 /*  Responsive Media Queries  */
 @media (min-width: 1850px) {
