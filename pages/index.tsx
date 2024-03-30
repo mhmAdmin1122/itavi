@@ -406,7 +406,7 @@ export default function Home() {
               <button type="submit">Get Updates</button>
             </div>
             <h3 className="text-center">
-              Enter your Email to keep up with Investor information.
+              Enter your email to keep up with investor information.
             </h3>
           </form>
 
