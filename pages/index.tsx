@@ -25,6 +25,7 @@ import {
   FaSquareFacebook,
   FaSquareXTwitter,
   FaAngleDown,
+  FaAngleUp,
   FaAngleRight,
 } from "react-icons/fa6";
 import { RxHamburgerMenu } from "react-icons/rx";
@@ -165,6 +166,163 @@ export default function Home() {
   {
     /* Documentaion-section */
   }
+  // Faqs
+  const [carousal1, setCarousal1] = useState(false);
+  const [carousal2, setCarousal2] = useState(false);
+  const [carousal3, setCarousal3] = useState(false);
+  const [carousal4, setCarousal4] = useState(false);
+  const [carousal5, setCarousal5] = useState(false);
+  const [carousal6, setCarousal6] = useState(false);
+  const [carousal7, setCarousal7] = useState(false);
+  const [carousal8, setCarousal8] = useState(false);
+  const [carousal9, setCarousal9] = useState(false);
+  const [carousal10, setCarousal10] = useState(false);
+  const [carousal11, setCarousal11] = useState(false);
+  const [carousal, setCarousal] = useState(false);
+
+  const openCarousal1 = () => {
+    setCarousal1((current) => !current);
+    setCarousal2(false);
+    setCarousal3(false);
+    setCarousal4(false);
+    setCarousal5(false);
+    setCarousal6(false);
+    setCarousal7(false);
+    setCarousal8(false);
+    setCarousal9(false);
+    setCarousal10(false);
+    setCarousal11(false);
+  };
+  const openCarousal2 = () => {
+    setCarousal1(false);
+    setCarousal2((current) => !current);
+    setCarousal3(false);
+    setCarousal4(false);
+    setCarousal5(false);
+    setCarousal6(false);
+    setCarousal7(false);
+    setCarousal8(false);
+    setCarousal9(false);
+    setCarousal10(false);
+    setCarousal11(false);
+  };
+  const openCarousal3 = () => {
+    setCarousal1(false);
+    setCarousal2(false);
+    setCarousal3((current) => !current);
+    setCarousal4(false);
+    setCarousal5(false);
+    setCarousal6(false);
+    setCarousal7(false);
+    setCarousal8(false);
+    setCarousal9(false);
+    setCarousal10(false);
+    setCarousal11(false);
+  };
+  const openCarousal4 = () => {
+    setCarousal1(false);
+    setCarousal2(false);
+    setCarousal3(false);
+    setCarousal4((current) => !current);
+    setCarousal5(false);
+    setCarousal6(false);
+    setCarousal7(false);
+    setCarousal8(false);
+    setCarousal9(false);
+    setCarousal10(false);
+    setCarousal11(false);
+  };
+  const openCarousal5 = () => {
+    setCarousal1(false);
+    setCarousal2(false);
+    setCarousal3(false);
+    setCarousal4(false);
+    setCarousal5((current) => !current);
+    setCarousal6(false);
+    setCarousal7(false);
+    setCarousal8(false);
+    setCarousal9(false);
+    setCarousal10(false);
+    setCarousal11(false);
+  };
+  const openCarousal6 = () => {
+    setCarousal1(false);
+    setCarousal2(false);
+    setCarousal3(false);
+    setCarousal4(false);
+    setCarousal5(false);
+    setCarousal6((current) => !current);
+    setCarousal7(false);
+    setCarousal8(false);
+    setCarousal9(false);
+    setCarousal10(false);
+    setCarousal11(false);
+  };
+  const openCarousal7 = () => {
+    setCarousal1(false);
+    setCarousal2(false);
+    setCarousal3(false);
+    setCarousal4(false);
+    setCarousal5(false);
+    setCarousal6(false);
+    setCarousal7((current) => !current);
+    setCarousal8(false);
+    setCarousal9(false);
+    setCarousal10(false);
+    setCarousal11(false);
+  };
+  const openCarousal8 = () => {
+    setCarousal1(false);
+    setCarousal2(false);
+    setCarousal3(false);
+    setCarousal4(false);
+    setCarousal5(false);
+    setCarousal6(false);
+    setCarousal7(false);
+    setCarousal8((current) => !current);
+    setCarousal9(false);
+    setCarousal10(false);
+    setCarousal11(false);
+  };
+  const openCarousal9 = () => {
+    setCarousal1(false);
+    setCarousal2(false);
+    setCarousal3(false);
+    setCarousal4(false);
+    setCarousal5(false);
+    setCarousal6(false);
+    setCarousal7(false);
+    setCarousal8(false);
+    setCarousal9((current) => !current);
+    setCarousal10(false);
+    setCarousal11(false);
+  };
+  const openCarousal10 = () => {
+    setCarousal1(false);
+    setCarousal2(false);
+    setCarousal3(false);
+    setCarousal4(false);
+    setCarousal5(false);
+    setCarousal6(false);
+    setCarousal7(false);
+    setCarousal8(false);
+    setCarousal9(false);
+    setCarousal10((current) => !current);
+    setCarousal11(false);
+  };
+  const openCarousal11 = () => {
+    setCarousal1(false);
+    setCarousal2(false);
+    setCarousal3(false);
+    setCarousal4(false);
+    setCarousal5(false);
+    setCarousal6(false);
+    setCarousal7(false);
+    setCarousal8(false);
+    setCarousal9(false);
+    setCarousal10(false);
+    setCarousal11((current) => !current);
+  };
 
   return (
     <div className="relative">
@@ -333,6 +491,8 @@ export default function Home() {
           <Link href="#contact" className="hover:underline shadow-text">
             Contact
           </Link>
+
+         
         </div>
 
         <div className="flex items-center justify-end gap-4 socail-icons-screen">
@@ -1061,6 +1221,7 @@ export default function Home() {
           </div>
         </section>
         {/* contact-section */}
+
       </div>
     </div>
   );
