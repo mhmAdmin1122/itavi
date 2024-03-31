@@ -448,11 +448,11 @@ html {
 /*  Contact Page  */
 /*  Contact Section  */
 .Contact-Section {
-  @apply h-screen bg-no-repeat bg-cover w-screen px-[10%] pt-[150px] text-white relative;
+  @apply h-screen bg-no-repeat bg-cover w-screen px-[10%] text-white relative flex items-center justify-center;
   background: linear-gradient(to right, #d91820, #f15a24) no-repeat;
 }
 .Contact-Section .Text-Box {
-  @apply absolute bottom-[30%] z-40;
+  @apply absolute z-40;
 }
 .Contact-Section h2 {
   @apply text-[68px] font-extralight w-[25%] leading-[70px];

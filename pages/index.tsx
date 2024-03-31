@@ -491,8 +491,6 @@ export default function Home() {
           <Link href="#contact" className="hover:underline shadow-text">
             Contact
           </Link>
-
-         
         </div>
 
         <div className="flex items-center justify-end gap-4 socail-icons-screen">
@@ -1204,24 +1202,19 @@ export default function Home() {
           </div>
           <div className="Text-Box relative z-10">
             <h2>Contact</h2>
-            <div className="Second-div">
-              <h3>05</h3>
-              <p className="!text-white">
-                Do you have an urgent question or request? This{" "}
-                <Link href={"/contact"} className="underline cursor-pointer">
-                  <b>Contact Form</b>
-                </Link>{" "}
-                is the fastest way to get in touch. You can also check{" "}
-                <Link href={"/faqs"} className="underline cursor-pointer">
-                  <b>FAQ{"'"}s</b>
-                </Link>{" "}
-                to get your answers.
-              </p>
-            </div>
+           
+            <form className="mt-2 flex flex-col items-center justify-center gap-6 w-full text-[#000]">
+              <div className="flex items-center gap-4 w-full">
+                <input type="text" className="outline-none px-6 py-2 rounded-md w-1/2" placeholder="Name" />
+                <input type="text" className="outline-none px-6 py-2 rounded-md w-1/2" placeholder="Email" />
+              </div>
+              <input type="text" placeholder="Subject" className="outline-none px-6 py-2 rounded-md w-full" />
+              <textarea rows={4} cols={30} placeholder="Message" className="outline-none px-6 py-2 rounded-md w-full" />
+              <button type="submit" className="px-6 py-2 bg-[#d98700]">Message</button>
+            </form>
           </div>
         </section>
         {/* contact-section */}
-
       </div>
     </div>
   );
