@@ -959,7 +959,7 @@ export default function Home() {
                     <div className="absolute top-0 left-0 w-full h-full object-cover z-4 bg-[#0000009a]"></div>
                   </div>
                   <div className="WWeDo-Box relative z-10">
-                    <h2>The Opportunity</h2>
+                    <h2 className="shadow-text">The Opportunity</h2>
                     <div className="Second-div">
                       <div className="flex flex-col items-start gap-6">
                         <h3>03</h3>
