@@ -1259,15 +1259,12 @@ html {
 .carousal-head {
   @apply text-[#000] flex items-center justify-between text-lg gap-4;
 }
-
 .carousal-body {
   @apply flex flex-col gap-4 w-full pl-[30px] pr-[70px];
 }
-
 .carousal-deatail {
   @apply text-[14px] text-[#000] pr-[40px] text-justify;
 }
-
 .mask1 {
   -webkit-mask-image: url(/img/contactText.png);
   mask-image: url(/img/contactText.png);
