@@ -447,14 +447,17 @@ html {
 /*  Our-Culture Section  */
 /*  Contact Page  */
 /*  Contact Section  */
-.Contact-Section, .legal-Section {
+.Contact-Section,
+.legal-Section {
   @apply h-screen bg-no-repeat bg-cover w-screen px-[10%] text-white relative flex items-center justify-center;
   background: linear-gradient(to right, #d91820, #f15a24) no-repeat;
 }
-.Contact-Section .Text-Box, .legal-Section .Text-Box {
+.Contact-Section .Text-Box,
+.legal-Section .Text-Box {
   @apply absolute z-40;
 }
-.Contact-Section h2, .legal-Section h2 {
+.Contact-Section h2,
+.legal-Section h2 {
   @apply text-[68px] font-extralight w-[25%] leading-[70px];
 }
 .Contact-Section .Second-div {
@@ -1209,14 +1212,20 @@ html {
   .legal-para {
     @apply w-full;
   }
-  .legal-number, .contact-number{
+  .legal-number,
+  .contact-number {
     @apply hidden;
   }
-  .contact-content-box{
+  .contact-content-box {
     @apply flex-col;
   }
-  .contact-content-box-para, .contact-content-container, .contact-Form-Box{
+  .contact-content-box-para,
+  .contact-content-container,
+  .contact-Form-Box {
     @apply w-full;
+  }
+  .Contact-Section .Text-Box {
+    top: 12% !important;
   }
 }
 /* snaping */
