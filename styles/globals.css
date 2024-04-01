@@ -156,7 +156,7 @@ html {
   @apply text-[150px] font-thin leading-[150px] max-[651px]:text-[120px];
 }
 .About-Section .Second-div p {
-  @apply text-[14px] w-[320px] pt-[17px] max-[600px]:pr-[20px] text-gray-200;
+  @apply text-[16px] w-[40%] pt-[17px] max-[600px]:pr-[20px] text-gray-200;
 }
 /*  About-Section  */
 /*  Our-Value Section  */
@@ -223,7 +223,7 @@ html {
   @apply absolute bottom-[15%];
 }
 .WWeDo-Section h2 {
-  @apply text-[68px] font-extralight w-[50%] leading-[70px] max-[651px]:text-[60px];
+  @apply text-[68px] font-extralight w-full leading-[70px] max-[651px]:text-[60px];
 }
 .WWeDo-Section .Second-div {
   @apply flex gap-10 justify-start items-start;
@@ -232,7 +232,7 @@ html {
   @apply text-[170px] font-thin leading-[150px] max-[651px]:text-[120px];
 }
 .WWeDo-Section .Second-div p {
-  @apply text-[15px] w-[280px] pt-[17px] text-gray-200;
+  @apply text-[16px] w-[40%] pt-[17px] text-gray-200;
 }
 /*  WhatWeDo-Section  */
 /*  Visionaries Section  */
@@ -312,7 +312,7 @@ html {
   @apply text-[170px] font-thin leading-[150px] max-[650px]:text-[120px];
 }
 .TeamWork-Section .Second-div p {
-  @apply text-[15px] w-[250px] pt-[17px] leading-7 text-gray-200;
+  @apply text-[16px] w-[40%] pt-[17px] leading-7 text-gray-200;
 }
 /*  Team-Work Section  */
 /*  Expert-Team Section  */
