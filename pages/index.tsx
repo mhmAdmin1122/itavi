@@ -1357,11 +1357,7 @@ export default function Home() {
                   Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste
                   quidem qui perspiciatis soluta nemo quaerat asperiores sint
                   labore, reiciendis eaque? Earum deleniti odio accusantium,
-                  numquam fugiat facere, libero quia fuga saepe doloribus
-                  debitis reiciendis veritatis, assumenda doloremque incidunt
-                  temporibus sit tempora minima reprehenderit commodi
-                  consectetur eligendi distinctio. Repellendus maiores cum
-                  laborum voluptate reiciendis, a repudiandae?
+                  numquam fugiat facere.
                 </p>
               </div>
             </div>
