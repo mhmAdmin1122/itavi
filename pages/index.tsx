@@ -1191,7 +1191,7 @@ export default function Home() {
 
         {/* legal-section */}
         <section
-          className="Contact-Section !w-full sections relative"
+          className="legal-Section !w-full sections relative"
           id="legal"
         >
           <Link
