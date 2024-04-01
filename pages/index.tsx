@@ -4,6 +4,7 @@ import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Logo from "@/public/img/Logo.svg";
 import Prisma from "@/public/img/goldQuartz.png";
+import { Montserrat } from "next/font/google";
 import OurValueBG from "@/public/img//Our-Value-BG.png";
 import WorkImage from "@/public/img/InvestWithConviction.jpg";
 import bolivia from "@/public/img/Bolivia Map Image.png";
@@ -30,6 +31,10 @@ import {
 } from "react-icons/fa6";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoCloseOutline } from "react-icons/io5";
+const montserrat = Montserrat({
+  weight: "400",
+  subsets: ["latin"],
+});
 
 export default function Home() {
   const handleClick = (event: any) => {
@@ -325,7 +330,7 @@ export default function Home() {
   };
 
   return (
-    <div className="relative">
+    <div className={`relative ${montserrat.className}`}>
       <Head>
         <title>Itavi Mining</title>
       </Head>
@@ -490,6 +495,10 @@ export default function Home() {
 
           <Link href="#contact" className="hover:underline shadow-text">
             Contact
+          </Link>
+
+          <Link href="#legal" className="hover:underline shadow-text">
+            Legal
           </Link>
         </div>
 
@@ -1178,16 +1187,22 @@ export default function Home() {
         </section>
         {/* Documentation-section */}
 
-        {/* contact-section */}
+        {/* legal-section */}
         <section
           className="Contact-Section !w-full sections relative"
-          id="contact"
+          id="legal"
         >
           <Link
             href="#documentation"
             className="absolute top-0 z-[999999] btn-design-top btn-design"
           >
             <TfiAngleUp />
+          </Link>
+          <Link
+            href="#contact"
+            className="absolute bottom-0 z-[999999] btn-design-bottom btn-design"
+          >
+            <TfiAngleDown />
           </Link>
           <div className="video-container">
             <video
@@ -1200,17 +1215,85 @@ export default function Home() {
             </video>
             <div className="absolute top-0 left-0 w-full h-full object-cover z-4 bg-[#0000009a]"></div>
           </div>
-          <div className="Text-Box relative z-10">
+          <div className="Text-Box relative z-10 px-10">
+            <h2 className="!w-full">05 Legalities</h2>
+            <p className="w-[60%] py-5 legal-para">
+              Itavi Mining provides its investors simple and clear information,
+              leaving behind the trust. Check{" "}
+              <Link href="/faqs" className="text-[#ca8a04] underline">
+                frequently asked questions
+              </Link>
+              ,{" "}
+              <Link href="/disclaimer" className="text-[#ca8a04] underline">
+                Disclaimer
+              </Link>
+              ,{" "}
+              <Link href="/terms" className="text-[#ca8a04] underline">
+                Terms & Conditions
+              </Link>
+              , and{" "}
+              <Link href="/privacy" className="text-[#ca8a04] underline">
+                Privacy Policies
+              </Link>
+              .
+            </p>
+          </div>
+        </section>
+        {/* legal-section */}
+
+        {/* contact-section */}
+        <section
+          className="Contact-Section !w-full sections relative"
+          id="contact"
+        >
+          <Link
+            href="#legal"
+            className="absolute top-0 z-[999999] btn-design-top btn-design"
+          >
+            <TfiAngleUp />
+          </Link>
+          
+          <div className="video-container">
+            <video
+              className="absolute top-0 left-0 w-full h-full object-cover z-0"
+              autoPlay
+              loop
+              muted
+            >
+              <source src="/video/ilamavideodron4.mp4" type="video/mp4" />
+            </video>
+            <div className="absolute top-0 left-0 w-full h-full object-cover z-4 bg-[#0000009a]"></div>
+          </div>
+          <div className="Text-Box relative z-10 px-10">
             <h2>Contact</h2>
-           
+
             <form className="mt-2 flex flex-col items-center justify-center gap-6 w-full text-[#000]">
               <div className="flex items-center gap-4 w-full">
-                <input type="text" className="outline-none px-6 py-2 rounded-md w-1/2" placeholder="Name" />
-                <input type="text" className="outline-none px-6 py-2 rounded-md w-1/2" placeholder="Email" />
+                <input
+                  type="text"
+                  className="outline-none px-6 py-2 rounded-md w-1/2"
+                  placeholder="Name"
+                />
+                <input
+                  type="text"
+                  className="outline-none px-6 py-2 rounded-md w-1/2"
+                  placeholder="Email"
+                />
               </div>
-              <input type="text" placeholder="Subject" className="outline-none px-6 py-2 rounded-md w-full" />
-              <textarea rows={4} cols={30} placeholder="Message" className="outline-none px-6 py-2 rounded-md w-full" />
-              <button type="submit" className="px-6 py-2 bg-[#d98700]">Message</button>
+              <input
+                type="text"
+                placeholder="Subject"
+                className="outline-none px-6 py-2 rounded-md w-full"
+              />
+              <textarea
+                rows={4}
+                cols={30}
+                placeholder="Message"
+                className="outline-none px-6 py-2 rounded-md w-full"
+              />
+              <button type="submit" className="px-6 py-2 bg-[#d98700]">
+                Message
+              </button>
             </form>
           </div>
         </section>

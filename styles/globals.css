@@ -112,7 +112,7 @@ html {
 .heading-deatilBox-home-Section {
   @apply flex-col !gap-8;
 }
-.btn-box-Home-Section{
+.btn-box-Home-Section {
   @apply flex-col;
 }
 .btn-box-Home-Section,
@@ -587,20 +587,17 @@ html {
 }
 .about-dropbtn .right-drop-ico,
 .opportunity-dropbtn .right-drop-ico,
-.documentation-dropbtn .right-drop-ico
- {
+.documentation-dropbtn .right-drop-ico {
   @apply hidden;
 }
 .about-dropbtn:hover .right-drop-ico,
 .opportunity-dropbtn:hover .right-drop-ico,
-.documentation-dropbtn:hover .right-drop-ico
- {
+.documentation-dropbtn:hover .right-drop-ico {
   @apply flex;
 }
 .about-dropbtn:hover .down-drop-ico,
 .opportunity-dropbtn:hover .down-drop-ico,
-.documentation-dropbtn:hover .down-drop-ico
- {
+.documentation-dropbtn:hover .down-drop-ico {
   @apply hidden;
 }
 
@@ -1208,6 +1205,9 @@ html {
   }
   .btn-txt-mob {
     @apply !pb-0 !w-fit !text-[16px] !px-0;
+  }
+  .legal-para {
+    @apply w-full;
   }
 }
 /* snaping */
