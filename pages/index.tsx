@@ -184,6 +184,9 @@ export default function Home() {
   const [carousal10, setCarousal10] = useState(false);
   const [carousal11, setCarousal11] = useState(false);
   const [carousal, setCarousal] = useState(false);
+  const [mobAboutTab, setMobAboutTab] = useState(false);
+  const [mobOppertunityTab, setMobOppertunityTab] = useState(false);
+  const [mobDocumentationTab, setMobDocumentationTab] = useState(false);
 
   const openCarousal1 = () => {
     setCarousal1((current) => !current);
@@ -328,7 +331,15 @@ export default function Home() {
     setCarousal10(false);
     setCarousal11((current) => !current);
   };
-
+  const mobAboutTabOpen = () => {
+    setMobAboutTab((current: any) => !current);
+  };
+  const mobOppertunityTabOpen = () => {
+    setMobOppertunityTab((current: any) => !current);
+  };
+  const mobDocumentationTabOpen = () => {
+    setMobDocumentationTab((current: any) => !current);
+  };
   return (
     <div className={`relative ${montserrat.className}`}>
       <Head>
@@ -346,32 +357,115 @@ export default function Home() {
         </div>
 
         {showTabs && (
-          <div
-            onClick={handleShowTabs}
-            className="mobile-sidebar-tabs absolute top-0 min-h-screen left-0 w-full bg-[#0000009a] flex flex-col gap-2 font-normal text-white text-right items-end px-4 pt-7 text-[0.85rem]"
-          >
-            <div className="text-4xl text-[#fff]">
+          <div className="mobile-sidebar-tabs absolute top-0 min-h-screen left-0 w-full bg-[#0000009a] flex flex-col gap-2 font-normal text-white text-right items-end px-4 pt-7 text-[0.85rem]">
+            <div className="text-4xl text-[#fff]" onClick={handleShowTabs}>
               <IoCloseOutline />
             </div>
-            <Link href="#home" className="hover:underline shadow-text">
-              Home
-            </Link>
+            <div onClick={handleShowTabs}>
+              <Link href="#home" className="hover:underline shadow-text">
+                Home
+              </Link>
+            </div>
 
-            <Link href="#about" className="hover:underline shadow-text">
-              About
-            </Link>
+            <div className="hover:underline shadow-text flex flex-col items-end gap-2">
+              <div className="flex items-center gap-2">
+                <button onClick={mobAboutTabOpen}>About</button>
+                {mobAboutTab ? <FaAngleDown /> : <FaAngleRight />}
+              </div>
+              {mobAboutTab && (
+                <div className="flex flex-col gap-2 items-end">
+                  <div onClick={handleShowTabs}>
+                    <Link href="#about" onClick={handleSecond}>
+                      Our Value
+                    </Link>
+                  </div>
+                  <div onClick={handleShowTabs}>
+                    <Link href="#about" onClick={handleThird}>
+                      History
+                    </Link>
+                  </div>
+                  <div onClick={handleShowTabs}>
+                    <Link href="#about" onClick={handleForth}>
+                      Invest with conviction
+                    </Link>
+                  </div>
+                </div>
+              )}
+            </div>
 
-            <Link href="#opportunity" className="hover:underline shadow-text">
-              Opportunity
-            </Link>
+            <div className="hover:underline shadow-text flex flex-col items-end gap-2">
+              <div className="flex items-center gap-2">
+                <button onClick={mobOppertunityTabOpen}>Oppertunity</button>
+                {mobOppertunityTab ? <FaAngleDown /> : <FaAngleRight />}
+              </div>
+              {mobOppertunityTab && (
+                <div className="flex flex-col gap-2 items-end">
+                  <div onClick={handleShowTabs}>
+                    <Link href="#opportunity" onClick={handleSixth2}>
+                      Investor Rewards
+                    </Link>
+                  </div>
+                  <div onClick={handleShowTabs}>
+                    <Link href="#opportunity" onClick={handleSecond2}>
+                      Visionaries
+                    </Link>
+                  </div>
+                  <div onClick={handleShowTabs}>
+                    <Link href="#opportunity" onClick={handleThird2}>
+                      Scale of Resources
+                    </Link>
+                  </div>
+                  <div onClick={handleShowTabs}>
+                    <Link href="#opportunity" onClick={handleFourth2}>
+                      Emerging Markets
+                    </Link>
+                  </div>
+                  <div onClick={handleShowTabs}>
+                    <Link href="#opportunity" onClick={handleFifth2}>
+                      Copper Concentration
+                    </Link>
+                  </div>
+                </div>
+              )}
+            </div>
 
-            <Link href="#documentation" className="hover:underline shadow-text">
-              Documentation
-            </Link>
+            <div className="hover:underline shadow-text flex flex-col items-end gap-2">
+              <div className="flex items-center gap-2">
+                <button onClick={mobDocumentationTabOpen}>Documentation</button>
+                {mobDocumentationTab ? <FaAngleDown /> : <FaAngleRight />}
+              </div>
+              {mobDocumentationTab && (
+                <div className="flex flex-col gap-2 items-end">
+                  <div onClick={handleShowTabs}>
+                    <Link href="#documentation" onClick={handleSecond3}>
+                      Private Placement Memorandum
+                    </Link>
+                  </div>
+                  <div onClick={handleShowTabs}>
+                    <Link href="#documentation" onClick={handleThird3}>
+                      Company Pitch Deck
+                    </Link>
+                  </div>
+                  <div onClick={handleShowTabs}>
+                    <Link href="#documentation" onClick={handlefour3}>
+                      Property Technical Report
+                    </Link>
+                  </div>
+                </div>
+              )}
+            </div>
 
-            <Link href="#contact" className="hover:underline shadow-text">
-              Contact
-            </Link>
+            <div onClick={handleShowTabs}>
+              <Link href="#legal" className="hover:underline shadow-text">
+                Legal
+              </Link>
+            </div>
+
+            <div onClick={handleShowTabs}>
+              <Link href="#contact" className="hover:underline shadow-text">
+                Contact
+              </Link>
+            </div>
 
             <div className="flex items-center justify-end gap-4 pt-12">
               <p>Follow us :</p>
@@ -1217,7 +1311,7 @@ export default function Home() {
           <div className="Text-Box relative z-10 px-[10%]">
             <h2 className="!w-full shadow-text text-[68px]">Legalities</h2>
             <div className="flex items-start gap-4">
-              <h4 className="text-9xl shadow-text">05</h4>
+              <h4 className="text-9xl shadow-text legal-number">05</h4>
               <p className="w-[55%] py-5 legal-para">
                 Itavi Mining provides its investors simple and clear
                 information, leaving behind the trust. Check{" "}
@@ -1254,12 +1348,12 @@ export default function Home() {
           >
             <TfiAngleUp />
           </Link>
-          <div className="Text-Box flex items-center gap-6 justify-between relative z-10 px-[10%]">
-            <div className="w-[60%]">
+          <div className="Text-Box contact-content-box flex items-center gap-6 justify-between relative z-10 px-[10%]">
+            <div className="w-[60%] contact-content-container">
               <h2 className="w-full text-[68px] shadow-text">Contact</h2>
               <div className="flex items-start gap-4">
-                <h3 className="text-9xl shadow-text">06</h3>
-                <p>
+                <h3 className="text-9xl shadow-text contact-number">06</h3>
+                <p className="contact-content-box-para">
                   Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste
                   quidem qui perspiciatis soluta nemo quaerat asperiores sint
                   labore, reiciendis eaque? Earum deleniti odio accusantium,
@@ -1272,7 +1366,7 @@ export default function Home() {
               </div>
             </div>
 
-            <form className="mt-2 flex flex-col items-center justify-center gap-6 w-[40%] text-[#000]">
+            <form className="mt-2 flex flex-col items-center justify-center gap-6 w-[40%] text-[#000] contact-Form-Box">
               <div className="flex items-center gap-4 w-full">
                 <input
                   type="text"

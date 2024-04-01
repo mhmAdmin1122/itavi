@@ -1209,6 +1209,15 @@ html {
   .legal-para {
     @apply w-full;
   }
+  .legal-number, .contact-number{
+    @apply hidden;
+  }
+  .contact-content-box{
+    @apply flex-col;
+  }
+  .contact-content-box-para, .contact-content-container, .contact-Form-Box{
+    @apply w-full;
+  }
 }
 /* snaping */
 .conatiner-box {
