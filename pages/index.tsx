@@ -493,12 +493,12 @@ export default function Home() {
             </div>
           </div>
 
-          <Link href="#contact" className="hover:underline shadow-text">
-            Contact
-          </Link>
-
           <Link href="#legal" className="hover:underline shadow-text">
             Legal
+          </Link>
+
+          <Link href="#contact" className="hover:underline shadow-text">
+            Contact
           </Link>
         </div>
 
@@ -537,7 +537,9 @@ export default function Home() {
           </Link>
         </div>
       </header>
+      {/* Header */}
 
+      {/* sections-snaper */}
       <div className="conatiner-box">
         {/* Home-hero-section */}
         <section className="Home-Section sections relative" id="home">
@@ -1215,7 +1217,7 @@ export default function Home() {
             </video>
             <div className="absolute top-0 left-0 w-full h-full object-cover z-4 bg-[#0000009a]"></div>
           </div>
-          <div className="Text-Box relative z-10 px-10">
+          <div className="Text-Box relative z-10 px-[10%]">
             <h2 className="!w-full">05 Legalities</h2>
             <p className="w-[60%] py-5 legal-para">
               Itavi Mining provides its investors simple and clear information,
@@ -1252,7 +1254,7 @@ export default function Home() {
           >
             <TfiAngleUp />
           </Link>
-          
+
           <div className="video-container">
             <video
               className="absolute top-0 left-0 w-full h-full object-cover z-0"
@@ -1264,10 +1266,25 @@ export default function Home() {
             </video>
             <div className="absolute top-0 left-0 w-full h-full object-cover z-4 bg-[#0000009a]"></div>
           </div>
-          <div className="Text-Box relative z-10 px-10">
-            <h2>Contact</h2>
+          <div className="Text-Box flex items-center gap-4 justify-between relative z-10 px-[10%]">
+            <div className="w-[45%]">
+              <h2 className="w-full">Contact</h2>
+              <div className="flex items-start gap-4">
+                <h3 className="text-8xl shadow-text">06</h3>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste
+                  quidem qui perspiciatis soluta nemo quaerat asperiores sint
+                  labore, reiciendis eaque? Earum deleniti odio accusantium,
+                  numquam fugiat facere, libero quia fuga saepe doloribus
+                  debitis reiciendis veritatis, assumenda doloremque incidunt
+                  temporibus sit tempora minima reprehenderit commodi
+                  consectetur eligendi distinctio. Repellendus maiores cum
+                  laborum voluptate reiciendis, a repudiandae?
+                </p>
+              </div>
+            </div>
 
-            <form className="mt-2 flex flex-col items-center justify-center gap-6 w-full text-[#000]">
+            <form className="mt-2 flex flex-col items-center justify-center gap-6 w-[55%] text-[#000]">
               <div className="flex items-center gap-4 w-full">
                 <input
                   type="text"
@@ -1299,6 +1316,7 @@ export default function Home() {
         </section>
         {/* contact-section */}
       </div>
+      {/* sections-snaper */}
     </div>
   );
 }
