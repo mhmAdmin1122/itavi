@@ -167,7 +167,7 @@ const FaqsPage = () => {
         <title>FAQs - Itavi Mining</title>
       </Head>
       <PageLayout>
-        <div className="flex flex-col items-center justify-center gap-4 min-h-screen max-h-full">
+        <div className="flex flex-col items-center justify-center gap-4 min-h-screen max-h-full text-[#000]">
           <h2 className="text-4xl font-medium px-[10px] py-[6px] rounded-md">
             FAQs
           </h2>

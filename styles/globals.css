@@ -1257,7 +1257,7 @@ html {
 }
 
 .carousal-head {
-  @apply text-[#fff] flex items-center justify-between text-lg gap-4;
+  @apply text-[#000] flex items-center justify-between text-lg gap-4;
 }
 
 .carousal-body {
@@ -1265,7 +1265,7 @@ html {
 }
 
 .carousal-deatail {
-  @apply text-[14px] text-[#fff] pr-[40px] text-justify;
+  @apply text-[14px] text-[#000] pr-[40px] text-justify;
 }
 
 .mask1 {
