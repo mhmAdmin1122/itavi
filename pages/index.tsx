@@ -1309,7 +1309,7 @@ export default function Home() {
             <div className="absolute top-0 left-0 w-full h-full object-cover z-4 bg-[#0000009a]"></div>
           </div>
           <div className="Text-Box relative z-10 px-[10%]">
-            <h2 className="!w-full shadow-text text-[68px]">Legalities</h2>
+            <h2 className="!w-full shadow-text text-[68px] legal-heading">Legalities</h2>
             <div className="flex items-start gap-4">
               <h4 className="text-9xl shadow-text legal-number">05</h4>
               <p className="w-[55%] py-5 legal-para">
