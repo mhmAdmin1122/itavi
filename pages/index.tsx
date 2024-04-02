@@ -8,18 +8,12 @@ import TRDownloadBtn from "./components/TRDownloadBtn";
 import EMDDownloadBtn from "./components/EMDDownloadBtn";
 import PPMDownloadBtn from "./components/PPMDownloadBtn";
 import weFunderIco from "@/public/img/wefunder.png";
-import {
-  TfiAngleDown,
-  TfiAngleUp,
-  TfiAngleLeft,
-  TfiAngleRight,
-} from "react-icons/tfi";
+import { TfiAngleDown, TfiAngleUp } from "react-icons/tfi";
 import {
   FaLinkedin,
   FaSquareFacebook,
   FaSquareXTwitter,
   FaAngleDown,
-  FaAngleUp,
   FaAngleRight,
 } from "react-icons/fa6";
 import { RxHamburgerMenu } from "react-icons/rx";
@@ -30,301 +24,19 @@ const montserrat = Montserrat({
 });
 
 export default function Home() {
-  const handleClick = (event: any) => {
-    const elementId = event.target.id;
-    console.log("Clicked Element ID:", elementId);
-  };
+  const [mobHomeTab, setMobHomeTab] = useState(false);
+  const [mobAboutTab, setMobAboutTab] = useState(false);
+  const [mobOppertunityTab, setMobOppertunityTab] = useState(false);
+  const [mobDocumentationTab, setMobDocumentationTab] = useState(false);
+  const [mobLegalTab, setMobLegalTab] = useState(false);
   const [showTabs, setShowTabs] = useState(false);
   const handleShowTabs = () => {
     setShowTabs((current) => !current);
   };
 
-  {
-    /* About-Us-section */
-  }
-  const [currentSection, setCurrentSection] = useState(1);
-  const [container1, setContainer1] = useState(false);
-  const [container2, setContainer2] = useState(false);
-  const [container3, setContainer3] = useState(false);
-  const [container4, setContainer4] = useState(false);
-
-  const totalSections = 4;
-
-  const handleNext = () => {
-    if (currentSection < totalSections) {
-      setCurrentSection(currentSection + 1);
-    }
+  const mobHomeTabOpen = () => {
+    setMobHomeTab((current: any) => !current);
   };
-  const handleFirst = () => {
-    setCurrentSection(1);
-    setContainer1(true);
-    setContainer2(false);
-    setContainer3(false);
-    setContainer4(false);
-  };
-  const handleSecond = () => {
-    setCurrentSection(2);
-    setContainer1(false);
-    setContainer2(true);
-    setContainer3(false);
-    setContainer4(false);
-  };
-  const handleThird = () => {
-    setCurrentSection(3);
-    setContainer1(false);
-    setContainer2(false);
-    setContainer3(true);
-    setContainer4(false);
-  };
-  const handleForth = () => {
-    setCurrentSection(4);
-    setContainer1(false);
-    setContainer2(false);
-    setContainer3(false);
-    setContainer4(true);
-  };
-
-  const handlePrevious = () => {
-    if (currentSection > 1) {
-      setCurrentSection(currentSection - 1);
-    }
-  };
-  {
-    /* About-Us-section */
-  }
-  {
-    /* Opportunity-section */
-  }
-  const [current2Section, setCurrent2Section] = useState(1);
-  const total2Sections = 6;
-
-  const handleNext2 = () => {
-    if (current2Section < total2Sections) {
-      setCurrent2Section(current2Section + 1);
-    }
-  };
-  const handleFirst2 = () => {
-    setCurrent2Section(1);
-  };
-  const handleSecond2 = () => {
-    setCurrent2Section(3);
-  };
-  const handleSixth2 = () => {
-    setCurrent2Section(2);
-  };
-  const handleThird2 = () => {
-    setCurrent2Section(4);
-  };
-  const handleFourth2 = () => {
-    setCurrent2Section(5);
-  };
-  const handleFifth2 = () => {
-    setCurrent2Section(6);
-  };
-
-  const handlePrevious2 = () => {
-    if (current2Section > 1) {
-      setCurrent2Section(current2Section - 1);
-    }
-  };
-
-  {
-    /* Opportunity-section */
-  }
-
-  {
-    /* Documentaion-section */
-  }
-  const [current3Section, setCurrent3Section] = useState(1);
-  const total3Sections = 4;
-
-  const handle3Next = () => {
-    if (current3Section < total3Sections) {
-      setCurrent3Section(current3Section + 1);
-    }
-  };
-  const handleFirst3 = () => {
-    setCurrent3Section(1);
-  };
-  const handleSecond3 = () => {
-    setCurrent3Section(2);
-  };
-  const handleThird3 = () => {
-    setCurrent3Section(3);
-  };
-  const handlefour3 = () => {
-    setCurrent3Section(4);
-  };
-
-  const handle3Previous = () => {
-    if (current3Section > 1) {
-      setCurrent3Section(current3Section - 1);
-    }
-  };
-  {
-    /* Documentaion-section */
-  }
-  // Faqs
-  const [carousal1, setCarousal1] = useState(false);
-  const [carousal2, setCarousal2] = useState(false);
-  const [carousal3, setCarousal3] = useState(false);
-  const [carousal4, setCarousal4] = useState(false);
-  const [carousal5, setCarousal5] = useState(false);
-  const [carousal6, setCarousal6] = useState(false);
-  const [carousal7, setCarousal7] = useState(false);
-  const [carousal8, setCarousal8] = useState(false);
-  const [carousal9, setCarousal9] = useState(false);
-  const [carousal10, setCarousal10] = useState(false);
-  const [carousal11, setCarousal11] = useState(false);
-  const [carousal, setCarousal] = useState(false);
-  const [mobAboutTab, setMobAboutTab] = useState(false);
-  const [mobOppertunityTab, setMobOppertunityTab] = useState(false);
-  const [mobDocumentationTab, setMobDocumentationTab] = useState(false);
-
-  const openCarousal1 = () => {
-    setCarousal1((current) => !current);
-    setCarousal2(false);
-    setCarousal3(false);
-    setCarousal4(false);
-    setCarousal5(false);
-    setCarousal6(false);
-    setCarousal7(false);
-    setCarousal8(false);
-    setCarousal9(false);
-    setCarousal10(false);
-    setCarousal11(false);
-  };
-  const openCarousal2 = () => {
-    setCarousal1(false);
-    setCarousal2((current) => !current);
-    setCarousal3(false);
-    setCarousal4(false);
-    setCarousal5(false);
-    setCarousal6(false);
-    setCarousal7(false);
-    setCarousal8(false);
-    setCarousal9(false);
-    setCarousal10(false);
-    setCarousal11(false);
-  };
-  const openCarousal3 = () => {
-    setCarousal1(false);
-    setCarousal2(false);
-    setCarousal3((current) => !current);
-    setCarousal4(false);
-    setCarousal5(false);
-    setCarousal6(false);
-    setCarousal7(false);
-    setCarousal8(false);
-    setCarousal9(false);
-    setCarousal10(false);
-    setCarousal11(false);
-  };
-  const openCarousal4 = () => {
-    setCarousal1(false);
-    setCarousal2(false);
-    setCarousal3(false);
-    setCarousal4((current) => !current);
-    setCarousal5(false);
-    setCarousal6(false);
-    setCarousal7(false);
-    setCarousal8(false);
-    setCarousal9(false);
-    setCarousal10(false);
-    setCarousal11(false);
-  };
-  const openCarousal5 = () => {
-    setCarousal1(false);
-    setCarousal2(false);
-    setCarousal3(false);
-    setCarousal4(false);
-    setCarousal5((current) => !current);
-    setCarousal6(false);
-    setCarousal7(false);
-    setCarousal8(false);
-    setCarousal9(false);
-    setCarousal10(false);
-    setCarousal11(false);
-  };
-  const openCarousal6 = () => {
-    setCarousal1(false);
-    setCarousal2(false);
-    setCarousal3(false);
-    setCarousal4(false);
-    setCarousal5(false);
-    setCarousal6((current) => !current);
-    setCarousal7(false);
-    setCarousal8(false);
-    setCarousal9(false);
-    setCarousal10(false);
-    setCarousal11(false);
-  };
-  const openCarousal7 = () => {
-    setCarousal1(false);
-    setCarousal2(false);
-    setCarousal3(false);
-    setCarousal4(false);
-    setCarousal5(false);
-    setCarousal6(false);
-    setCarousal7((current) => !current);
-    setCarousal8(false);
-    setCarousal9(false);
-    setCarousal10(false);
-    setCarousal11(false);
-  };
-  const openCarousal8 = () => {
-    setCarousal1(false);
-    setCarousal2(false);
-    setCarousal3(false);
-    setCarousal4(false);
-    setCarousal5(false);
-    setCarousal6(false);
-    setCarousal7(false);
-    setCarousal8((current) => !current);
-    setCarousal9(false);
-    setCarousal10(false);
-    setCarousal11(false);
-  };
-  const openCarousal9 = () => {
-    setCarousal1(false);
-    setCarousal2(false);
-    setCarousal3(false);
-    setCarousal4(false);
-    setCarousal5(false);
-    setCarousal6(false);
-    setCarousal7(false);
-    setCarousal8(false);
-    setCarousal9((current) => !current);
-    setCarousal10(false);
-    setCarousal11(false);
-  };
-  const openCarousal10 = () => {
-    setCarousal1(false);
-    setCarousal2(false);
-    setCarousal3(false);
-    setCarousal4(false);
-    setCarousal5(false);
-    setCarousal6(false);
-    setCarousal7(false);
-    setCarousal8(false);
-    setCarousal9(false);
-    setCarousal10((current) => !current);
-    setCarousal11(false);
-  };
-  const openCarousal11 = () => {
-    setCarousal1(false);
-    setCarousal2(false);
-    setCarousal3(false);
-    setCarousal4(false);
-    setCarousal5(false);
-    setCarousal6(false);
-    setCarousal7(false);
-    setCarousal8(false);
-    setCarousal9(false);
-    setCarousal10(false);
-    setCarousal11((current) => !current);
-  };
-
   const mobAboutTabOpen = () => {
     setMobAboutTab((current: any) => !current);
   };
@@ -333,6 +45,9 @@ export default function Home() {
   };
   const mobDocumentationTabOpen = () => {
     setMobDocumentationTab((current: any) => !current);
+  };
+  const mobLegalTabOpen = () => {
+    setMobLegalTab((current: any) => !current);
   };
   const handle1Download = () => {
     const pdfUrl = "/pdf/ppm.pdf";
@@ -382,6 +97,23 @@ export default function Home() {
           <div className="mobile-sidebar-tabs absolute top-0 min-h-screen left-0 w-full bg-[#0000009a] flex flex-col gap-2 font-normal text-white text-right items-end px-4 pt-7 text-[0.85rem]">
             <div className="text-4xl text-[#fff]" onClick={handleShowTabs}>
               <IoCloseOutline />
+            </div>
+
+            <div className="hover:underline shadow-text flex flex-col items-end gap-2">
+              <div className="flex items-center gap-2">
+                <button onClick={mobHomeTabOpen}>Home</button>
+                {mobHomeTab ? <FaAngleDown /> : <FaAngleRight />}
+              </div>
+              {mobHomeTab && (
+                <div className="flex flex-col gap-2 items-end">
+                  <div onClick={handleShowTabs}>
+                    <Link href="https://wefunder.com/itavimining">Invest</Link>
+                  </div>
+                  <div onClick={handleShowTabs}>
+                    <Link href="/Investment">Inestment Details</Link>
+                  </div>
+                </div>
+              )}
             </div>
 
             <div className="hover:underline shadow-text flex flex-col items-end gap-2">
@@ -438,19 +170,38 @@ export default function Home() {
               {mobDocumentationTab && (
                 <div className="flex flex-col gap-2 items-end">
                   <div onClick={handleShowTabs}>
-                    <Link href="#documentation" onClick={handleSecond3}>
+                    <Link href="#documentation">
                       Private Placement Memorandum
                     </Link>
                   </div>
                   <div onClick={handleShowTabs}>
-                    <Link href="#documentation" onClick={handleThird3}>
-                      Company Pitch Deck
-                    </Link>
+                    <Link href="#documentation">Company Pitch Deck</Link>
                   </div>
                   <div onClick={handleShowTabs}>
-                    <Link href="#documentation" onClick={handlefour3}>
-                      Property Technical Report
-                    </Link>
+                    <Link href="#documentation">Property Technical Report</Link>
+                  </div>
+                </div>
+              )}
+            </div>
+
+            <div className="hover:underline shadow-text flex flex-col items-end gap-2">
+              <div className="flex items-center gap-2">
+                <button onClick={mobLegalTabOpen}>Legal</button>
+                {mobLegalTab ? <FaAngleDown /> : <FaAngleRight />}
+              </div>
+              {mobLegalTab && (
+                <div className="flex flex-col gap-2 items-end">
+                  <div onClick={handleShowTabs}>
+                    <Link href="/faqs">FAQs</Link>
+                  </div>
+                  <div onClick={handleShowTabs}>
+                    <Link href="/disclaimer">Disclaimer</Link>
+                  </div>
+                  <div onClick={handleShowTabs}>
+                    <Link href="/terms">Terms & Condition</Link>
+                  </div>
+                  <div onClick={handleShowTabs}>
+                    <Link href="/privacy">Privacy Policy</Link>
                   </div>
                 </div>
               )}
@@ -506,7 +257,6 @@ export default function Home() {
           <div className="documentation-dropdown">
             <Link
               href="#home"
-              onClick={handleFirst3}
               className="documentation-dropbtn hover:underline shadow-text flex items-center gap-2"
             >
               <p>Home</p>
@@ -514,23 +264,16 @@ export default function Home() {
               <FaAngleRight className="right-drop-ico" />
             </Link>
             <div className="documentation-dropdown-content">
-              <Link
-                href="https://wefunder.com/itavimining"
-                target="blank"
-                onClick={handleSecond3}
-              >
+              <Link href="https://wefunder.com/itavimining" target="blank">
                 Invest
               </Link>
-              <Link href="/Investment" onClick={handleThird3}>
-                Investment Details
-              </Link>
+              <Link href="/Investment">Investment Details</Link>
             </div>
           </div>
 
           <div className="about-dropdown">
             <Link
               href="#about"
-              onClick={handleFirst}
               className="about-dropbtn hover:underline shadow-text flex items-center gap-2"
             >
               <p>About</p>
@@ -547,7 +290,6 @@ export default function Home() {
           <div className="opportunity-dropdown">
             <Link
               href="#opportunity"
-              onClick={handleFirst2}
               className="opportunity-dropbtn hover:underline shadow-text flex items-center gap-2"
             >
               <p>Opportunity</p>
@@ -580,27 +322,16 @@ export default function Home() {
           </div>
 
           <div className="legal-dropdown">
-            <div
-              onClick={handleFirst3}
-              className="legal-dropbtn shadow-text flex items-center gap-2"
-            >
+            <div className="legal-dropbtn shadow-text flex items-center gap-2">
               <p className="cursor-pointer">Legal</p>
               <FaAngleDown className="down-drop-ico" />
               <FaAngleRight className="right-drop-ico" />
             </div>
             <div className="legal-dropdown-content">
-              <Link href="/faqs" onClick={handleSecond3}>
-                FAQs
-              </Link>
-              <Link href="/disclaimer" onClick={handleThird3}>
-                Disclaimer
-              </Link>
-              <Link href="/terms" onClick={handlefour3}>
-                Terms & Conditions
-              </Link>
-              <Link href="/privacy" onClick={handlefour3}>
-                Privacy Policy
-              </Link>
+              <Link href="/faqs">FAQs</Link>
+              <Link href="/disclaimer">Disclaimer</Link>
+              <Link href="/terms">Terms & Conditions</Link>
+              <Link href="/privacy">Privacy Policy</Link>
             </div>
           </div>
 
@@ -691,10 +422,6 @@ export default function Home() {
               </form>
             </div>
           </div>
-
-          {/* <div className="home-vector-box">
-            <Image src={Prisma} alt="Prisma" height={"250"} width={"250"} />
-          </div> */}
         </section>
         {/* home-hero-section */}
 
@@ -715,7 +442,6 @@ export default function Home() {
           >
             <TfiAngleDown />
           </Link>
-
           <div className="About-content-container flex flex-col items-center gap-6 text-center justify-center">
             <h2 className="shadow-text">About Us</h2>
             <div className="About-Content-Box flex flex-col items-center w-full justify-center pb-2">
