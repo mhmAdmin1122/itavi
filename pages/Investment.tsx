@@ -101,11 +101,11 @@ const InvestmentPage = () => {
               </div>
               <p className="mt-[-7px] min-[1600px]:text-[20px] min-[1600px]:leading-[35px] pb-3">
                 <br />
-                Share Price: <b>$1.00 USD per share</b>
+                Share Price: <b>$1.00 per share</b>
                 <br />
                 Minimum Shares: <b>1,000</b>
                 <br />
-                Minimum Investment: <b>$1,000 USD</b>
+                Minimum Investment: <b>$1,000</b>
                 <br />
               </p>
             </div>
@@ -297,7 +297,7 @@ const InvestmentPage = () => {
                   of Itavi Mining Company, S.A. Each share represents ownership
                   in the company and a stake in the future success of our
                   projects. <br />
-                  With a minimum subscription amount of 50,000 shares, investors
+                  With a minimum subscription amount of 1,000 shares, investors
                   can tailor their investment to suit their financial goals and
                   risk tolerance.
                   <br />

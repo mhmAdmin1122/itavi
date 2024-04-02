@@ -347,8 +347,8 @@ export default function Home() {
       </Head>
 
       {/* Header */}
-      <header className="bg-transparent navbar text-white flex items-center justify-between fixed top-0 !z-[999999] right-0 w-full py-4 px-[90px]">
-        <Link href="#home" className="w-[110px] logo-main-page">
+      <header className="bg-transparent navbar text-white flex items-center justify-between fixed top-0 !z-[999999] right-0 w-full py-4 px-[40px]">
+        <Link href="#about" className="w-[110px] logo-main-page">
           <Image src={Logo} alt="logo-pic" className="logo-pic" />
         </Link>
 
@@ -360,11 +360,6 @@ export default function Home() {
           <div className="mobile-sidebar-tabs absolute top-0 min-h-screen left-0 w-full bg-[#0000009a] flex flex-col gap-2 font-normal text-white text-right items-end px-4 pt-7 text-[0.85rem]">
             <div className="text-4xl text-[#fff]" onClick={handleShowTabs}>
               <IoCloseOutline />
-            </div>
-            <div onClick={handleShowTabs}>
-              <Link href="#home" className="hover:underline shadow-text">
-                Home
-              </Link>
             </div>
 
             <div className="hover:underline shadow-text flex flex-col items-end gap-2">
@@ -460,7 +455,11 @@ export default function Home() {
                 Legal
               </Link>
             </div>
-
+            <div onClick={handleShowTabs}>
+              <Link href="#updates" className="hover:underline shadow-text">
+                Updates
+              </Link>
+            </div>
             <div onClick={handleShowTabs}>
               <Link href="#contact" className="hover:underline shadow-text">
                 Contact
@@ -508,10 +507,6 @@ export default function Home() {
         )}
 
         <div className="flex justify-center space-x-4 main-tabs">
-          <Link href="#home" className="hover:underline shadow-text">
-            Home
-          </Link>
-
           <div className="about-dropdown">
             <Link
               href="#about"
@@ -565,15 +560,14 @@ export default function Home() {
           </div>
 
           <div className="documentation-dropdown">
-            <Link
-              href="#documentation"
+            <div
               onClick={handleFirst3}
-              className="documentation-dropbtn hover:underline shadow-text flex items-center gap-2"
+              className="documentation-dropbtn shadow-text flex items-center gap-2"
             >
-              <p>Documentation</p>
+              <p className="cursor-pointer">Documentation</p>
               <FaAngleDown className="down-drop-ico" />
               <FaAngleRight className="right-drop-ico" />
-            </Link>
+            </div>
             <div className="documentation-dropdown-content">
               <Link href="#documentation" onClick={handleSecond3}>
                 Private Placement Memorandum
@@ -587,9 +581,54 @@ export default function Home() {
             </div>
           </div>
 
-          <Link href="#legal" className="hover:underline shadow-text">
-            Legal
-          </Link>
+          <div className="documentation-dropdown">
+            <div
+              onClick={handleFirst3}
+              className="documentation-dropbtn shadow-text flex items-center gap-2"
+            >
+              <p className="cursor-pointer">Legal</p>
+              <FaAngleDown className="down-drop-ico" />
+              <FaAngleRight className="right-drop-ico" />
+            </div>
+            <div className="documentation-dropdown-content">
+              <Link href="/faqs" onClick={handleSecond3}>
+                FAQs
+              </Link>
+              <Link href="/disclaimer" onClick={handleThird3}>
+                Disclaimer
+              </Link>
+              <Link href="/terms" onClick={handlefour3}>
+                Terms & Conditions
+              </Link>
+              <Link href="/privacy" onClick={handlefour3}>
+                Privacy Policy
+              </Link>
+            </div>
+          </div>
+
+          <div className="documentation-dropdown">
+            <Link
+              href="#updates"
+              onClick={handleFirst3}
+              className="documentation-dropbtn hover:underline shadow-text flex items-center gap-2"
+            >
+              <p>Updates</p>
+              <FaAngleDown className="down-drop-ico" />
+              <FaAngleRight className="right-drop-ico" />
+            </Link>
+            <div className="documentation-dropdown-content">
+              <Link
+                href="https://wefunder.com/itavimining"
+                target="blank"
+                onClick={handleSecond3}
+              >
+                Invest
+              </Link>
+              <Link href="/Investment" onClick={handleThird3}>
+                Investment Details
+              </Link>
+            </div>
+          </div>
 
           <Link href="#contact" className="hover:underline shadow-text">
             Contact
@@ -635,62 +674,8 @@ export default function Home() {
 
       {/* sections-snaper */}
       <div className="conatiner-box">
-        {/* Home-hero-section */}
-        <section className="Home-Section sections relative" id="home">
-          <Link
-            href="#about"
-            className="absolute bottom-0 z-[999999] btn-design-bottom btn-design"
-          >
-            <TfiAngleDown />
-          </Link>
-
-          <div className="heading-deatilBox-home-Section">
-            <h2 className="shadow-text">Seize The Opportunity</h2>
-            <p className="w-[70%]">
-              Invest in Bolivia{"'"}s Next Major Gold, Silver, and Copper
-              Discovery with Itavi Mining Company{"'"}s Flagship Project -{" "}
-              <b>La Gran Española</b>
-            </p>
-            <div className="btn-box-Home-Section">
-              <Link href="https://wefunder.com/itavimining">
-                <p className="btn-txt-desctop">Invest Now</p>
-                <p className="btn-txt-mob">Invest</p>
-              </Link>
-              <Link href="/Investment">
-                <p className="btn-txt-desctop">Investment Details</p>
-                <p className="btn-txt-mob">Details</p>
-              </Link>
-            </div>
-          </div>
-
-          <form className="newlatter-form">
-            <div className="flex gap-3 items-center">
-              <input
-                type="text"
-                className="newlatter-input2"
-                placeholder="Email"
-              />
-              <button type="submit">Get Updates</button>
-            </div>
-            <h3 className="text-center">
-              Enter your email to keep up with investor information.
-            </h3>
-          </form>
-
-          {/* <div className="home-vector-box">
-            <Image src={Prisma} alt="Prisma" height={"250"} width={"250"} />
-          </div> */}
-        </section>
-        {/* Home-hero-section */}
-
         {/* About-Us-section */}
         <section className="slider-container sections relative" id="about">
-          <Link
-            href="#home"
-            className="absolute top-0 z-[999999] btn-design-top btn-design"
-          >
-            <TfiAngleUp />
-          </Link>
           <Link
             href="#opportunity"
             className="absolute bottom-0 z-[999999] btn-design-bottom btn-design"
@@ -731,9 +716,9 @@ export default function Home() {
               <div className="slider-section">
                 <section className="About-Section">
                   <div className="About-Box">
-                    <h2>About Us</h2>
+                    <h2 className="shadow-text">About Us</h2>
                     <div className="Second-div">
-                      <h3>02</h3>
+                      <h3 className="numbers shadow-text">02</h3>
                       <p>
                         We are more than prospectors; We are visionaries. Our
                         journey begins where the Andean peaks kiss the sky and
@@ -835,7 +820,7 @@ export default function Home() {
               <div className="slider-section">
                 <section className="Invest-Con-Section">
                   <div className="Text-Box">
-                    <h4>Invest with conviction</h4>
+                    <h4>Invest With Conviction</h4>
                     <p>
                       At Itavi Mining, we envision a future where responsible
                       mining powers progress. Our foundation rests on
@@ -962,7 +947,7 @@ export default function Home() {
                     <h2 className="shadow-text">The Opportunity</h2>
                     <div className="Second-div">
                       <div className="flex flex-col items-start gap-6">
-                        <h3>03</h3>
+                        <h3 className="numbers shadow-text">03</h3>
                       </div>
                       <p>
                         Tap into Bolivia{"'"}s growing mining sector, supported
@@ -1160,7 +1145,7 @@ export default function Home() {
             <TfiAngleUp />
           </Link>
           <Link
-            href="#contact"
+            href="#legal"
             className="absolute bottom-0 z-[999999] btn-design-bottom btn-design"
           >
             <TfiAngleDown />
@@ -1196,24 +1181,6 @@ export default function Home() {
                 transform: `translateX(-${(current3Section - 1) * 100}vw)`,
               }}
             >
-              <div className="slider-section">
-                <section className="TeamWork-Section">
-                  <div className="TeamWork-Box">
-                    <h2 className="shadow-text">Documentation</h2>
-                    <div className="Second-div">
-                      <h3 className="shadow-text">04</h3>
-                      <p className="shadow-text-2">
-                        We provide full-transparency with our documentation to
-                        our Investors. Make sure you go-through the important
-                        information highlighted in the documents. In the next
-                        pages you{"'"}ll find a Memorándum and Subscription
-                        Agreement, Pitch Deck, and Technical Report.
-                      </p>
-                    </div>
-                  </div>
-                </section>
-              </div>
-
               <div className="slider-section">
                 <section className="Expert-Team-Section">
                   <div className="Text-Box !w-[100%]">
@@ -1284,7 +1251,7 @@ export default function Home() {
         {/* Documentation-section */}
 
         {/* legal-section */}
-        <section className="legal-Section !w-full sections relative" id="legal">
+        {/* <section className="legal-Section !w-full sections relative" id="legal">
           <Link
             href="#documentation"
             className="absolute top-0 z-[999999] btn-design-top btn-design"
@@ -1292,7 +1259,7 @@ export default function Home() {
             <TfiAngleUp />
           </Link>
           <Link
-            href="#contact"
+            href="#updates"
             className="absolute bottom-0 z-[999999] btn-design-bottom btn-design"
           >
             <TfiAngleDown />
@@ -1309,9 +1276,11 @@ export default function Home() {
             <div className="absolute top-0 left-0 w-full h-full object-cover z-4 bg-[#0000009a]"></div>
           </div>
           <div className="Text-Box relative z-10 px-[10%]">
-            <h2 className="!w-full shadow-text text-[68px] legal-heading">Legalities</h2>
+            <h2 className="!w-full shadow-text text-[68px] legal-heading">
+              Legal
+            </h2>
             <div className="flex items-start gap-4">
-              <h4 className="text-9xl shadow-text legal-number">05</h4>
+              <h4 className="text-9xl shadow-text legal-number numbers">05</h4>
               <p className="w-[55%] py-5 legal-para">
                 Itavi Mining provides its investors simple and clear
                 information, leaving behind the trust. Check{" "}
@@ -1334,8 +1303,60 @@ export default function Home() {
               </p>
             </div>
           </div>
-        </section>
+        </section> */}
         {/* legal-section */}
+
+        {/* updates-hero-section */}
+        <section className="Home-Section sections relative" id="updates">
+          <Link
+            href="#legal"
+            className="absolute top-0 z-[999999] btn-design-top btn-design"
+          >
+            <TfiAngleUp />
+          </Link>
+          <Link
+            href="#contact"
+            className="absolute bottom-0 z-[999999] btn-design-bottom btn-design"
+          >
+            <TfiAngleDown />
+          </Link>
+          <div className="heading-deatilBox-home-Section">
+            <h2 className="shadow-text">Seize The Opportunity</h2>
+            <p className="w-[70%]">
+              Invest in Bolivia{"'"}s next major gold, silver, and copper
+              discovery with Itavi Mining Company{"'"}s Flagship Project -{" "}
+              <b>La Gran Española</b>
+            </p>
+            <div className="btn-box-Home-Section">
+              <Link href="https://wefunder.com/itavimining">
+                <p className="btn-txt-desctop">Invest Now</p>
+                <p className="btn-txt-mob">Invest</p>
+              </Link>
+              <Link href="/Investment">
+                <p className="btn-txt-desctop">Investment Details</p>
+                <p className="btn-txt-mob">Details</p>
+              </Link>
+            </div>
+            <form className="newlatter-form">
+              <div className="flex gap-3 items-center">
+                <input
+                  type="text"
+                  className="newlatter-input2"
+                  placeholder="Email"
+                />
+                <button type="submit">Get Updates</button>
+              </div>
+              <h3 className="text-center">
+                Enter your email to keep up with investor information.
+              </h3>
+            </form>
+          </div>
+
+          {/* <div className="home-vector-box">
+            <Image src={Prisma} alt="Prisma" height={"250"} width={"250"} />
+          </div> */}
+        </section>
+        {/* updates-hero-section */}
 
         {/* contact-section */}
         <section
@@ -1343,7 +1364,7 @@ export default function Home() {
           id="contact"
         >
           <Link
-            href="#legal"
+            href="#updates"
             className="absolute top-0 z-[999999] btn-design-top btn-design"
           >
             <TfiAngleUp />
@@ -1351,13 +1372,32 @@ export default function Home() {
           <div className="Text-Box contact-content-box flex items-center gap-6 justify-between relative z-10 px-[10%]">
             <div className="w-[60%] contact-content-container">
               <h2 className="w-full text-[68px] shadow-text">Contact</h2>
-              <div className="flex items-start gap-4">
-                <h3 className="text-9xl shadow-text contact-number">06</h3>
+              <div className="flex items-start gap-4 py-5">
+                <h3 className="text-9xl shadow-text contact-number numbers">
+                  06
+                </h3>
                 <p className="contact-content-box-para">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste
-                  quidem qui perspiciatis soluta nemo quaerat asperiores sint
-                  labore, reiciendis eaque? Earum deleniti odio accusantium,
-                  numquam fugiat facere.
+                  Got any question about our project? Want to know more about
+                  us? Please fill out the form, email us at:{" "}
+                  <b>
+                    <Link
+                      href="mailto:william@itavimining.com"
+                      target="blank"
+                      className="hover:underline"
+                    >
+                      william@itavimining.com
+                    </Link>
+                  </b>{" "}
+                  or contact us here:{" "}
+                  <b>
+                    <Link
+                      href="tel:6467700628"
+                      target="blank"
+                      className="hover:underline"
+                    >
+                      {"("}646{")"} 770-0628
+                    </Link>
+                  </b>
                 </p>
               </div>
             </div>

@@ -202,7 +202,7 @@ html {
   @apply h-screen w-full flex;
 }
 .Invest-Con-Section .Text-Box {
-  @apply bg-[#2B2D31] pl-[10%] py-[10%] max-[450px]:pt-[0%] flex flex-col justify-center w-[50%] max-[800px]:w-full;
+  @apply bg-[#2B2D31] pl-[4%] py-[10%] max-[450px]:pt-[0%] flex flex-col justify-center w-[50%] max-[800px]:w-full;
 }
 .Invest-Con-Section .Text-Box h4 {
   @apply text-white text-[48px] pt-[120px] w-[90%] font-extralight leading-[50px];
@@ -226,7 +226,7 @@ html {
   @apply text-[68px] font-extralight w-full leading-[70px] max-[651px]:text-[60px];
 }
 .WWeDo-Section .Second-div {
-  @apply flex gap-10 justify-start items-start;
+  @apply flex justify-start items-start;
 }
 .WWeDo-Section .Second-div h3 {
   @apply text-[170px] font-thin leading-[150px] max-[651px]:text-[120px];
@@ -563,16 +563,17 @@ html {
   display: none;
   position: absolute;
   background-color: #f1f1f1;
-  min-width: 160px;
+  min-width: 200px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
+  font-size: 12px;
 }
 
 .about-dropdown-content a,
 .opportunity-dropdown-content a,
 .documentation-dropdown-content a {
   color: black;
-  padding: 12px 16px;
+  padding: 6px 16px;
   text-decoration: none;
   display: block;
 }
@@ -1348,4 +1349,9 @@ html {
   @apply h-screen bg-no-repeat bg-cover w-screen px-[10%] pt-[150px] text-white relative;
   background-image: linear-gradient(rgba(0, 0, 1, 0.7), rgba(0, 0, 1, 0.7)),
     url("../public/img/goldbg.webp");
+}
+
+
+.numbers{
+  @apply !hidden;
 }
