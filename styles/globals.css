@@ -544,7 +544,8 @@ html {
 
 .about-dropbtn,
 .opportunity-dropbtn,
-.documentation-dropbtn {
+.documentation-dropbtn,
+.legal-dropbtn {
   color: white;
   font-size: 16px;
   border: none;
@@ -552,17 +553,19 @@ html {
 
 .about-dropdown,
 .opportunity-dropdown,
-.documentation-dropdown {
+.documentation-dropdown,
+.legal-dropdown {
   position: relative;
   display: inline-block;
 }
 
 .about-dropdown-content,
 .opportunity-dropdown-content,
-.documentation-dropdown-content {
+.documentation-dropdown-content,
+.legal-dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f1f1f1;
+  background-color: #121212;
   min-width: 200px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
@@ -572,8 +575,9 @@ html {
 .about-dropdown-content a,
 .opportunity-dropdown-content a,
 .documentation-dropdown-content a,
+.legal-dropdown-content a,
 .documentation-dropdown-content div {
-  color: black;
+  color: #f1f1f1;
   padding: 6px 16px;
   text-decoration: none;
   display: block;
@@ -583,29 +587,33 @@ html {
 .about-dropdown-content a:hover,
 .opportunity-dropdown-content a:hover,
 .documentation-dropdown-content a:hover,
-.documentation-dropdown-content div:hover
- {
-  background-color: #ddd;
+.legal-dropdown-content a:hover,
+.documentation-dropdown-content div:hover {
+  background-color: #0000009a;
 }
 
 .about-dropdown:hover .about-dropdown-content,
 .opportunity-dropdown:hover .opportunity-dropdown-content,
-.documentation-dropdown:hover .documentation-dropdown-content {
+.documentation-dropdown:hover .documentation-dropdown-content,
+.legal-dropdown:hover .legal-dropdown-content {
   display: block;
 }
 .about-dropbtn .right-drop-ico,
 .opportunity-dropbtn .right-drop-ico,
-.documentation-dropbtn .right-drop-ico {
+.documentation-dropbtn .right-drop-ico,
+.legal-dropbtn .right-drop-ico {
   @apply hidden;
 }
 .about-dropbtn:hover .right-drop-ico,
 .opportunity-dropbtn:hover .right-drop-ico,
-.documentation-dropbtn:hover .right-drop-ico {
+.documentation-dropbtn:hover .right-drop-ico,
+.legal-dropbtn:hover .right-drop-ico {
   @apply flex;
 }
 .about-dropbtn:hover .down-drop-ico,
 .opportunity-dropbtn:hover .down-drop-ico,
-.documentation-dropbtn:hover .down-drop-ico {
+.documentation-dropbtn:hover .down-drop-ico,
+.legal-dropbtn:hover .down-drop-ico {
   @apply hidden;
 }
 
@@ -1006,7 +1014,8 @@ html {
     position: absolute;
     bottom: 30%;
   }
-  .Contact-Section h2, .legal-heading {
+  .Contact-Section h2,
+  .legal-heading {
     width: 25%;
     font-size: 40px !important;
     font-weight: 200;
@@ -1355,7 +1364,6 @@ html {
     url("../public/img/goldbg.webp");
 }
 
-
-.numbers{
+.numbers {
   @apply !hidden;
 }

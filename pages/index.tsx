@@ -579,16 +579,16 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="documentation-dropdown">
+          <div className="legal-dropdown">
             <div
               onClick={handleFirst3}
-              className="documentation-dropbtn shadow-text flex items-center gap-2"
+              className="legal-dropbtn shadow-text flex items-center gap-2"
             >
               <p className="cursor-pointer">Legal</p>
               <FaAngleDown className="down-drop-ico" />
               <FaAngleRight className="right-drop-ico" />
             </div>
-            <div className="documentation-dropdown-content">
+            <div className="legal-dropdown-content">
               <Link href="/faqs" onClick={handleSecond3}>
                 FAQs
               </Link>
