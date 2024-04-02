@@ -370,19 +370,13 @@ export default function Home() {
               {mobAboutTab && (
                 <div className="flex flex-col gap-2 items-end">
                   <div onClick={handleShowTabs}>
-                    <Link href="/values">
-                      Our Value
-                    </Link>
+                    <Link href="/values">Our Value</Link>
                   </div>
                   <div onClick={handleShowTabs}>
-                    <Link href="/history">
-                      History
-                    </Link>
+                    <Link href="/history">History</Link>
                   </div>
                   <div onClick={handleShowTabs}>
-                    <Link href="conviction">
-                      Invest With Conviction
-                    </Link>
+                    <Link href="conviction">Invest With Conviction</Link>
                   </div>
                 </div>
               )}
@@ -507,6 +501,30 @@ export default function Home() {
         )}
 
         <div className="flex justify-center space-x-4 main-tabs">
+          <div className="documentation-dropdown">
+            <Link
+              href="#home"
+              onClick={handleFirst3}
+              className="documentation-dropbtn hover:underline shadow-text flex items-center gap-2"
+            >
+              <p>Home</p>
+              <FaAngleDown className="down-drop-ico" />
+              <FaAngleRight className="right-drop-ico" />
+            </Link>
+            <div className="documentation-dropdown-content">
+              <Link
+                href="https://wefunder.com/itavimining"
+                target="blank"
+                onClick={handleSecond3}
+              >
+                Invest
+              </Link>
+              <Link href="/Investment" onClick={handleThird3}>
+                Investment Details
+              </Link>
+            </div>
+          </div>
+
           <div className="about-dropdown">
             <Link
               href="#about"
@@ -518,15 +536,9 @@ export default function Home() {
               <FaAngleRight className="right-drop-ico" />
             </Link>
             <div className="about-dropdown-content">
-              <Link href="/values">
-                Our Values
-              </Link>
-              <Link href="/history">
-                History
-              </Link>
-              <Link href="/conviction">
-                Invest With Conviction
-              </Link>
+              <Link href="/values">Our Values</Link>
+              <Link href="/history">History</Link>
+              <Link href="/conviction">Invest With Conviction</Link>
             </div>
           </div>
 
@@ -606,30 +618,6 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="documentation-dropdown">
-            <Link
-              href="#updates"
-              onClick={handleFirst3}
-              className="documentation-dropbtn hover:underline shadow-text flex items-center gap-2"
-            >
-              <p>Updates</p>
-              <FaAngleDown className="down-drop-ico" />
-              <FaAngleRight className="right-drop-ico" />
-            </Link>
-            <div className="documentation-dropdown-content">
-              <Link
-                href="https://wefunder.com/itavimining"
-                target="blank"
-                onClick={handleSecond3}
-              >
-                Invest
-              </Link>
-              <Link href="/Investment" onClick={handleThird3}>
-                Investment Details
-              </Link>
-            </div>
-          </div>
-
           <Link href="#contact" className="hover:underline shadow-text">
             Contact
           </Link>
@@ -674,11 +662,63 @@ export default function Home() {
 
       {/* sections-snaper */}
       <div className="conatiner-box">
+        {/* updates-hero-section */}
+        <section className="Home-Section sections relative" id="home">
+          <Link
+            href="#about"
+            className="absolute bottom-0 z-[999999] btn-design-bottom btn-design"
+          >
+            <TfiAngleDown />
+          </Link>
+          <div className="heading-deatilBox-home-Section">
+            <h2 className="shadow-text">Seize The Opportunity</h2>
+            <p className="w-[70%]">
+              Invest in Bolivia{"'"}s next major gold, silver, and copper
+              discovery with Itavi Mining Company{"'"}s Flagship Project -{" "}
+              <b>La Gran Española</b>
+            </p>
+            <div className="btn-box-Home-Section">
+              <Link href="https://wefunder.com/itavimining">
+                <p className="btn-txt-desctop">Invest Now</p>
+                <p className="btn-txt-mob">Invest</p>
+              </Link>
+              <Link href="/Investment">
+                <p className="btn-txt-desctop">Investment Details</p>
+                <p className="btn-txt-mob">Details</p>
+              </Link>
+            </div>
+            <form className="newlatter-form">
+              <div className="flex gap-3 items-center">
+                <input
+                  type="text"
+                  className="newlatter-input2"
+                  placeholder="Email"
+                />
+                <button type="submit">Get Updates</button>
+              </div>
+              <h3 className="text-center">
+                Enter your email to keep up with investor information.
+              </h3>
+            </form>
+          </div>
+
+          {/* <div className="home-vector-box">
+            <Image src={Prisma} alt="Prisma" height={"250"} width={"250"} />
+          </div> */}
+        </section>
+        {/* updates-hero-section */}
+
         {/* About-Us-section */}
         <section
           className="slider-container About-Section sections relative"
           id="about"
         >
+          <Link
+            href="#home"
+            className="absolute top-0 z-[999999] btn-design-top btn-design"
+          >
+            <TfiAngleUp />
+          </Link>
           <Link
             href="#opportunity"
             className="absolute bottom-0 z-[999999] btn-design-bottom btn-design"
@@ -704,9 +744,24 @@ export default function Home() {
               </p>
             </div>
             <div className="flex items-center gap-6">
-              <Link href="/values" className="bg-[#ca8a04] text-[#fff] px-6 py-2 rounded-sm">Our Values</Link>
-              <Link href="/history" className="bg-[#ca8a04] text-[#fff] px-6 py-2 rounded-sm">History</Link>
-              <Link href="/conviction" className="bg-[#ca8a04] text-[#fff] px-6 py-2 rounded-sm">Invest With Conviction</Link>
+              <Link
+                href="/values"
+                className="bg-[#ca8a04] text-[#fff] px-6 py-2 rounded-sm"
+              >
+                Our Values
+              </Link>
+              <Link
+                href="/history"
+                className="bg-[#ca8a04] text-[#fff] px-6 py-2 rounded-sm"
+              >
+                History
+              </Link>
+              <Link
+                href="/conviction"
+                className="bg-[#ca8a04] text-[#fff] px-6 py-2 rounded-sm"
+              >
+                Invest With Conviction
+              </Link>
             </div>
           </div>
           {/* <div className="slider-section">
@@ -1099,7 +1154,7 @@ export default function Home() {
             <TfiAngleUp />
           </Link>
           <Link
-            href="#legal"
+            href="#contact"
             className="absolute bottom-0 z-[999999] btn-design-bottom btn-design"
           >
             <TfiAngleDown />
@@ -1259,58 +1314,6 @@ export default function Home() {
           </div>
         </section> */}
         {/* legal-section */}
-
-        {/* updates-hero-section */}
-        <section className="Home-Section sections relative" id="updates">
-          <Link
-            href="#legal"
-            className="absolute top-0 z-[999999] btn-design-top btn-design"
-          >
-            <TfiAngleUp />
-          </Link>
-          <Link
-            href="#contact"
-            className="absolute bottom-0 z-[999999] btn-design-bottom btn-design"
-          >
-            <TfiAngleDown />
-          </Link>
-          <div className="heading-deatilBox-home-Section">
-            <h2 className="shadow-text">Seize The Opportunity</h2>
-            <p className="w-[70%]">
-              Invest in Bolivia{"'"}s next major gold, silver, and copper
-              discovery with Itavi Mining Company{"'"}s Flagship Project -{" "}
-              <b>La Gran Española</b>
-            </p>
-            <div className="btn-box-Home-Section">
-              <Link href="https://wefunder.com/itavimining">
-                <p className="btn-txt-desctop">Invest Now</p>
-                <p className="btn-txt-mob">Invest</p>
-              </Link>
-              <Link href="/Investment">
-                <p className="btn-txt-desctop">Investment Details</p>
-                <p className="btn-txt-mob">Details</p>
-              </Link>
-            </div>
-            <form className="newlatter-form">
-              <div className="flex gap-3 items-center">
-                <input
-                  type="text"
-                  className="newlatter-input2"
-                  placeholder="Email"
-                />
-                <button type="submit">Get Updates</button>
-              </div>
-              <h3 className="text-center">
-                Enter your email to keep up with investor information.
-              </h3>
-            </form>
-          </div>
-
-          {/* <div className="home-vector-box">
-            <Image src={Prisma} alt="Prisma" height={"250"} width={"250"} />
-          </div> */}
-        </section>
-        {/* updates-hero-section */}
 
         {/* contact-section */}
         <section
