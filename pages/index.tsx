@@ -370,18 +370,18 @@ export default function Home() {
               {mobAboutTab && (
                 <div className="flex flex-col gap-2 items-end">
                   <div onClick={handleShowTabs}>
-                    <Link href="#about" onClick={handleSecond}>
+                    <Link href="/values">
                       Our Value
                     </Link>
                   </div>
                   <div onClick={handleShowTabs}>
-                    <Link href="#about" onClick={handleThird}>
+                    <Link href="/history">
                       History
                     </Link>
                   </div>
                   <div onClick={handleShowTabs}>
-                    <Link href="#about" onClick={handleForth}>
-                      Invest with conviction
+                    <Link href="conviction">
+                      Invest With Conviction
                     </Link>
                   </div>
                 </div>
@@ -518,14 +518,14 @@ export default function Home() {
               <FaAngleRight className="right-drop-ico" />
             </Link>
             <div className="about-dropdown-content">
-              <Link href="#about" onClick={handleSecond}>
-                Our Value
+              <Link href="/values">
+                Our Values
               </Link>
-              <Link href="#about" onClick={handleThird}>
+              <Link href="/history">
                 History
               </Link>
-              <Link href="#about" onClick={handleForth}>
-                Invest with conviction
+              <Link href="/conviction">
+                Invest With Conviction
               </Link>
             </div>
           </div>
@@ -675,68 +675,41 @@ export default function Home() {
       {/* sections-snaper */}
       <div className="conatiner-box">
         {/* About-Us-section */}
-        <section className="slider-container sections relative" id="about">
+        <section
+          className="slider-container About-Section sections relative"
+          id="about"
+        >
           <Link
             href="#opportunity"
             className="absolute bottom-0 z-[999999] btn-design-bottom btn-design"
           >
             <TfiAngleDown />
           </Link>
-          <div className="Side-Nav" id="Side-Nav">
-            <div className="Uper-div">
-              <h2 onClick={handleFirst} className="shadow-text">
-                About <b>Us</b>
-              </h2>
+
+          <div className="About-content-container flex flex-col items-center gap-6 text-center justify-center">
+            <h2 className="shadow-text">About Us</h2>
+            <div className="About-Content-Box flex flex-col items-center w-full justify-center pb-2">
+              <h3 className="numbers shadow-text">02</h3>
+              <p className="w-[70%]">
+                We are more than prospectors; We are visionaries. Our journey
+                begins where the Andean peaks kiss the sky and the earth cradles
+                untold riches. We are a Bolivian mining company driven by a
+                passion for discovery and a commitment to responsible
+                development. Our flagship project, La Gran Española,{" "}
+                <b>spans over 6,000 acres</b>
+                , boasting a rich history of exploration and the potential to
+                become a major gold, silver, and copper producer. <br /> Our
+                pursuit of Bolivia{"'"}s mineral wealth is guided by our
+                dedication to sustainable and ethical practices.
+              </p>
             </div>
-            <div className="Progress-Bar">
-              <div
-                className="slider-progress"
-                style={{ width: `${(currentSection - 1) * 33.33}%` }}
-              ></div>
-            </div>
-            <div className="Lower-div">
-              <p onClick={handleSecond} className="shadow-text">
-                OUR VALUES
-              </p>
-              <p onClick={handleThird} className="shadow-text">
-                HISTORY
-              </p>
-              <p onClick={handleForth} className="shadow-text">
-                INVEST WITH CONVICTION
-              </p>
+            <div className="flex items-center gap-6">
+              <Link href="/values" className="bg-[#ca8a04] text-[#fff] px-6 py-2 rounded-sm">Our Values</Link>
+              <Link href="/history" className="bg-[#ca8a04] text-[#fff] px-6 py-2 rounded-sm">History</Link>
+              <Link href="/conviction" className="bg-[#ca8a04] text-[#fff] px-6 py-2 rounded-sm">Invest With Conviction</Link>
             </div>
           </div>
-          <div className="slider">
-            <div
-              className="slider-content"
-              style={{
-                transform: `translateX(-${(currentSection - 1) * 100}vw)`,
-              }}
-            >
-              <div className="slider-section">
-                <section className="About-Section">
-                  <div className="About-Box">
-                    <h2 className="shadow-text">About Us</h2>
-                    <div className="Second-div">
-                      <h3 className="numbers shadow-text">02</h3>
-                      <p>
-                        We are more than prospectors; We are visionaries. Our
-                        journey begins where the Andean peaks kiss the sky and
-                        the earth cradles untold riches. We are a Bolivian
-                        mining company driven by a passion for discovery and a
-                        commitment to responsible development. Our flagship
-                        project, La Gran Española, <b>spans over 6,000 acres</b>
-                        , boasting a rich history of exploration and the
-                        potential to become a major gold, silver, and copper
-                        producer. <br /> Our pursuit of Bolivia{"'"}s mineral
-                        wealth is guided by our dedication to sustainable and
-                        ethical practices.
-                      </p>
-                    </div>
-                  </div>
-                </section>
-              </div>
-              <div className="slider-section">
+          {/* <div className="slider-section">
                 <section className="Our-Value-Section">
                   <div className="w-fit">
                     <Image
@@ -853,26 +826,7 @@ export default function Home() {
                     />
                   </div>
                 </section>
-              </div>
-            </div>
-          </div>
-          <button
-            className="slider-button btn-design-right btn-design"
-            onClick={handlePrevious}
-            style={{ visibility: currentSection === 1 ? "hidden" : "visible" }}
-          >
-            <TfiAngleLeft />
-          </button>
-          <button
-            className="slider-button btn-design-left btn-design"
-            onClick={handleNext}
-            style={{
-              visibility:
-                currentSection === totalSections ? "hidden" : "visible",
-            }}
-          >
-            <TfiAngleRight />
-          </button>
+              </div> */}
         </section>
         {/* About-Us-section */}
 
