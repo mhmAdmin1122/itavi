@@ -1,19 +1,12 @@
 import Head from "next/head";
 import Link from "next/link";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import Logo from "@/public/img/Logo.svg";
-import Prisma from "@/public/img/goldQuartz.png";
 import { Montserrat } from "next/font/google";
-import OurValueBG from "@/public/img//Our-Value-BG.png";
-import WorkImage from "@/public/img/InvestWithConviction.jpg";
-import bolivia from "@/public/img/Bolivia Map Image.png";
-import CopperImage from "@/public/img/Copper-Image.png";
 import TRDownloadBtn from "./components/TRDownloadBtn";
 import EMDDownloadBtn from "./components/EMDDownloadBtn";
 import PPMDownloadBtn from "./components/PPMDownloadBtn";
-import ScaleRes from "@/public/img/LaGranEspañolaleft.png";
-import EmergingMarket from "@/public/img/LaGranEspañolaright.png";
 import weFunderIco from "@/public/img/wefunder.png";
 import {
   TfiAngleDown,
@@ -331,6 +324,7 @@ export default function Home() {
     setCarousal10(false);
     setCarousal11((current) => !current);
   };
+
   const mobAboutTabOpen = () => {
     setMobAboutTab((current: any) => !current);
   };
@@ -340,6 +334,34 @@ export default function Home() {
   const mobDocumentationTabOpen = () => {
     setMobDocumentationTab((current: any) => !current);
   };
+  const handle1Download = () => {
+    const pdfUrl = "/pdf/ppm.pdf";
+    const link = document.createElement("a");
+    link.href = pdfUrl;
+    link.setAttribute("download", "privateplacement.pdf");
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+  const handle2Download = () => {
+    const pdfUrl = "/pdf/Emd.pdf";
+    const link = document.createElement("a");
+    link.href = pdfUrl;
+    link.setAttribute("download", "pitchdeck.pdf");
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+  const handle3Download = () => {
+    const pdfUrl = "/pdf/TR.pdf";
+    const link = document.createElement("a");
+    link.href = pdfUrl;
+    link.setAttribute("download", "technicalreport.pdf");
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <div className={`relative ${montserrat.className}`}>
       <Head>
@@ -390,29 +412,19 @@ export default function Home() {
               {mobOppertunityTab && (
                 <div className="flex flex-col gap-2 items-end">
                   <div onClick={handleShowTabs}>
-                    <Link href="#opportunity" onClick={handleSixth2}>
-                      Investor Rewards
-                    </Link>
+                    <Link href="/reward">Investor Rewards</Link>
                   </div>
                   <div onClick={handleShowTabs}>
-                    <Link href="#opportunity" onClick={handleSecond2}>
-                      Visionaries
-                    </Link>
+                    <Link href="/visionaries">Visionaries</Link>
                   </div>
                   <div onClick={handleShowTabs}>
-                    <Link href="#opportunity" onClick={handleThird2}>
-                      Scale of Resources
-                    </Link>
+                    <Link href="/resources">Scale of Resources</Link>
                   </div>
                   <div onClick={handleShowTabs}>
-                    <Link href="#opportunity" onClick={handleFourth2}>
-                      Emerging Markets
-                    </Link>
+                    <Link href="/market">Emerging Markets</Link>
                   </div>
                   <div onClick={handleShowTabs}>
-                    <Link href="#opportunity" onClick={handleFifth2}>
-                      Copper Concentration
-                    </Link>
+                    <Link href="/copper">Copper Concentration</Link>
                   </div>
                 </div>
               )}
@@ -444,16 +456,6 @@ export default function Home() {
               )}
             </div>
 
-            <div onClick={handleShowTabs}>
-              <Link href="#legal" className="hover:underline shadow-text">
-                Legal
-              </Link>
-            </div>
-            <div onClick={handleShowTabs}>
-              <Link href="#updates" className="hover:underline shadow-text">
-                Updates
-              </Link>
-            </div>
             <div onClick={handleShowTabs}>
               <Link href="#contact" className="hover:underline shadow-text">
                 Contact
@@ -553,43 +555,27 @@ export default function Home() {
               <FaAngleRight className="right-drop-ico" />
             </Link>
             <div className="opportunity-dropdown-content">
-              <Link href="#opportunity" onClick={handleSixth2}>
-                Investor Rewards
-              </Link>
-              <Link href="#opportunity" onClick={handleSecond2}>
-                Visionaries
-              </Link>
-              <Link href="#opportunity" onClick={handleThird2}>
-                Scale of Resources
-              </Link>
-              <Link href="#opportunity" onClick={handleFourth2}>
-                Emerging Markets
-              </Link>
-              <Link href="#opportunity" onClick={handleFifth2}>
-                Copper Concentration
-              </Link>
+              <Link href="/reward">Investor Rewards</Link>
+              <Link href="/visionaries">Visionaries</Link>
+              <Link href="/resources">Scale of Resources</Link>
+              <Link href="/market">Emerging Markets</Link>
+              <Link href="/copper">Copper Concentration</Link>
             </div>
           </div>
 
           <div className="documentation-dropdown">
-            <div
-              onClick={handleFirst3}
-              className="documentation-dropbtn shadow-text flex items-center gap-2"
+            <Link
+              href="#documentation"
+              className="documentation-dropbtn hover:underline shadow-text flex items-center gap-2"
             >
               <p className="cursor-pointer">Documentation</p>
               <FaAngleDown className="down-drop-ico" />
               <FaAngleRight className="right-drop-ico" />
-            </div>
+            </Link>
             <div className="documentation-dropdown-content">
-              <Link href="#documentation" onClick={handleSecond3}>
-                Private Placement Memorandum
-              </Link>
-              <Link href="#documentation" onClick={handleThird3}>
-                Company Pitch Deck
-              </Link>
-              <Link href="#documentation" onClick={handlefour3}>
-                Property Technical Report
-              </Link>
+              <div onClick={handle1Download}>Private Placement Memorandum</div>
+              <div onClick={handle2Download}>Company Pitch Deck</div>
+              <div onClick={handle3Download}>Property Technical Report</div>
             </div>
           </div>
 
@@ -662,7 +648,7 @@ export default function Home() {
 
       {/* sections-snaper */}
       <div className="conatiner-box">
-        {/* updates-hero-section */}
+        {/* home-hero-section */}
         <section className="Home-Section sections relative" id="home">
           <Link
             href="#about"
@@ -679,17 +665,17 @@ export default function Home() {
                 <b>La Gran Española</b>
               </p>
             </div>
+            <div className="btn-box-Home-Section">
+              <Link href="https://wefunder.com/itavimining">
+                <p className="btn-txt-desctop">Invest Now</p>
+                <p className="btn-txt-mob">Invest</p>
+              </Link>
+              <Link href="/Investment">
+                <p className="btn-txt-desctop">Investment Details</p>
+                <p className="btn-txt-mob">Details</p>
+              </Link>
+            </div>
             <div className="flex flex-col items-center gap-6">
-              <div className="btn-box-Home-Section">
-                <Link href="https://wefunder.com/itavimining">
-                  <p className="btn-txt-desctop">Invest Now</p>
-                  <p className="btn-txt-mob">Invest</p>
-                </Link>
-                <Link href="/Investment">
-                  <p className="btn-txt-desctop">Investment Details</p>
-                  <p className="btn-txt-mob">Details</p>
-                </Link>
-              </div>
               <form className="newlatter-form">
                 <div className="flex gap-3 items-center">
                   <input
@@ -710,7 +696,7 @@ export default function Home() {
             <Image src={Prisma} alt="Prisma" height={"250"} width={"250"} />
           </div> */}
         </section>
-        {/* updates-hero-section */}
+        {/* home-hero-section */}
 
         {/* About-Us-section */}
         <section
@@ -734,7 +720,7 @@ export default function Home() {
             <h2 className="shadow-text">About Us</h2>
             <div className="About-Content-Box flex flex-col items-center w-full justify-center pb-2">
               <h3 className="numbers shadow-text">02</h3>
-              <p className="w-[70%]">
+              <p className="w-[70%] text-left">
                 We are more than prospectors; We are visionaries. Our journey
                 begins where the Andean peaks kiss the sky and the earth cradles
                 untold riches. We are a Bolivian mining company driven by a
@@ -768,130 +754,12 @@ export default function Home() {
               </Link>
             </div>
           </div>
-          {/* <div className="slider-section">
-                <section className="Our-Value-Section">
-                  <div className="w-fit">
-                    <Image
-                      src={OurValueBG}
-                      alt="Background-Image"
-                      className="h-screen"
-                    />
-                  </div>
-                  <div className="Text-Box">
-                    <h4>
-                      Our <b>Values</b>
-                    </h4>
-                    <p>
-                      At the core of Itavi Mining lie our values, the bedrock of
-                      our commitment to responsible mining. <br />
-                      <b>Ambition:</b> To reach beyond the horizon. Our passion
-                      fuels our pursuit of mineral treasures and our ambition
-                      knows no bounds. <br />
-                      <b>Investor Focus:</b> We believe in delivering strong
-                      returns through the strategic development of our assets.{" "}
-                      <br />
-                      <b>Sustainability:</b> We respect the land, leaving a
-                      legacy of responsible mining. We have a strong commitment
-                      to minimizing our environmental footprint. <br />
-                      <b>Innovation:</b> Pioneering modern methods to explore,
-                      delineate, and develop with a sustainable touch. <br />
-                      <b>Integrity:</b> We uphold the highest standards
-                      navigating the mining industry and Bolivian legislation
-                      with transparency, ethical practices, and a steadfast
-                      commitment to legal compliance. <br />
-                    </p>
-                  </div>
-                </section>
-              </div>
-              <div className="slider-section">
-                <section className="History-Section">
-                  <div className="Text-Box">
-                    <div className="Evolution">
-                      <h4>1980</h4>
-                      <p className="pl-[12px]">
-                        EXPROMIN conducts initial explorations at La Española,
-                        including surface sampling and local geological mapping.
-                      </p>
-                    </div>
-                    <div className="Evolution">
-                      <h4>1990</h4>
-                      <p className="pl-[12px]">
-                        Initial exploration efforts reveal a resource of 500,000
-                        ounces of Gold.
-                      </p>
-                    </div>
-                    <div className="Evolution">
-                      <h4>2000</h4>
-                      <p className="pl-[6px]">
-                        The United States Geological Survey (USGS) confirms
-                        high-sulfidation epithermal deposit of gold, silver, and
-                        copper.
-                      </p>
-                    </div>
-                    <div className="Evolution">
-                      <h4>2008</h4>
-                      <p className="pl-[8px]">
-                        Newmont Gold Corporation enters La Española,
-                        implementing systematic sampling in the Santa Rosa
-                        sector and launching a detailed geological exploration
-                        program, including drilling diamond core holes.
-                      </p>
-                    </div>
-                    <div className="Evolution">
-                      <h4>Today</h4>
-                      <p>
-                        Itavi Mining Company acquires La Gran Española and
-                        initiates a comprehensive exploration program using
-                        modern technologies and drilling techniques. Join us on
-                        this quest. Invest in posterity!
-                      </p>
-                    </div>
-                  </div>
-                </section>
-              </div>
-              <div className="slider-section">
-                <section className="Invest-Con-Section">
-                  <div className="Text-Box">
-                    <h4>Invest With Conviction</h4>
-                    <p>
-                      At Itavi Mining, we envision a future where responsible
-                      mining powers progress. Our foundation rests on
-                      transparency, ethical practices, and an unwavering
-                      commitment to responsible mining.
-                    </p>
-                    <p>
-                      Market Presence: The NYSE-listed New Pacific Metals Corp
-                      (NEWP) operates nearby (market cap of $168M as of
-                      3/12/24.) Their presence validates the region{"'"}s vast
-                      potential.
-                    </p>
-                    <p>
-                      Expertise: Our team brings decades of experience in
-                      successful Bolivian mining projects and our flagship La
-                      Gran Española prospect boasts documented potential
-                      validated by past exploration by major industry players.
-                    </p>
-                    <p>
-                      Track Record: Our track record is a testament to our
-                      dedication to both mineral exploration and the well-being
-                      of the environment.
-                    </p>
-                  </div>
-                  <div className="w-full imgebox">
-                    <Image
-                      src={WorkImage}
-                      alt="Background-Image"
-                      className="h-screen w-full"
-                    />
-                  </div>
-                </section>
-              </div> */}
         </section>
         {/* About-Us-section */}
 
         {/* Opportunity-section */}
         <section
-          className="slider-container sections relative"
+          className="slider-container sections WWeDo-Section relative"
           id="opportunity"
         >
           <Link
@@ -906,249 +774,52 @@ export default function Home() {
           >
             <TfiAngleDown />
           </Link>
-          <div className="Side-Nav" id="Side-Nav">
-            <div className="Uper-div">
-              <h2 onClick={handleFirst2} className="shadow-text">
-                The <b>Opportunity</b>
-              </h2>
+          <div>
+            <div className="video-container">
+              <video
+                className="absolute top-0 left-0 w-full h-full object-cover z-0"
+                autoPlay
+                loop
+                muted
+              >
+                <source src="/video/dron2video.mp4" type="video/mp4" />
+              </video>
+              <div className="absolute top-0 left-0 w-full h-full object-cover z-4 bg-[#0000009a]"></div>
             </div>
-            <div className="Progress-Bar">
-              <div
-                className="slider-progress"
-                style={{ width: `${(current2Section - 1) * 25}%` }}
-              ></div>
-            </div>
-            <div className="Lower-div">
-              <p className="shadow-text" onClick={handleSixth2}>
-                INVESTOR REWARDS
-              </p>
-              <p className="shadow-text" onClick={handleSecond2}>
-                VISIONARIES
-              </p>
-              <p className="shadow-text" onClick={handleThird2}>
-                SCALE OF RESOURCES
-              </p>
-              <p className="shadow-text" onClick={handleFourth2}>
-                EMERGING MARKETS
-              </p>
-              <p className="shadow-text" onClick={handleFifth2}>
-                HUGE COPPER CONCENTRATION
-              </p>
-            </div>
-          </div>
-          <div className="slider">
-            <div
-              className="slider-content"
-              style={{
-                transform: `translateX(-${(current2Section - 1) * 100}vw)`,
-              }}
-            >
-              <div className="slider-section">
-                <section className="WWeDo-Section">
-                  <div className="video-container">
-                    <video
-                      className="absolute top-0 left-0 w-full h-full object-cover z-0"
-                      autoPlay
-                      loop
-                      muted
-                    >
-                      <source src="/video/dron2video.mp4" type="video/mp4" />
-                    </video>
-                    <div className="absolute top-0 left-0 w-full h-full object-cover z-4 bg-[#0000009a]"></div>
-                  </div>
-                  <div className="WWeDo-Box relative z-10">
-                    <h2 className="shadow-text">The Opportunity</h2>
-                    <div className="Second-div">
-                      <div className="flex flex-col items-start gap-6">
-                        <h3 className="numbers shadow-text">03</h3>
-                      </div>
-                      <p>
-                        Tap into Bolivia{"'"}s growing mining sector, supported
-                        by a pro-development government. Itavi Mining{"'"}s
-                        strategic approach and commitment to ethical practices
-                        mitigate risk and position the company for long-term
-                        success. This ground-floor opportunity offers investors
-                        the potential for future partnerships, acquisitions, and
-                        significant returns on their investment. Join us. Invest
-                        in La Gran Española with conviction.
-                      </p>
-                    </div>
-                  </div>
-                </section>
+
+            <div className="flex items-center gap-6 relative flex-col justify-center">
+              <h2 className="shadow-text text-center">The Opportunity</h2>
+              <div className="flex flex-col items-center justify-center gap-4">
+                <div className="flex flex-col items-start gap-6">
+                  <h3 className="numbers shadow-text">03</h3>
+                </div>
+                <p className="w-[70%]">
+                  Tap into Bolivia{"'"}s growing mining sector, supported by a
+                  pro-development government. Itavi Mining{"'"}s strategic
+                  approach and commitment to ethical practices mitigate risk and
+                  position the company for long-term success. This ground-floor
+                  opportunity offers investors the potential for future
+                  partnerships, acquisitions, and significant returns on their
+                  investment. Join us. Invest in La Gran Española with
+                  conviction.
+                </p>
               </div>
-
-              <div className="slider-section">
-                <section className="investorReward-Section h-screen px-[70px] pt-[150px] max-[650px]:pt-[100px] flex flex-col items-center justify-center">
-                  <div className="Text-Box flex flex-col gap-4 text-[#fff] ">
-                    <h4 className="text-5xl text-wrap  max-[650px]:text-4xl">
-                      Investor Rewards
-                    </h4>
-                    <p className=" w-[60%] max-[800px]:w-[90%] max-[651px]:w-full">
-                      We value our investors{"'"}s support. As a token of our
-                      gratitude, we offer following rewards to you:
-                    </p>
-                    <ol className="list-decimal w-[60%] listbox max-[800px]:w-[90%] max-[651px]:w-[100%]">
-                      <li>
-                        <b>Humanitarian Impact:</b> For every investment of at
-                        least $1000, a donation will be made in your (the
-                        investor{"’"}s) name to the impoverished indigenous
-                        people of Bolivia. These communities, including the
-                        Highland Quechua and Armara tribes, provide our labor
-                        force and contribute to our project.
-                      </li>
-
-                      <li>
-                        <b>Precious Metals:</b> Depending on the investment
-                        level, investors will receive:
-                        <ul className="list-disc pl-8">
-                          <li>
-                            <b>Gold Bar</b> (1 gram): For investments of at
-                            least $10,000 but less than $100,000.
-                          </li>
-                          <li>
-                            <b>Gold Bar</b> (1 ounce): For investments of at
-                            least $100,000 but less than $250,000.
-                          </li>
-                        </ul>
-                      </li>
-
-                      <li>
-                        <b>Exploration Adventure:</b> For investments of at
-                        least $250,000, investors will enjoy an all-expense-paid
-                        trip to beautiful modern Santa Cruz, Bolivia, and the
-                        nearby wine region.
-                      </li>
-
-                      <p>
-                        Join us in shaping Bolivia{"’"}s mining landscape.{" "}
-                        <b>Invest with conviction.</b>
-                      </p>
-                    </ol>
-                  </div>
-                </section>
-              </div>
-
-              <div className="slider-section">
-                <section className="Visionaries-Section">
-                  <div className="Text-Box !w-full flex !flex-row items-center justify-start gap-10">
-                    <Image
-                      src={bolivia}
-                      alt="vis-pic"
-                      className="visionaries-image"
-                    />
-                    <div className="w-[700px]">
-                      <h4>Visionaries</h4>
-                      <p className="w-[60%] max-[650px]:w-[90%] !text-white">
-                        Our vision extends beyond the current project, subtly
-                        suggesting potential future acquisitions and/or
-                        partnerships with industry giants.
-                      </p>
-                      <p className="!text-white">
-                        Join us. Invest in La Gran Española with conviction.
-                      </p>
-                    </div>
-                  </div>
-                </section>
-              </div>
-
-              <div className="slider-section">
-                <section className="ScaleRes-Section">
-                  <div className="Text-Box">
-                    <h4>Scale of Resources</h4>
-                    <p className="text-white">
-                      Picture 6,000 acres of untamed Bolivian terrain—a canvas
-                      for mineral riches waiting to be unearthed. Our past
-                      exploration efforts revealed a tantalizing resource of
-                      500,000 ounces of Gold. But that{"’"}s just the beginning.
-                      Beneath the surface, copper veins pulse with promise.
-                      Investors, this is your ground-floor opportunity. Join us.
-                      Invest in La Gran Española with conviction.
-                    </p>
-                  </div>
-                  <div className="w-1/2 imagebox">
-                    <Image
-                      src={ScaleRes}
-                      alt=""
-                      className="h-full w-full select-none object-fill"
-                    />
-                  </div>
-                </section>
-              </div>
-
-              <div className="slider-section">
-                <section className="EmergingMarket-Section">
-                  <div className="w-1/3 imagebox">
-                    <Image
-                      src={EmergingMarket}
-                      alt=""
-                      className="h-full w-full select-none object-fill"
-                    />
-                  </div>
-                  <div className="Text-Box">
-                    <h4>Emerging Markets</h4>
-                    <p className="text-white">
-                      Yes, Bolivia is emerging. But we are not novices. Our team
-                      brings decades of experience. We navigate Bolivian
-                      regulations with finesse. Plus, government support fuels
-                      our drive.
-                    </p>
-                    <p className="text-white">
-                      Join us. Invest in La Gran Española with conviction.
-                    </p>
-                  </div>
-                </section>
-              </div>
-
-              <div className="slider-section">
-                <section className="HugeConcentration-Section">
-                  <div className="Text-Box">
-                    <h4>Huge Copper Concentration</h4>
-                    <p className="text-white">
-                      While gold and silver glitter on the horizon, it{"'"}s the
-                      prominent mention of copper that truly sets this
-                      opportunity apart. As the world pivots towards a green
-                      energy transition, the strategic inclusion of copper
-                      positions your investment at the forefront of this
-                      essential shift.
-                    </p>
-                    <p className="text-white">
-                      Join us. Invest in La Gran Española with conviction.
-                    </p>
-                  </div>
-                  <div className="w-1/2 imagebox">
-                    <Image
-                      src={CopperImage}
-                      alt=""
-                      className="h-full w-full select-none"
-                    />
-                  </div>
-                </section>
+              <div>
+                <Link
+                  href="/reward"
+                  className="bg-[#ca8a04] text-[#fff] px-6 py-2 rounded-sm"
+                >
+                  Opportunity Details
+                </Link>
               </div>
             </div>
           </div>
-          <button
-            className="slider-button btn-design-right btn-design"
-            onClick={handlePrevious2}
-            style={{ visibility: current2Section === 1 ? "hidden" : "visible" }}
-          >
-            <TfiAngleLeft />
-          </button>
-          <button
-            className="slider-button btn-design-left btn-design"
-            onClick={handleNext2}
-            style={{
-              visibility:
-                current2Section === total2Sections ? "hidden" : "visible",
-            }}
-          >
-            <TfiAngleRight />
-          </button>
         </section>
         {/* Opportunity-section */}
 
         {/* Documentation-section */}
         <section
-          className="slider-container sections relative"
+          className="slider-container sections TeamWork-Section relative"
           id="documentation"
         >
           <Link
@@ -1163,161 +834,24 @@ export default function Home() {
           >
             <TfiAngleDown />
           </Link>
-          <div className="Side-Nav" id="Side-Nav">
-            <div className="Uper-div">
-              <h2 onClick={handleFirst3} className="shadow-text">
-                Documentation for <b>Investors</b>
-              </h2>
-            </div>
-            <div className="Progress-Bar">
-              <div
-                className="slider-progress"
-                style={{ width: `${(current3Section - 1) * 33.5}%` }}
-              ></div>
-            </div>
-            <div className="Lower-div">
-              <p onClick={handleSecond3} className="shadow-text">
-                Private Placement Memorándum
-              </p>
-              <p onClick={handleThird3} className="shadow-text">
-                Company Pitch Deck
-              </p>
-              <p onClick={handlefour3} className="shadow-text">
-                Property Technical Report
-              </p>
+
+          <div className="flex flex-col items-center justify-center gap-6">
+            <h2 className="shadow-text !w-full text-center">Documentation</h2>
+            <p className="w-[70%]">
+              We provide full-transparency with our documentation to our
+              Investors. Make sure you go-through the important information
+              highlighted in the documents. In the next pages you{"'"}ll find a
+              Memorándum and Subscription Agreement, Pitch Deck, and Technical
+              Report.
+            </p>
+            <div className="flex items-center gap-6">
+              <PPMDownloadBtn />
+              <EMDDownloadBtn />
+              <TRDownloadBtn />
             </div>
           </div>
-          <div className="slider">
-            <div
-              className="slider-content"
-              style={{
-                transform: `translateX(-${(current3Section - 1) * 100}vw)`,
-              }}
-            >
-              <div className="slider-section">
-                <section className="Expert-Team-Section">
-                  <div className="Text-Box !w-[100%]">
-                    <h4>Private Placement Memorándum</h4>
-                    <p className="!text-white">
-                      Itavi Mining Company, S.A., a Wyoming Corporation, is
-                      offering a unique investment opportunity in the form of
-                      500,000 shares of Common Stock, valued at $1.00 per share,
-                      with a minimum subscription of 50,000 shares.
-                    </p>
-                    <PPMDownloadBtn />
-                  </div>
-                </section>
-              </div>
-
-              <div className="slider-section">
-                <section className="Celebrating-Section">
-                  <div className="Text-Box !w-[100%]">
-                    <h4>Company Pitch Deck</h4>
-                    <p className="!text-white !w-[550px]">
-                      Our flagship project, {'"'}La Gran Española{'"'}, holds
-                      the promise of becoming one of Bolivia{"'"}s largest gold,
-                      copper, and silver mines, with a potential 500,000 ounces
-                      of gold in resources. Join us in venture!
-                    </p>
-                    <EMDDownloadBtn />
-                  </div>
-                </section>
-              </div>
-
-              <div className="slider-section">
-                <section className="Expert-Team-Section">
-                  <div className="Text-Box !w-[100%]">
-                    <h4>Property Technical Report</h4>
-                    <p className="!text-white">
-                      The La Gran Española Project is strategically located in
-                      Bolivia{"'"}s Western Cordillera, past explorations
-                      underscored its geological significance.
-                    </p>
-                    <p className="!text-white">
-                      Based on drilling and sampling data, an inferred resource
-                      of 500,000 ounces of gold has been estimated.
-                    </p>
-                    <TRDownloadBtn />
-                  </div>
-                </section>
-              </div>
-            </div>
-          </div>
-          <button
-            className="slider-button btn-design-right btn-design"
-            onClick={handle3Previous}
-            style={{ visibility: current3Section === 1 ? "hidden" : "visible" }}
-          >
-            <TfiAngleLeft />
-          </button>
-          <button
-            className="slider-button btn-design-left btn-design"
-            onClick={handle3Next}
-            style={{
-              visibility:
-                current3Section === total3Sections ? "hidden" : "visible",
-            }}
-          >
-            <TfiAngleRight />
-          </button>
         </section>
         {/* Documentation-section */}
-
-        {/* legal-section */}
-        {/* <section className="legal-Section !w-full sections relative" id="legal">
-          <Link
-            href="#documentation"
-            className="absolute top-0 z-[999999] btn-design-top btn-design"
-          >
-            <TfiAngleUp />
-          </Link>
-          <Link
-            href="#updates"
-            className="absolute bottom-0 z-[999999] btn-design-bottom btn-design"
-          >
-            <TfiAngleDown />
-          </Link>
-          <div className="video-container">
-            <video
-              className="absolute top-0 left-0 w-full h-full object-cover z-0"
-              autoPlay
-              loop
-              muted
-            >
-              <source src="/video/ilamavideodron4.mp4" type="video/mp4" />
-            </video>
-            <div className="absolute top-0 left-0 w-full h-full object-cover z-4 bg-[#0000009a]"></div>
-          </div>
-          <div className="Text-Box relative z-10 px-[10%]">
-            <h2 className="!w-full shadow-text text-[68px] legal-heading">
-              Legal
-            </h2>
-            <div className="flex items-start gap-4">
-              <h4 className="text-9xl shadow-text legal-number numbers">05</h4>
-              <p className="w-[55%] py-5 legal-para">
-                Itavi Mining provides its investors simple and clear
-                information, leaving behind the trust. Check{" "}
-                <Link href="/faqs" className="text-[#ca8a04] underline">
-                  frequently asked questions
-                </Link>
-                ,{" "}
-                <Link href="/disclaimer" className="text-[#ca8a04] underline">
-                  Disclaimer
-                </Link>
-                ,{" "}
-                <Link href="/terms" className="text-[#ca8a04] underline">
-                  Terms & Conditions
-                </Link>
-                , and{" "}
-                <Link href="/privacy" className="text-[#ca8a04] underline">
-                  Privacy Policies
-                </Link>
-                .
-              </p>
-            </div>
-          </div>
-        </section> */}
-        {/* legal-section */}
 
         {/* contact-section */}
         <section
@@ -1364,6 +898,7 @@ export default function Home() {
             </div>
 
             <form className="mt-2 flex flex-col items-center justify-center gap-6 w-[40%] text-[#000] contact-Form-Box">
+              <h5 className="w-full text-white text-lg">Get In Touch</h5>
               <div className="flex items-center gap-4 w-full">
                 <input
                   type="text"

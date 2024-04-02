@@ -104,7 +104,7 @@ html {
 /*  Home-Page  */
 .Home-Section {
   background-image: url("../public/img/GoldSilver.jpg");
-  @apply flex flex-col items-center justify-around pt-20 text-[#fff] text-center bg-no-repeat bg-cover;
+  @apply flex flex-col items-center justify-around pb-20 pt-28 text-[#fff] text-center bg-no-repeat bg-cover;
 }
 .heading-deatilBox-home-Section h2 {
   @apply text-5xl font-bold;
@@ -449,8 +449,8 @@ html {
 /*  Contact Section  */
 .Contact-Section,
 .legal-Section {
-  @apply h-screen bg-no-repeat bg-cover w-screen px-[10%] text-white relative flex items-center justify-center;
-  background: linear-gradient(to right, #d91820, #f15a24) no-repeat;
+  @apply h-screen bg-no-repeat bg-cover w-screen px-[10%] text-white relative flex items-center justify-center !bg-[#121212];
+  /* background: linear-gradient(to right, #d91820, #f15a24) no-repeat; */
 }
 .Contact-Section .Text-Box,
 .legal-Section .Text-Box {
@@ -571,16 +571,20 @@ html {
 
 .about-dropdown-content a,
 .opportunity-dropdown-content a,
-.documentation-dropdown-content a {
+.documentation-dropdown-content a,
+.documentation-dropdown-content div {
   color: black;
   padding: 6px 16px;
   text-decoration: none;
   display: block;
+  cursor: pointer;
 }
 
 .about-dropdown-content a:hover,
 .opportunity-dropdown-content a:hover,
-.documentation-dropdown-content a:hover {
+.documentation-dropdown-content a:hover,
+.documentation-dropdown-content div:hover
+ {
   background-color: #ddd;
 }
 
@@ -1252,7 +1256,7 @@ html {
 .Expert-Team-Section .Text-Box,
 .Contact-Section,
 .side-bar-section {
-  background-image: linear-gradient(120deg, gold, red) !important;
+  background: #121212 !important;
 }
 .investorReward-Section,
 .ScaleRes-Section,
