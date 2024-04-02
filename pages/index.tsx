@@ -670,36 +670,40 @@ export default function Home() {
           >
             <TfiAngleDown />
           </Link>
-          <div className="heading-deatilBox-home-Section">
-            <h2 className="shadow-text">Seize The Opportunity</h2>
-            <p className="w-[70%]">
-              Invest in Bolivia{"'"}s next major gold, silver, and copper
-              discovery with Itavi Mining Company{"'"}s Flagship Project -{" "}
-              <b>La Gran Española</b>
-            </p>
-            <div className="btn-box-Home-Section">
-              <Link href="https://wefunder.com/itavimining">
-                <p className="btn-txt-desctop">Invest Now</p>
-                <p className="btn-txt-mob">Invest</p>
-              </Link>
-              <Link href="/Investment">
-                <p className="btn-txt-desctop">Investment Details</p>
-                <p className="btn-txt-mob">Details</p>
-              </Link>
+          <div className="heading-deatilBox-home-Section !gap-14 justify-around h-full">
+            <div className="flex gap-6 items-center flex-col">
+              <h2 className="shadow-text">Seize The Opportunity</h2>
+              <p className="w-[70%]">
+                Invest in Bolivia{"'"}s next major gold, silver, and copper
+                discovery with Itavi Mining Company{"'"}s Flagship Project -{" "}
+                <b>La Gran Española</b>
+              </p>
             </div>
-            <form className="newlatter-form">
-              <div className="flex gap-3 items-center">
-                <input
-                  type="text"
-                  className="newlatter-input2"
-                  placeholder="Email"
-                />
-                <button type="submit">Get Updates</button>
+            <div className="flex flex-col items-center gap-6">
+              <div className="btn-box-Home-Section">
+                <Link href="https://wefunder.com/itavimining">
+                  <p className="btn-txt-desctop">Invest Now</p>
+                  <p className="btn-txt-mob">Invest</p>
+                </Link>
+                <Link href="/Investment">
+                  <p className="btn-txt-desctop">Investment Details</p>
+                  <p className="btn-txt-mob">Details</p>
+                </Link>
               </div>
-              <h3 className="text-center">
-                Enter your email to keep up with investor information.
-              </h3>
-            </form>
+              <form className="newlatter-form">
+                <div className="flex gap-3 items-center">
+                  <input
+                    type="text"
+                    className="newlatter-input2"
+                    placeholder="Email"
+                  />
+                  <button type="submit">Get Updates</button>
+                </div>
+                <h3 className="text-center">
+                  Enter your email to keep up with investor information.
+                </h3>
+              </form>
+            </div>
           </div>
 
           {/* <div className="home-vector-box">

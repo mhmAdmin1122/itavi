@@ -110,7 +110,7 @@ html {
   @apply text-5xl font-bold;
 }
 .heading-deatilBox-home-Section {
-  @apply flex-col !gap-8;
+  @apply flex-col gap-8;
 }
 .btn-box-Home-Section {
   @apply flex-col;
