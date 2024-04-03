@@ -91,7 +91,7 @@ export default function Home() {
           <Image src={Logo} alt="logo-pic" className="logo-pic" />
         </Link>
 
-        <div className="menu-sidebar-hamburger" onClick={handleShowTabs}>
+        <div className="menu-sidebar-hamburger-main-page text-4xl" onClick={handleShowTabs}>
           {showTabs ? "" : <RxHamburgerMenu />}
         </div>
 

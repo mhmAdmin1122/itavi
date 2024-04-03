@@ -683,10 +683,16 @@ html {
 .mob-router-back-link-toster {
   @apply block bottom-10 -left-2 text-lg;
 }
+.menu-sidebar-hamburger-main-page, .mobile-sidebar-tabs{
+  @apply hidden;
+}
 
 @media (max-width: 980px) and (min-width: 750px) {
   .mob-router-back-link-toster {
     @apply block bottom-10 -left-2 text-lg;
+  }
+  .menu-sidebar-hamburger-main-page, .mobile-sidebar-tabs{
+    @apply hidden;
   }
   .About-Section h2 {
     @apply w-full;
@@ -763,6 +769,9 @@ html {
 @media (max-width: 749px) and (min-width: 451px) {
   .mob-router-back-link-toster {
     @apply block bottom-10 -left-2 text-lg;
+  }
+  .menu-sidebar-hamburger-main-page, .mobile-sidebar-tabs{
+    @apply block;
   }
   .pagelayout {
     @apply gap-4;
@@ -911,6 +920,9 @@ html {
     font-size: 39px !important;
     font-weight: 200 !important;
     line-height: 38px !important;
+  }
+  .menu-sidebar-hamburger-main-page, .mobile-sidebar-tabs{
+    @apply block;
   }
   .About-Section h2 {
     @apply w-full;
