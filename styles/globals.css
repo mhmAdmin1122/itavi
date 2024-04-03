@@ -1227,7 +1227,7 @@ html {
     @apply w-full;
   }
   .legal-number,
-  .contact-number {
+  .contact-number, .not-for-mob {
     @apply hidden;
   }
   .contact-content-box {
@@ -1238,12 +1238,19 @@ html {
   .contact-Form-Box {
     @apply w-full;
   }
+  .contact-content-box-para, .contact-para{
+    @apply py-0 !important;
+  }
   .Contact-Section .Text-Box {
     top: 12% !important;
+    gap: 0px !important;
   }
   .About-Box {
     position: absolute;
     bottom: 15%;
+  }
+  .about-us-para, .opportunity-para, .documentation-para{
+    @apply w-full;
   }
 }
 /* snaping */

@@ -18,6 +18,7 @@ import {
 } from "react-icons/fa6";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoCloseOutline } from "react-icons/io5";
+import Button from "./components/Button";
 const montserrat = Montserrat({
   weight: "400",
   subsets: ["latin"],
@@ -397,14 +398,16 @@ export default function Home() {
               </p>
             </div>
             <div className="btn-box-Home-Section">
-              <Link href="https://wefunder.com/itavimining">
-                <p className="btn-txt-desctop">Invest Now</p>
-                <p className="btn-txt-mob">Invest</p>
-              </Link>
-              <Link href="/Investment">
-                <p className="btn-txt-desctop">Investment Details</p>
-                <p className="btn-txt-mob">Details</p>
-              </Link>
+              <Button
+                url="https://wefunder.com/itavimining"
+                btnText="Invest Now"
+                btnText2="Invest"
+              />
+              <Button
+                url="/Investment"
+                btnText="Investment Details"
+                btnText2="Details"
+              />
             </div>
             <div className="flex flex-col items-center gap-6">
               <form className="newlatter-form">
@@ -414,7 +417,12 @@ export default function Home() {
                     className="newlatter-input2"
                     placeholder="Email"
                   />
-                  <button type="submit">Get Updates</button>
+                  <button
+                    type="submit"
+                    className="bg-[#ca8a04] !text-[#000] px-6 py-2 !font-bold"
+                  >
+                    Get Updates
+                  </button>
                 </div>
                 <h3 className="text-center">
                   Enter your email to keep up with investor information.
@@ -446,39 +454,27 @@ export default function Home() {
             <h2 className="shadow-text">About Us</h2>
             <div className="About-Content-Box flex flex-col items-center w-full justify-center pb-2">
               <h3 className="numbers shadow-text">02</h3>
-              <p className="w-[70%] text-left">
-                We are more than prospectors; We are visionaries. Our journey
-                begins where the Andean peaks kiss the sky and the earth cradles
-                untold riches. We are a Bolivian mining company driven by a
-                passion for discovery and a commitment to responsible
-                development. Our flagship project, La Gran Española,{" "}
-                <b>spans over 6,000 acres</b>
-                , boasting a rich history of exploration and the potential to
-                become a major gold, silver, and copper producer. <br /> Our
-                pursuit of Bolivia{"'"}s mineral wealth is guided by our
-                dedication to sustainable and ethical practices.
-              </p>
+              <div className="w-[70%] text-left about-us-para flex flex-col gap-4">
+                <p>
+                  We are more than prospectors; We are visionaries. Our journey
+                  begins where the Andean peaks kiss the sky and the earth
+                  cradles untold riches. We are a Bolivian mining company driven
+                  by a passion for discovery and a commitment to responsible
+                  development.
+                </p>
+                <p>
+                  Our flagship project, La Gran Española,
+                  <b>spans over 6,000 acres</b>, boasting a rich history of
+                  exploration and the potential to become a major gold, silver,
+                  and copper producer.
+                </p>
+                <p className="not-for-mob">
+                  Our pursuit of Bolivia{"'"}s mineral wealth is guided by our
+                  dedication to sustainable and ethical practices.
+                </p>
+              </div>
             </div>
-            <div className="flex items-center gap-6">
-              <Link
-                href="/values"
-                className="bg-[#ca8a04] text-[#fff] px-6 py-2 rounded-sm"
-              >
-                Our Values
-              </Link>
-              <Link
-                href="/history"
-                className="bg-[#ca8a04] text-[#fff] px-6 py-2 rounded-sm"
-              >
-                History
-              </Link>
-              <Link
-                href="/conviction"
-                className="bg-[#ca8a04] text-[#fff] px-6 py-2 rounded-sm"
-              >
-                Invest With Conviction
-              </Link>
-            </div>
+            <Button url="/values" btnText="Our Values" btnText2="Our Values" />
           </div>
         </section>
         {/* About-Us-section */}
@@ -519,7 +515,7 @@ export default function Home() {
                 <div className="flex flex-col items-start gap-6">
                   <h3 className="numbers shadow-text">03</h3>
                 </div>
-                <p className="w-[70%]">
+                <p className="w-[70%] opportunity-para">
                   Tap into Bolivia{"'"}s growing mining sector, supported by a
                   pro-development government. Itavi Mining{"'"}s strategic
                   approach and commitment to ethical practices mitigate risk and
@@ -530,14 +526,11 @@ export default function Home() {
                   conviction.
                 </p>
               </div>
-              <div>
-                <Link
-                  href="/reward"
-                  className="bg-[#ca8a04] text-[#fff] px-6 py-2 rounded-sm"
-                >
-                  Opportunity Details
-                </Link>
-              </div>
+              <Button
+                url="/reward"
+                btnText="Opportunity Details"
+                btnText2="Details"
+              />
             </div>
           </div>
         </section>
@@ -563,7 +556,7 @@ export default function Home() {
 
           <div className="flex flex-col items-center justify-center gap-6">
             <h2 className="shadow-text !w-full text-center">Documentation</h2>
-            <p className="w-[70%]">
+            <p className="w-[70%] documentation-para">
               We provide full-transparency with our documentation to our
               Investors. Make sure you go-through the important information
               highlighted in the documents. In the next pages you{"'"}ll find a
@@ -593,7 +586,7 @@ export default function Home() {
           <div className="Text-Box contact-content-box flex items-center gap-6 justify-between relative z-10 px-[10%]">
             <div className="w-[60%] contact-content-container">
               <h2 className="w-full text-[68px] shadow-text">Contact</h2>
-              <div className="flex items-start gap-4 py-5">
+              <div className="flex items-start gap-4 py-5 contact-para">
                 <h3 className="text-9xl shadow-text contact-number numbers">
                   06
                 </h3>
@@ -648,7 +641,7 @@ export default function Home() {
                 placeholder="Message"
                 className="outline-none px-6 py-2 rounded-md w-full"
               />
-              <button type="submit" className="px-6 py-2 bg-[#d98700]">
+              <button type="submit" className="px-6 py-2 bg-[#d98700] font-bold">
                 Message
               </button>
             </form>
