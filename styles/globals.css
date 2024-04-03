@@ -458,7 +458,7 @@ html {
 }
 .Contact-Section h2,
 .legal-Section h2 {
-  @apply text-[68px] font-extralight w-[25%] leading-[70px];
+  @apply text-[68px] font-extralight w-full leading-[70px];
 }
 .Contact-Section .Second-div {
   @apply flex gap-10 justify-start items-start flex-wrap;
@@ -907,7 +907,7 @@ html {
   .mobile-sidebar-tabs {
     @apply hidden;
   }
-  .mobile-sidebar-tabs-main{
+  .mobile-sidebar-tabs-main {
     @apply block;
   }
 }
@@ -974,15 +974,17 @@ html {
     padding-top: 2px;
     font-size: 14px;
   }
-  .WWeDo-Section h2 {
-    font-size: 30px;
+  .WWeDo-Section h2,
+  .About-content-container h2,
+  .heading-deatilBox-home-Section h2 {
+    font-size: 40px;
     font-weight: 100;
     line-height: 30px;
     margin-bottom: 12px;
   }
   .TeamWork-Section h2 {
-    width: 70%;
-    font-size: 30px;
+    width: 100%;
+    font-size: 40px;
     font-weight: 200;
     line-height: 70px;
   }
@@ -1061,7 +1063,7 @@ html {
   }
   .Contact-Section h2,
   .legal-heading {
-    width: 25%;
+    width: 100%;
     font-size: 40px !important;
     font-weight: 200;
     line-height: 70px;
@@ -1302,10 +1304,16 @@ html {
     @apply w-full;
   }
   .documentaion-heading {
-    @apply text-[1.75rem];
+    @apply text-[40px];
   }
-  .mobile-sidebar-tabs-main{
+  .mobile-sidebar-tabs-main {
     @apply block;
+  }
+  #documentation {
+    @apply pt-16;
+  }
+   .contact-content-box{
+    @apply pt-4;
   }
 }
 /* snaping */

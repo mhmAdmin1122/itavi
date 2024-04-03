@@ -91,13 +91,19 @@ export default function Home() {
           <Image src={Logo} alt="logo-pic" className="logo-pic" />
         </Link>
 
-        <div className="menu-sidebar-hamburger-main-page text-4xl" onClick={handleShowTabs}>
+        <div
+          className="menu-sidebar-hamburger-main-page text-4xl"
+          onClick={handleShowTabs}
+        >
           {showTabs ? "" : <RxHamburgerMenu />}
         </div>
 
         {showTabs && (
           <div className="mobile-sidebar-tabs-main absolute top-0 min-h-screen left-0 w-full bg-[#0000009a] flex flex-col gap-2 font-normal text-white text-right items-end px-4 pt-7 text-[0.85rem]">
-            <div className="text-4xl flex justify-end text-[#fff]" onClick={handleShowTabs}>
+            <div
+              className="text-4xl flex justify-end text-[#fff]"
+              onClick={handleShowTabs}
+            >
               <IoCloseOutline />
             </div>
 
@@ -401,7 +407,7 @@ export default function Home() {
                 <b>La Gran Española</b>
               </p>
             </div>
-            <div className="btn-box-Home-Section">
+            <div className="btn-box-Home-Section !gap-10">
               <Button
                 url="https://wefunder.com/itavimining"
                 btnText="Invest Now"
@@ -439,7 +445,7 @@ export default function Home() {
 
         {/* About-Us-section */}
         <section
-          className="slider-container bg-[#121212] text-[#fff] flex items-center justify-center sections relative"
+          className="slider-container bg-[#121212] text-[#fff] flex items-start pt-32 justify-center sections relative"
           id="about"
         >
           {/* <section
@@ -458,7 +464,7 @@ export default function Home() {
           >
             <TfiAngleDown />
           </Link>
-          <div className="About-content-container px-10 flex flex-col items-center gap-6 text-center justify-center">
+          <div className="About-content-container px-10 flex flex-col items-center gap-6 text-center ">
             <h2 className="shadow-text text-6xl">About Us</h2>
             <div className="About-Content-Box flex flex-col items-center w-full justify-center pb-2">
               <h3 className="numbers shadow-text">02</h3>
@@ -482,7 +488,19 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <Button url="/values" btnText="Our Values" btnText2="Our Values" />
+            <div className="flex items-center gap-10 flex-wrap">
+              <Button
+                url="/values"
+                btnText="Our Values"
+                btnText2="Our Values"
+              />
+              <Button url="/history" btnText="History" btnText2="History" />
+              <Button
+                url="/conviction"
+                btnText="Invest With Conviction"
+                btnText2="Invest With"
+              />
+            </div>
           </div>
         </section>
         {/* About-Us-section */}
@@ -534,11 +552,33 @@ export default function Home() {
                   conviction.
                 </p>
               </div>
-              <Button
-                url="/reward"
-                btnText="Opportunity Details"
-                btnText2="Details"
-              />
+              <div className="flex items-center justify-center gap-10 flex-wrap">
+                <Button
+                  url="/reward"
+                  btnText="Opportunity Details"
+                  btnText2="Details"
+                />
+                <Button
+                  url="/visionaries"
+                  btnText="Visionaries"
+                  btnText2="Visionaries"
+                />
+                <Button
+                  url="/resources"
+                  btnText="Scale of resources"
+                  btnText2="Resources"
+                />
+                <Button
+                  url="/market"
+                  btnText="Emerging Market"
+                  btnText2="Market"
+                />
+                <Button
+                  url="/copper"
+                  btnText="Copper Concentration"
+                  btnText2="Copper"
+                />
+              </div>
             </div>
           </div>
         </section>
@@ -546,7 +586,7 @@ export default function Home() {
 
         {/* Documentation-section */}
         <section
-          className="slider-container sections bg-[#121212] text-white flex flex-col items-center justify-center relative"
+          className="slider-container sections bg-[#121212] text-white flex flex-col items-center pt-32 justify-start relative"
           id="documentation"
         >
           {/* <section
@@ -612,14 +652,16 @@ export default function Home() {
           >
             <TfiAngleUp />
           </Link>
-          <div className="Text-Box contact-content-box flex items-center gap-6 justify-between relative z-10 px-[10%]">
-            <div className="w-[60%] contact-content-container">
-              <h2 className="w-full text-[68px] shadow-text">Contact</h2>
-              <div className="flex items-start gap-4 py-5 contact-para">
+          <div className="Text-Box contact-content-box flex flex-col items-center pt-32 gap-6 justify-start relative z-10 px-[10%]">
+            <div className="w-[100%] contact-content-container">
+              <h2 className="w-full text-[68px] flex items-center justify-center text-center shadow-text">
+                Contact
+              </h2>
+              <div className="flex items-center justify-center gap-4 pb-1 contact-para">
                 <h3 className="text-9xl shadow-text contact-number numbers">
                   06
                 </h3>
-                <p className="contact-content-box-para">
+                <p className="contact-content-box-para w-[90%]">
                   Got any question about our project? Want to know more about
                   us? Please fill out the form, email us at:{" "}
                   <b>
@@ -645,7 +687,7 @@ export default function Home() {
               </div>
             </div>
 
-            <form className="mt-2 flex flex-col items-center justify-center gap-6 w-[40%] text-[#000] contact-Form-Box">
+            <form className="flex flex-col items-center justify-start gap-4 w-[70%] text-[#000] contact-Form-Box">
               <h5 className="w-full text-white text-lg">Get In Touch</h5>
               <div className="flex items-center gap-4 w-full">
                 <input
