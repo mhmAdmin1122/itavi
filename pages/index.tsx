@@ -97,7 +97,7 @@ export default function Home() {
 
         {showTabs && (
           <div className="mobile-sidebar-tabs absolute top-0 min-h-screen left-0 w-full bg-[#0000009a] flex flex-col gap-2 font-normal text-white text-right items-end px-4 pt-7 text-[0.85rem]">
-            <div className="text-4xl text-[#fff]" onClick={handleShowTabs}>
+            <div className="text-4xl flex justify-end text-[#fff]" onClick={handleShowTabs}>
               <IoCloseOutline />
             </div>
 
@@ -458,7 +458,7 @@ export default function Home() {
           >
             <TfiAngleDown />
           </Link>
-          <div className="About-content-container flex flex-col items-center gap-6 text-center justify-center">
+          <div className="About-content-container px-10 flex flex-col items-center gap-6 text-center justify-center">
             <h2 className="shadow-text text-6xl">About Us</h2>
             <div className="About-Content-Box flex flex-col items-center w-full justify-center pb-2">
               <h3 className="numbers shadow-text">02</h3>
@@ -566,7 +566,7 @@ export default function Home() {
             <TfiAngleDown />
           </Link>
 
-          <div className="flex flex-col items-center justify-center gap-6 px-4">
+          <div className="flex flex-col items-center justify-center gap-6 px-10">
             <h2 className="shadow-text !w-full text-center text-6xl documentaion-heading">
               Documentation
             </h2>
