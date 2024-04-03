@@ -566,8 +566,8 @@ export default function Home() {
             <TfiAngleDown />
           </Link>
 
-          <div className="flex flex-col items-center justify-center gap-6">
-            <h2 className="shadow-text !w-full text-center text-6xl">
+          <div className="flex flex-col items-center justify-center gap-6 px-4">
+            <h2 className="shadow-text !w-full text-center text-6xl documentaion-heading">
               Documentation
             </h2>
 

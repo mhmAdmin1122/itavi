@@ -683,7 +683,8 @@ html {
 .mob-router-back-link-toster {
   @apply block bottom-10 -left-2 text-lg;
 }
-.menu-sidebar-hamburger-main-page, .mobile-sidebar-tabs{
+.menu-sidebar-hamburger-main-page,
+.mobile-sidebar-tabs {
   @apply hidden;
 }
 
@@ -691,7 +692,8 @@ html {
   .mob-router-back-link-toster {
     @apply block bottom-10 -left-2 text-lg;
   }
-  .menu-sidebar-hamburger-main-page, .mobile-sidebar-tabs{
+  .menu-sidebar-hamburger-main-page,
+  .mobile-sidebar-tabs {
     @apply hidden;
   }
   .About-Section h2 {
@@ -770,7 +772,8 @@ html {
   .mob-router-back-link-toster {
     @apply block bottom-10 -left-2 text-lg;
   }
-  .menu-sidebar-hamburger-main-page, .mobile-sidebar-tabs{
+  .menu-sidebar-hamburger-main-page,
+  .mobile-sidebar-tabs {
     @apply block;
   }
   .pagelayout {
@@ -921,7 +924,8 @@ html {
     font-weight: 200 !important;
     line-height: 38px !important;
   }
-  .menu-sidebar-hamburger-main-page, .mobile-sidebar-tabs{
+  .menu-sidebar-hamburger-main-page,
+  .mobile-sidebar-tabs {
     @apply block;
   }
   .About-Section h2 {
@@ -1293,6 +1297,9 @@ html {
   .opportunity-para,
   .documentation-para {
     @apply w-full;
+  }
+  .documentaion-heading {
+    @apply text-[1.75rem];
   }
 }
 /* snaping */
