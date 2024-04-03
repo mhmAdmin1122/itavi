@@ -175,7 +175,7 @@ const FaqsPage = () => {
           {/* Carousals */}
           <div className="carousal-body carousal1">
             <div className="carousal-head">
-              <h2 onClick={openCarousal1} className="cursor-pointer">
+              <h2 onClick={openCarousal1} className={`cursor-pointer ${carousal1 ? "font-bold" : ""}`}>
                 What is the offering price per share for Itavi Mining Company,
                 S.A.?
               </h2>
@@ -194,7 +194,7 @@ const FaqsPage = () => {
 
           <div className="carousal-body carousal2">
             <div className="carousal-head">
-              <h2 onClick={openCarousal2} className="cursor-pointer">
+              <h2 onClick={openCarousal2} className={`cursor-pointer ${carousal2 ? "font-bold" : ""}`}>
                 What sets La Gran Española apart from other mining projects?
               </h2>
               <i onClick={openCarousal2} className="cursor-pointer">
@@ -215,7 +215,7 @@ const FaqsPage = () => {
 
           <div className="carousal-body carousal3">
             <div className="carousal-head">
-              <h2 onClick={openCarousal3} className="cursor-pointer">
+              <h2 onClick={openCarousal3} className={`cursor-pointer ${carousal3 ? "font-bold" : ""}`}>
                 Where is the La Gran Española Project located?
               </h2>
               <i onClick={openCarousal3} className="cursor-pointer">
@@ -232,7 +232,7 @@ const FaqsPage = () => {
 
           <div className="carousal-body carousal4">
             <div className="carousal-head">
-              <h2 onClick={openCarousal4} className="cursor-pointer">
+              <h2 onClick={openCarousal4} className={`cursor-pointer ${carousal4 ? "font-bold" : ""}`}>
                 What are the exploration targets of Itavi Mining Company S.A.?
               </h2>
               <i onClick={openCarousal4} className="cursor-pointer">
@@ -251,7 +251,7 @@ const FaqsPage = () => {
 
           <div className="carousal-body carousal5">
             <div className="carousal-head">
-              <h2 onClick={openCarousal5} className="cursor-pointer">
+              <h2 onClick={openCarousal5} className={`cursor-pointer ${carousal5 ? "font-bold" : ""}`}>
                 What are the initial exploration results?
               </h2>
               <i onClick={openCarousal5} className="cursor-pointer">
@@ -269,7 +269,7 @@ const FaqsPage = () => {
 
           <div className="carousal-body carousal6">
             <div className="carousal-head">
-              <h2 onClick={openCarousal6} className="cursor-pointer">
+              <h2 onClick={openCarousal6} className={`cursor-pointer ${carousal6 ? "font-bold" : ""}`}>
                 What is the company{"’"}s exploration strategy?
               </h2>
               <i onClick={openCarousal6} className="cursor-pointer">
@@ -289,7 +289,7 @@ const FaqsPage = () => {
 
           <div className="carousal-body carousal7">
             <div className="carousal-head">
-              <h2 onClick={openCarousal7} className="cursor-pointer">
+              <h2 onClick={openCarousal7} className={`cursor-pointer ${carousal7 ? "font-bold" : ""}`}>
                 What is the potential return on investment for investors?
               </h2>
               <i onClick={openCarousal7} className="cursor-pointer">
@@ -307,8 +307,8 @@ const FaqsPage = () => {
           </div>
 
           <div className="carousal-body carousal8">
-            <div className="carousal-head text-gray-600 flex items-center justify-between text-xl gap-4">
-              <h2 onClick={openCarousal8} className="cursor-pointer">
+            <div className="carousal-head">
+              <h2 onClick={openCarousal8} className={`cursor-pointer ${carousal8 ? "font-bold" : ""}`}>
                 How can I trust Itavi Mining with my investment?
               </h2>
               <i onClick={openCarousal8} className="cursor-pointer">
@@ -326,8 +326,8 @@ const FaqsPage = () => {
           </div>
 
           <div className="carousal-body carousal9">
-            <div className="carousal-head text-gray-600 flex items-center justify-between text-xl gap-4">
-              <h2 onClick={openCarousal9} className="cursor-pointer">
+            <div className="carousal-head">
+              <h2 onClick={openCarousal9} className={`cursor-pointer ${carousal9 ? "font-bold" : ""}`}>
                 What is the minimum subscription amount for investors?
               </h2>
               <i onClick={openCarousal9} className="cursor-pointer">
@@ -343,8 +343,8 @@ const FaqsPage = () => {
           </div>
 
           <div className="carousal-body carousal10">
-            <div className="carousal-head text-gray-600 flex items-center justify-between text-xl gap-4">
-              <h2 onClick={openCarousal10} className="cursor-pointer">
+            <div className="carousal-head">
+              <h2 onClick={openCarousal10} className={`cursor-pointer ${carousal10 ? "font-bold" : ""}`}>
                 How will the proceeds from the offering be used?
               </h2>
               <i onClick={openCarousal10} className="cursor-pointer">
@@ -362,7 +362,7 @@ const FaqsPage = () => {
 
           <div className="carousal-body carousal11">
             <div className="carousal-head">
-              <h2 onClick={openCarousal11} className="cursor-pointer">
+              <h2 onClick={openCarousal11} className={`cursor-pointer ${carousal11 ? "font-bold" : ""}`}>
                 What are the investor suitability requirements?
               </h2>
               <i onClick={openCarousal11} className="cursor-pointer">
