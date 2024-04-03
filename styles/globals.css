@@ -1304,6 +1304,9 @@ html {
   .documentaion-heading {
     @apply text-[1.75rem];
   }
+  .mobile-sidebar-tabs-main{
+    @apply block;
+  }
 }
 /* snaping */
 .conatiner-box {
