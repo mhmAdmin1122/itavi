@@ -684,7 +684,7 @@ html {
   @apply block bottom-10 -left-2 text-lg;
 }
 .menu-sidebar-hamburger-main-page,
-.mobile-sidebar-tabs {
+.mobile-sidebar-tabs-main {
   @apply hidden;
 }
 
@@ -693,7 +693,7 @@ html {
     @apply block bottom-10 -left-2 text-lg;
   }
   .menu-sidebar-hamburger-main-page,
-  .mobile-sidebar-tabs {
+  .mobile-sidebar-tabs-main {
     @apply hidden;
   }
   .About-Section h2 {
@@ -907,6 +907,9 @@ html {
   .mobile-sidebar-tabs {
     @apply hidden;
   }
+  .mobile-sidebar-tabs-main{
+    @apply block;
+  }
 }
 .mobile-sidebar-tabs {
   @apply hidden;
@@ -918,7 +921,7 @@ html {
   @apply text-9xl;
 }
 
-@media (max-width: 450px) and (min-width: 260px) {
+@media (max-width: 450px) and (min-width: 160px) {
   .Home-Section .heading h2 {
     font-size: 39px !important;
     font-weight: 200 !important;

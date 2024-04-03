@@ -96,7 +96,7 @@ export default function Home() {
         </div>
 
         {showTabs && (
-          <div className="mobile-sidebar-tabs absolute top-0 min-h-screen left-0 w-full bg-[#0000009a] flex flex-col gap-2 font-normal text-white text-right items-end px-4 pt-7 text-[0.85rem]">
+          <div className="mobile-sidebar-tabs-main absolute top-0 min-h-screen left-0 w-full bg-[#0000009a] flex flex-col gap-2 font-normal text-white text-right items-end px-4 pt-7 text-[0.85rem]">
             <div className="text-4xl flex justify-end text-[#fff]" onClick={handleShowTabs}>
               <IoCloseOutline />
             </div>
