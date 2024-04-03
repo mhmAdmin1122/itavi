@@ -107,7 +107,7 @@ export default function Home() {
                 {mobHomeTab ? <FaAngleDown /> : <FaAngleRight />}
               </div>
               {mobHomeTab && (
-                <div className="flex flex-col gap-2 items-end">
+                <div className="flex flex-col gap-2 items-end text-[10px]">
                   <div onClick={handleShowTabs}>
                     <Link href="https://wefunder.com/itavimining">Invest</Link>
                   </div>
@@ -124,7 +124,7 @@ export default function Home() {
                 {mobAboutTab ? <FaAngleDown /> : <FaAngleRight />}
               </div>
               {mobAboutTab && (
-                <div className="flex flex-col gap-2 items-end">
+                <div className="flex flex-col gap-2 items-end text-[10px]">
                   <div onClick={handleShowTabs}>
                     <Link href="/values">Our Value</Link>
                   </div>
@@ -144,7 +144,7 @@ export default function Home() {
                 {mobOppertunityTab ? <FaAngleDown /> : <FaAngleRight />}
               </div>
               {mobOppertunityTab && (
-                <div className="flex flex-col gap-2 items-end">
+                <div className="flex flex-col gap-2 items-end text-[10px]">
                   <div onClick={handleShowTabs}>
                     <Link href="/reward">Investor Rewards</Link>
                   </div>
@@ -170,7 +170,7 @@ export default function Home() {
                 {mobDocumentationTab ? <FaAngleDown /> : <FaAngleRight />}
               </div>
               {mobDocumentationTab && (
-                <div className="flex flex-col gap-2 items-end">
+                <div className="flex flex-col gap-2 items-end text-[10px]">
                   <div onClick={handleShowTabs}>
                     <Link href="#documentation">
                       Private Placement Memorandum
@@ -192,7 +192,7 @@ export default function Home() {
                 {mobLegalTab ? <FaAngleDown /> : <FaAngleRight />}
               </div>
               {mobLegalTab && (
-                <div className="flex flex-col gap-2 items-end">
+                <div className="flex flex-col gap-2 items-end text-[10px]">
                   <div onClick={handleShowTabs}>
                     <Link href="/faqs">FAQs</Link>
                   </div>
