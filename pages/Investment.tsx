@@ -118,7 +118,7 @@ const InvestmentPage = () => {
               <button
                 onClick={btn01click}
                 className={`!w-fit px-6 py-2 text-[#ffffff] font-bold rounded-md hover:text-[#fff] transition-all ease-in-out duration-700 ${
-                  button01 ? "bg-[#212121]" : ""
+                  button01 ? "bg-[#212121]" : "hover:bg-[#212121]"
                 }`}
               >
                 <p className="btn-txt-desctop">The Opportunity</p>
@@ -128,7 +128,7 @@ const InvestmentPage = () => {
               <button
                 onClick={btn02click}
                 className={`!w-fit px-6 py-2 text-[#ffffff] font-bold rounded-md hover:text-[#fff] hover:bg-[#212121] transition-all ease-in-out duration-700 ${
-                  button02 ? "bg-[#212121]" : ""
+                  button02 ? "bg-[#212121]" : "hover:bg-[#212121]"
                 }`}
               >
                 <p className="btn-txt-desctop">Leadership & Governance</p>
@@ -138,7 +138,7 @@ const InvestmentPage = () => {
               <button
                 onClick={btn03click}
                 className={`!w-fit px-6 py-2 text-[#ffffff] font-bold rounded-md hover:text-[#fff] hover:bg-[#212121] transition-all ease-in-out duration-700 ${
-                  button03 ? "bg-[#212121]" : ""
+                  button03 ? "bg-[#212121]" : "hover:bg-[#212121]"
                 }`}
               >
                 <p className="btn-txt-desctop">Invest With Conviction</p>
@@ -220,7 +220,7 @@ const InvestmentPage = () => {
               <h2>
                 <b>Meet The Experts</b>
               </h2>
-              <p>
+              <p className="pb-4">
                 Our leadership team combines Bolivian mining expertise, deep
                 geological knowledge, and international financial acumen to
                 guide Itavi Mining{"'"}s strategic development. <br />
@@ -237,9 +237,8 @@ const InvestmentPage = () => {
                 banking, and mergers and acquisitions (M&A), Lourdes manages
                 transactions for clients ranging from exploration and
                 development companies to global metals and mining giants.
-                <br /> She also serves as an <b>advisor to Inventa Capital.</b>
-                <br />
-                <br />
+                She also serves as an <b>advisor to Inventa Capital.</b>
+                <br /><br />
                 <b>Carlos Johnny Thompson</b> (Director and Exploration Chief)
                 <br />
                 Carlos Johnny Thompson, a professional geological engineer,
@@ -252,10 +251,9 @@ const InvestmentPage = () => {
                 copper, and antimony projects. Carlos has worked within the
                 geological provinces of the Altiplano, Western Cordillera, and
                 Precambrian Shield in Bolivia. <br />
-                Notably, he was the head of geology at <b>Inti Raymi S.A.</b>,
+                <p className="pt-2">Notably, he was the head of geology at <b>Inti Raymi S.A.</b>,
                 the Bolivian developer of the Kori Kollu-Kori Chaca gold-copper
-                project.
-                <br />
+                project.</p>
                 <br />
                 <b>William Cabrera</b> (Chief Executive Officer)
                 <br />
@@ -287,47 +285,56 @@ const InvestmentPage = () => {
           )}
 
           {button03 && (
-            <div>
-              <div className="text-shower-box flex flex-col items-start gap-5 pt-10">
-                <p>
-                  <h2>
-                    <b>Investment Options</b>
-                  </h2>
+            <div className="text-shower-box flex flex-col items-start gap-5 pt-10">
+              <div>
+                <h2>
+                  <b>Investment Options</b>
+                </h2>
+                <p className="pb-2">
                   Investors can participate in our campaign by purchasing shares
                   of Itavi Mining Company, S.A. Each share represents ownership
                   in the company and a stake in the future success of our
-                  projects. <br />
+                  projects.
+                </p>
+                <p className="pb-2">
                   With a minimum subscription amount of 1,000 shares, investors
                   can tailor their investment to suit their financial goals and
                   risk tolerance.
-                  <br />
-                  <br />
-                  <h2>
-                    <b>Investor Rewards</b>
-                  </h2>
+                </p>
+                <h2 className="pt-8">
+                  <b>Investor Rewards</b>
+                </h2>
+                <p className="pb-2">
                   As a token of appreciation for their support, investors may be
                   eligible for exclusive rewards based on their level of
-                  investment. <br />
+                  investment.
+                </p>
+                <p className="pb-2">
                   From donations to local communities to gold bars and
                   all-expense-paid trips, we aim to provide meaningful
                   incentives for our valued investors.
                 </p>
+              </div>
+
+              <div>
                 <h2>
                   <b>How to Invest</b>
                 </h2>
-                <p>
+                <p className="pb-2">
                   Investing in our flagship project La Gran Española is a
                   strategic decision. Here{"’"}s how you can participate:
-                  <br />
+                </p>
+                <p className="pb-2">
                   <b>Review the Opportunity:</b> Explore our website and
                   understand the potential of La Gran Española.
-                  <br />
+                </p>
+                <p className="pb-2">
                   <b>Contact Us:</b> Reach out to our team for detailed
                   investment information.
-                  <br />
+                </p>
+                <p className="pb-6">
                   <b>Invest:</b> Make your investment and become part of Bolivia
                   {"’"}s mineral revolution.
-                  <br />
                 </p>
               </div>
             </div>
