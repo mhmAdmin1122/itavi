@@ -12,7 +12,7 @@ const InvestorRewardPage = () => {
         </p>
         <ol className="flex items-start gap-4 flex-col pb-4 list-decimal pl-8">
           <li>
-            <b>Humanitarian Impact:</b> For every investment of at least $1000,
+            <b className="text-3xl pb-2">Humanitarian Impact</b><br /> For every investment of at least $1000,
             a donation will be made in your (the investor{"’"}s) name to the
             impoverished indigenous people of Bolivia. These communities,
             including the Highland Quechua and Armara tribes, provide our labor
@@ -20,7 +20,7 @@ const InvestorRewardPage = () => {
           </li>
 
           <li>
-            <b>Precious Metals:</b> Depending on the investment level, investors
+            <b className="text-3xl pb-2">Precious Metals</b><br /> Depending on the investment level, investors
             will receive:
             <ul className="list-disc pl-4">
               <li>
@@ -35,7 +35,7 @@ const InvestorRewardPage = () => {
           </li>
 
           <li>
-            <b>Exploration Adventure:</b> For investments of at least $250,000,
+            <b className="text-3xl pb-2">Exploration Adventure</b><br /> For investments of at least $250,000,
             investors will enjoy an all-expense-paid trip to beautiful modern
             Santa Cruz, Bolivia, and the nearby wine region.
           </li>

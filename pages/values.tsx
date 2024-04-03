@@ -11,26 +11,30 @@ const OurValuesPage = () => {
           commitment to responsible mining.{" "}
         </p>
         <p className="pb-4">
-          <b>Ambition:</b> To reach beyond the horizon. Our passion fuels our
-          pursuit of mineral treasures and our ambition knows no bounds.
+          <b className="text-3xl pb-2">Ambition</b>
+          <br /> To reach beyond the horizon. Our passion fuels our pursuit of
+          mineral treasures and our ambition knows no bounds.
         </p>
         <p className="pb-4">
-          <b>Investor Focus:</b> We believe in delivering strong returns through
-          the strategic development of our assets.
+          <b className="text-3xl pb-2">Investor Focus</b>
+          <br /> We believe in delivering strong returns through the strategic
+          development of our assets.
         </p>
         <p className="pb-4">
-          <b>Sustainability:</b> We respect the land, leaving a legacy of
-          responsible mining. We have a strong commitment to minimizing our
-          environmental footprint.
+          <b className="text-3xl pb-2">Sustainability</b>
+          <br /> We respect the land, leaving a legacy of responsible mining. We
+          have a strong commitment to minimizing our environmental footprint.
         </p>
         <p className="pb-4">
-          <b>Innovation:</b> Pioneering modern methods to explore, delineate,
-          and develop with a sustainable touch.
+          <b className="text-3xl pb-2">Innovation</b>
+          <br /> Pioneering modern methods to explore, delineate, and develop
+          with a sustainable touch.
         </p>
         <p className="pb-4">
-          <b>Integrity:</b> We uphold the highest standards navigating the
-          mining industry and Bolivian legislation with transparency, ethical
-          practices, and a steadfast commitment to legal compliance.
+          <b className="text-3xl pb-2">Integrity</b>
+          <br /> We uphold the highest standards navigating the mining industry
+          and Bolivian legislation with transparency, ethical practices, and a
+          steadfast commitment to legal compliance.
         </p>
       </div>
     </AboutLayout>

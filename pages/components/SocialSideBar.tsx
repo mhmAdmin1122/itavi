@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import {
-  FaGripfire,
+  FaBell,
+  FaBellSlash,
   FaLinkedin,
   FaSquareFacebook,
   FaSquareXTwitter,
@@ -15,50 +16,51 @@ const SocialSideBar = () => {
 
   const handleShowIcons = () => {
     setShow((current) => !current);
-    setInterval(() => {
-      setShow(false);
-    }, 10000);
   };
 
   return (
-    <div className="fixed bottom-0 right-0 forlaptop-ico">
+    <div className="fixed bottom-0 right-4 forlaptop-ico z-50">
       {show && (
-        <div className="social-iconsfor-laptop flex flex-col gap-[4px] py-1">
+        <div className="social-iconsfor-laptop flex flex-col items-center gap-[6px] py-2">
           <Link
-            className="text-[40px] text-[#ca8a04] btnshadow2"
+            className="text-xl text-[#ca8a04] btnshadow2"
             href="https://www.facebook.com/itavimining"
             target="blank"
+            onClick={handleShowIcons}
           >
             <FaSquareFacebook />
           </Link>
           <Link
-            className="text-[40px] text-[#ca8a04] btnshadow2"
+            className="text-xl text-[#ca8a04] btnshadow2"
             href="https://www.linkedin.com/company/itavi-mining-company"
             target="blank"
+            onClick={handleShowIcons}
           >
             <FaLinkedin />
           </Link>
           <Link
-            className="text-[40px] text-[#ca8a04] btnshadow2"
+            className="text-xl text-[#ca8a04] btnshadow2"
             href="https://www.twitter.com/@itavimining"
             target="blank"
+            onClick={handleShowIcons}
           >
             <FaSquareXTwitter />
           </Link>
           <Link
-            className="w-[38px] btnshadow2 overflow-hidden rounded-md "
+            className="w-[20px] btnshadow2 overflow-hidden rounded-md "
             href="https://wefunder.com/itavimining"
             target="blank"
+            onClick={handleShowIcons}
           >
             <Image src={weFunderIco} alt="weFunder-Ico" className="w-[40px]" />
           </Link>
         </div>
       )}
       <div
-        className="btntrigger-social-icon-box bg-[#0000009a] text-white rounded-tl-md text-2xl p-2 cursor-pointer"
+        className="btntrigger-social-icon-box bg-[#0000009a] text-white rounded-t-md text-2xl p-2 cursor-pointer"
         onClick={handleShowIcons}
       >
-        {show ? <IoClose /> : <FaGripfire />}
+        {show ? <FaBellSlash /> : <FaBell />}
       </div>
     </div>
   );

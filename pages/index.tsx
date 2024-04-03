@@ -337,7 +337,10 @@ export default function Home() {
             </div>
           </div>
 
-          <Link href="#contact" className="hover:underline shadow-text text-[16px] contact-btn-tabs">
+          <Link
+            href="#contact"
+            className="hover:underline shadow-text text-[16px] contact-btn-tabs"
+          >
             Contact
           </Link>
         </div>
@@ -439,7 +442,7 @@ export default function Home() {
           className="slider-container bg-[#121212] text-[#fff] flex items-center justify-center sections relative"
           id="about"
         >
-        {/* <section
+          {/* <section
           className="slider-container About-Section sections relative"
           id="about"
         > */}
@@ -546,7 +549,7 @@ export default function Home() {
           className="slider-container sections bg-[#121212] text-white flex flex-col items-center justify-center relative"
           id="documentation"
         >
-        {/* <section
+          {/* <section
           className="slider-container sections TeamWork-Section relative"
           id="documentation"
         > */}
@@ -563,36 +566,37 @@ export default function Home() {
             <TfiAngleDown />
           </Link>
 
-          <div className="flex flex-col items-center justify-center gap-2">
-            <h2 className="shadow-text !w-full text-center text-6xl">Documentation</h2>
-            <p className="w-[70%] documentation-para">
-              We provide full-transparency with our documentation to our
-              Investors. Make sure you go-through the important information
-              highlighted in the documents. In the next pages you{"'"}ll find a
-              Memorándum and Subscription Agreement, Pitch Deck, and Technical
-              Report.
-            </p>
-            <PPMDownloadBtn />
-            <p className="w-[70%] documentation-para">
-              We provide full-transparency with our documentation to our
-              Investors. Make sure you go-through the important information
-              highlighted in the documents. In the next pages you{"'"}ll find a
-              Memorándum and Subscription Agreement, Pitch Deck, and Technical
-              Report.
-            </p>
-            <EMDDownloadBtn />
-            <p className="w-[70%] documentation-para">
-              We provide full-transparency with our documentation to our
-              Investors. Make sure you go-through the important information
-              highlighted in the documents. In the next pages you{"'"}ll find a
-              Memorándum and Subscription Agreement, Pitch Deck, and Technical
-              Report.
-            </p>
-            <TRDownloadBtn />
-            {/* <div className="flex items-center gap-6">
+          <div className="flex flex-col items-center justify-center gap-6">
+            <h2 className="shadow-text !w-full text-center text-6xl">
+              Documentation
+            </h2>
+
+            <div className="flex flex-col items-center justify-center w-full">
+              <p className="w-[70%] documentation-para pb-2">
+                We provide full-transparency with our documentation to our
+                Investors. In the next pages you{"'"}ll find a Memorándum
+                Agreement, Pitch Deck, and Technical Report.
+              </p>
+              <PPMDownloadBtn />
+            </div>
+
+            <div className="flex flex-col items-center justify-center w-full">
+              <p className="w-[70%] documentation-para pb-2">
+                We provide full-transparency with our documentation to our
+                Investors. In the next pages you{"'"}ll find a Memorándum
+                Agreement, Pitch Deck, and Technical Report.
+              </p>
               <EMDDownloadBtn />
+            </div>
+
+            <div className="flex flex-col items-center justify-center w-full">
+              <p className="w-[70%] documentation-para pb-2">
+                We provide full-transparency with our documentation to our
+                Investors. In the next pages you{"'"}ll find a Memorándum
+                Agreement, Pitch Deck, and Technical Report.
+              </p>
               <TRDownloadBtn />
-            </div> */}
+            </div>
           </div>
         </section>
         {/* Documentation-section */}
