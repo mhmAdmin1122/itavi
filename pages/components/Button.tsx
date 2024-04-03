@@ -3,7 +3,7 @@ import React from "react";
 
 const Button = ({ url, btnText, btnText2 }: any) => {
   return (
-    <Link href={url} className="bg-[#ca8a04] text-[#000] px-6 py-2 font-bold">
+    <Link href={`${url}`} className="bg-[#ca8a04] text-[#000] px-6 py-2 font-bold">
       <p className="btn-txt-desctop">{btnText}</p>
       <p className="btn-txt-mob">{btnText2}</p>
     </Link>

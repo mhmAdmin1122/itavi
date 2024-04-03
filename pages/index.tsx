@@ -254,7 +254,7 @@ export default function Home() {
           </div>
         )}
 
-        <div className="flex justify-center space-x-4 main-tabs">
+        <div className="flex justify-center gap-4 main-tabs">
           <div className="documentation-dropdown">
             <Link
               href="#home"
@@ -336,12 +336,12 @@ export default function Home() {
             </div>
           </div>
 
-          <Link href="#contact" className="hover:underline shadow-text">
+          <Link href="#contact" className="hover:underline shadow-text text-[16px] contact-btn-tabs">
             Contact
           </Link>
         </div>
 
-        <div className="flex items-center justify-end gap-4 socail-icons-screen">
+        <div className="flex items-center justify-end gap-4 socail-icons-screen social-icons-notfor-laptop">
           <Link
             className="text-xl text-[#ca8a04] btnshadow2"
             href="https://www.facebook.com/itavimining"
@@ -641,7 +641,10 @@ export default function Home() {
                 placeholder="Message"
                 className="outline-none px-6 py-2 rounded-md w-full"
               />
-              <button type="submit" className="px-6 py-2 bg-[#d98700] font-bold">
+              <button
+                type="submit"
+                className="px-6 py-2 bg-[#d98700] font-bold"
+              >
                 Message
               </button>
             </form>
