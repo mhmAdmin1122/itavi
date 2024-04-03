@@ -616,7 +616,7 @@ html {
 .legal-dropbtn:hover .down-drop-ico {
   @apply hidden;
 }
-.forlaptop-ico{
+.forlaptop-ico {
   @apply hidden;
 }
 /*  Responsive Media Queries  */
@@ -740,7 +740,8 @@ html {
   .investorReward-Section {
     @apply pt-[65px];
   }
-  .social-icons-notfor-laptop {
+  .social-icons-notfor-laptop,
+  .mobile-sidebar-tabs {
     @apply hidden;
   }
   .about-dropbtn,
@@ -752,8 +753,11 @@ html {
     font-size: 14px;
     border: none;
   }
-  .forlaptop-ico{
+  .forlaptop-ico {
     @apply block;
+  }
+  .sidebar-tabs a {
+    @apply text-end;
   }
 }
 @media (max-width: 749px) and (min-width: 451px) {
@@ -807,7 +811,7 @@ html {
     @apply px-4;
   }
   .menu-sidebar-hamburger {
-    @apply flex text-3xl;
+    @apply hidden;
   }
   /* Header */
   /* Home Section */
@@ -888,8 +892,13 @@ html {
     @apply px-2 text-[10px];
   }
   /* Home Section */
+  .mobile-sidebar-tabs {
+    @apply hidden;
+  }
 }
-
+.mobile-sidebar-tabs {
+  @apply hidden;
+}
 .WWeDo-Section .Second-div h3,
 .About-Section .Second-div h3,
 .TeamWork-Section .Second-div h3,
