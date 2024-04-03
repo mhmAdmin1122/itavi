@@ -19,6 +19,7 @@ import {
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoCloseOutline } from "react-icons/io5";
 import Button from "./components/Button";
+import SocialSideBar from "./components/SocialSideBar";
 const montserrat = Montserrat({
   weight: "400",
   subsets: ["latin"],
@@ -653,6 +654,10 @@ export default function Home() {
         {/* contact-section */}
       </div>
       {/* sections-snaper */}
+
+      {/* social icons for laptop */}
+      <SocialSideBar />
+      {/* social icons for laptop */}
     </div>
   );
 }

@@ -616,7 +616,9 @@ html {
 .legal-dropbtn:hover .down-drop-ico {
   @apply hidden;
 }
-
+.forlaptop-ico{
+  @apply hidden;
+}
 /*  Responsive Media Queries  */
 @media (min-width: 1850px) {
   .Home-Section .heading p,
@@ -749,6 +751,9 @@ html {
     color: white;
     font-size: 14px;
     border: none;
+  }
+  .forlaptop-ico{
+    @apply block;
   }
 }
 @media (max-width: 749px) and (min-width: 451px) {
