@@ -436,9 +436,13 @@ export default function Home() {
 
         {/* About-Us-section */}
         <section
-          className="slider-container About-Section sections relative"
+          className="slider-container bg-[#121212] text-[#fff] flex items-center justify-center sections relative"
           id="about"
         >
+        {/* <section
+          className="slider-container About-Section sections relative"
+          id="about"
+        > */}
           <Link
             href="#home"
             className="absolute top-0 z-[999999] btn-design-top btn-design"
@@ -452,7 +456,7 @@ export default function Home() {
             <TfiAngleDown />
           </Link>
           <div className="About-content-container flex flex-col items-center gap-6 text-center justify-center">
-            <h2 className="shadow-text">About Us</h2>
+            <h2 className="shadow-text text-6xl">About Us</h2>
             <div className="About-Content-Box flex flex-col items-center w-full justify-center pb-2">
               <h3 className="numbers shadow-text">02</h3>
               <div className="w-[70%] text-left about-us-para flex flex-col gap-4">
@@ -498,7 +502,7 @@ export default function Home() {
             <TfiAngleDown />
           </Link>
           <div>
-            <div className="video-container">
+            {/* <div className="video-container">
               <video
                 className="absolute top-0 left-0 w-full h-full object-cover z-0"
                 autoPlay
@@ -508,7 +512,7 @@ export default function Home() {
                 <source src="/video/dron2video.mp4" type="video/mp4" />
               </video>
               <div className="absolute top-0 left-0 w-full h-full object-cover z-4 bg-[#0000009a]"></div>
-            </div>
+            </div> */}
 
             <div className="flex items-center gap-6 relative flex-col justify-center">
               <h2 className="shadow-text text-center">The Opportunity</h2>
@@ -539,9 +543,13 @@ export default function Home() {
 
         {/* Documentation-section */}
         <section
-          className="slider-container sections TeamWork-Section relative"
+          className="slider-container sections bg-[#121212] text-white flex flex-col items-center justify-center relative"
           id="documentation"
         >
+        {/* <section
+          className="slider-container sections TeamWork-Section relative"
+          id="documentation"
+        > */}
           <Link
             href="#opportunity"
             className="absolute top-0 z-[999999] btn-design-top btn-design"
@@ -555,8 +563,8 @@ export default function Home() {
             <TfiAngleDown />
           </Link>
 
-          <div className="flex flex-col items-center justify-center gap-6">
-            <h2 className="shadow-text !w-full text-center">Documentation</h2>
+          <div className="flex flex-col items-center justify-center gap-2">
+            <h2 className="shadow-text !w-full text-center text-6xl">Documentation</h2>
             <p className="w-[70%] documentation-para">
               We provide full-transparency with our documentation to our
               Investors. Make sure you go-through the important information
@@ -564,11 +572,27 @@ export default function Home() {
               Memorándum and Subscription Agreement, Pitch Deck, and Technical
               Report.
             </p>
-            <div className="flex items-center gap-6">
-              <PPMDownloadBtn />
+            <PPMDownloadBtn />
+            <p className="w-[70%] documentation-para">
+              We provide full-transparency with our documentation to our
+              Investors. Make sure you go-through the important information
+              highlighted in the documents. In the next pages you{"'"}ll find a
+              Memorándum and Subscription Agreement, Pitch Deck, and Technical
+              Report.
+            </p>
+            <EMDDownloadBtn />
+            <p className="w-[70%] documentation-para">
+              We provide full-transparency with our documentation to our
+              Investors. Make sure you go-through the important information
+              highlighted in the documents. In the next pages you{"'"}ll find a
+              Memorándum and Subscription Agreement, Pitch Deck, and Technical
+              Report.
+            </p>
+            <TRDownloadBtn />
+            {/* <div className="flex items-center gap-6">
               <EMDDownloadBtn />
               <TRDownloadBtn />
-            </div>
+            </div> */}
           </div>
         </section>
         {/* Documentation-section */}
