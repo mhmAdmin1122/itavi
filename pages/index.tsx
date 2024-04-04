@@ -653,7 +653,7 @@ export default function Home() {
               <h3 className="text-9xl shadow-text contact-number numbers">
                 06
               </h3>
-              <p className="contact-content-box-para w-[90%]">
+              <p className="contact-content-box-para w-[70vh]">
                 Got any question about our project? Want to know more about us?
                 Please fill out the form, email us at:{" "}
                 <b>
@@ -680,7 +680,7 @@ export default function Home() {
           </div>
 
           <form className="flex flex-col items-center justify-start gap-4 w-[70%] text-[#000] contact-Form-Box">
-            <h5 className="w-full text-white text-lg">Get In Touch</h5>
+            <h5 className="w-full mt-[5vh] text-white text-lg">Get In Touch</h5>
             <div className="flex items-center gap-4 w-full">
               <input
                 type="text"
