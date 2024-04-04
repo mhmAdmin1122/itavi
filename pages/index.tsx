@@ -653,7 +653,7 @@ export default function Home() {
               <h3 className="text-9xl shadow-text contact-number numbers">
                 06
               </h3>
-              <p className="contact-content-box-para w-[70vw]">
+              <p className="contact-content-box-para w-[70vh]">
                 Got any question about our project? Want to know more about us?
                 Please fill out the form, email us at:{" "}
                 <b>
