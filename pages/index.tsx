@@ -445,13 +445,9 @@ export default function Home() {
 
         {/* About-Us-section */}
         <section
-          className="slider-container bg-[#121212] text-[#fff] flex items-start pt-32 justify-center sections relative"
+          className="slider-container about-box-container bg-[#121212] text-[#fff] flex items-start pt-32 justify-center sections relative"
           id="about"
         >
-          {/* <section
-          className="slider-container About-Section sections relative"
-          id="about"
-        > */}
           <Link
             href="#home"
             className="absolute top-0 z-[999999] btn-design-top btn-design"
@@ -488,7 +484,7 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div className="flex items-center gap-10 flex-wrap">
+            <div className="flex items-center gap-10 flex-wrap justify-center">
               <Button
                 url="/values"
                 btnText="Our Values"
@@ -589,10 +585,6 @@ export default function Home() {
           className="slider-container sections bg-[#121212] text-white flex flex-col items-center pt-32 justify-start relative"
           id="documentation"
         >
-          {/* <section
-          className="slider-container sections TeamWork-Section relative"
-          id="documentation"
-        > */}
           <Link
             href="#opportunity"
             className="absolute top-0 z-[999999] btn-design-top btn-design"
@@ -643,7 +635,7 @@ export default function Home() {
 
         {/* contact-section */}
         <section
-          className="Contact-Section !w-full sections relative"
+          className="Contact-Section !w-full sections relative flex flex-col "
           id="contact"
         >
           <Link
@@ -652,74 +644,70 @@ export default function Home() {
           >
             <TfiAngleUp />
           </Link>
-          <div className="Text-Box contact-content-box flex flex-col items-center pt-32 gap-6 justify-start relative z-10 px-[10%]">
-            <div className="w-[100%] contact-content-container">
-              <h2 className="w-full text-[68px] flex items-center justify-center text-center shadow-text">
-                Contact
-              </h2>
-              <div className="flex items-center justify-center gap-4 pb-1 contact-para">
-                <h3 className="text-9xl shadow-text contact-number numbers">
-                  06
-                </h3>
-                <p className="contact-content-box-para w-[90%]">
-                  Got any question about our project? Want to know more about
-                  us? Please fill out the form, email us at:{" "}
-                  <b>
-                    <Link
-                      href="mailto:william@itavimining.com"
-                      target="blank"
-                      className="hover:underline"
-                    >
-                      william@itavimining.com
-                    </Link>
-                  </b>{" "}
-                  or contact us here:{" "}
-                  <b>
-                    <Link
-                      href="tel:6467700628"
-                      target="blank"
-                      className="hover:underline"
-                    >
-                      {"("}646{")"} 770-0628
-                    </Link>
-                  </b>
-                </p>
-              </div>
-            </div>
 
-            <form className="flex flex-col items-center justify-start gap-4 w-[70%] text-[#000] contact-Form-Box">
-              <h5 className="w-full text-white text-lg">Get In Touch</h5>
-              <div className="flex items-center gap-4 w-full">
-                <input
-                  type="text"
-                  className="outline-none px-6 py-2 rounded-md w-1/2"
-                  placeholder="Name"
-                />
-                <input
-                  type="text"
-                  className="outline-none px-6 py-2 rounded-md w-1/2"
-                  placeholder="Email"
-                />
-              </div>
+          <div className="w-[100%] contact-content-container">
+            <h2 className="w-full text-[68px] pb-6 flex items-center justify-center text-center shadow-text">
+              Contact
+            </h2>
+            <div className="flex items-center justify-center gap-4 pb-1 contact-para">
+              <h3 className="text-9xl shadow-text contact-number numbers">
+                06
+              </h3>
+              <p className="contact-content-box-para w-[90%]">
+                Got any question about our project? Want to know more about us?
+                Please fill out the form, email us at:{" "}
+                <b>
+                  <Link
+                    href="mailto:william@itavimining.com"
+                    target="blank"
+                    className="hover:underline"
+                  >
+                    william@itavimining.com
+                  </Link>
+                </b>{" "}
+                or contact us here:{" "}
+                <b>
+                  <Link
+                    href="tel:6467700628"
+                    target="blank"
+                    className="hover:underline"
+                  >
+                    {"("}646{")"} 770-0628
+                  </Link>
+                </b>
+              </p>
+            </div>
+          </div>
+
+          <form className="flex flex-col items-center justify-start gap-4 w-[70%] text-[#000] contact-Form-Box">
+            <h5 className="w-full text-white text-lg">Get In Touch</h5>
+            <div className="flex items-center gap-4 w-full">
               <input
                 type="text"
-                placeholder="Subject"
-                className="outline-none px-6 py-2 rounded-md w-full"
+                className="outline-none px-6 py-2 rounded-md w-1/2"
+                placeholder="Name"
               />
-              <textarea
-                rows={4}
-                cols={30}
-                placeholder="Message"
-                className="outline-none px-6 py-2 rounded-md w-full"
+              <input
+                type="text"
+                className="outline-none px-6 py-2 rounded-md w-1/2"
+                placeholder="Email"
               />
-              <button
-                type="submit"
-                className="px-6 py-2 bg-[#d98700] font-bold"
-              >
-                Message
-              </button>
-            </form>
-          </div>
+            </div>
+            <input
+              type="text"
+              placeholder="Subject"
+              className="outline-none px-6 py-2 rounded-md w-full"
+            />
+            <textarea
+              rows={4}
+              cols={30}
+              placeholder="Message"
+              className="outline-none px-6 py-2 rounded-md w-full"
+            />
+            <button type="submit" className="px-6 py-2 bg-[#d98700] font-bold">
+              Message
+            </button>
+          </form>
         </section>
         {/* contact-section */}
       </div>

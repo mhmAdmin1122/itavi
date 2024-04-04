@@ -768,7 +768,7 @@ html {
     @apply text-end;
   }
 }
-@media (max-width: 749px) and (min-width: 451px) {
+@media (max-width: 749px) and (min-width: 551px) {
   .mob-router-back-link-toster {
     @apply block bottom-10 -left-2 text-lg;
   }
@@ -853,7 +853,7 @@ html {
     @apply w-full;
   }
   .newlatter-form button {
-    @apply text-[12px];
+    @apply text-[16px];
   }
   .WWeDo-Section .Second-div h3,
   .About-Section .Second-div h3,
@@ -900,15 +900,38 @@ html {
   .Contact-Section .Second-div {
     @apply gap-[2px];
   }
-  a[href="/Investment"] {
-    @apply px-2 text-[10px];
-  }
+
   /* Home Section */
   .mobile-sidebar-tabs {
     @apply hidden;
   }
   .mobile-sidebar-tabs-main {
-    @apply block;
+    @apply block pt-[54px];
+  }
+  .heading-deatilBox-home-Section h2 {
+    font-size: 60px;
+    padding-bottom: 2px;
+  }
+  .heading-deatilBox-home-Section{
+    @apply justify-start;
+  }
+  .about-us-para,
+  .opportunity-para {
+    @apply w-full;
+  }
+  .about-box-container,
+  .WWeDo-Section,
+  #documentation {
+    @apply pt-[7rem];
+  }
+  #documentation h2 {
+    word-wrap: break-word;
+  }
+  .Contact-Section {
+    @apply justify-start pt-[7rem];
+  }
+  .contact-Form-Box {
+    @apply w-[90%];
   }
 }
 .mobile-sidebar-tabs {
@@ -921,7 +944,7 @@ html {
   @apply text-9xl;
 }
 
-@media (max-width: 450px) and (min-width: 160px) {
+@media (max-width: 550px) and (min-width: 160px) {
   .Home-Section .heading h2 {
     font-size: 39px !important;
     font-weight: 200 !important;
@@ -1312,8 +1335,25 @@ html {
   #documentation {
     @apply pt-16;
   }
-   .contact-content-box{
+  .contact-content-box {
     @apply pt-4;
+  }
+  .heading-deatilBox-home-Section, .Contact-Section{
+    @apply justify-start;
+  }
+  .about-box-container,
+  .WWeDo-Section,
+  #documentation {
+    @apply pt-[5rem];
+  }
+   .Contact-Section {
+    @apply pt-[4rem];
+  }
+  .Contact-Section h2{
+    @apply pb-[14px];
+  }
+  .WWeDo-Section h2{
+    @apply mb-0;
   }
 }
 /* snaping */
