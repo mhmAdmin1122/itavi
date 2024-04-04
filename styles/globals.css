@@ -687,10 +687,37 @@ html {
 .mobile-sidebar-tabs-main {
   @apply hidden;
 }
-
+/* all heading and there spaces [Home page] */
+.heading-deatilBox-home-Section {
+  @apply justify-start;
+}
+.about-box-container,
+.WWeDo-Section,
+#documentation,
+.Contact-Section {
+  @apply pt-[7rem];
+}
+.Contact-Section {
+  @apply justify-start;
+}
+.heading-deatilBox-home-Section h2,
+#opportunity h2,
+.contact-content-container h2 {
+  font-size: 60px;
+}
+.menu-verticalsidebar-hamburger-main-page,
+.mob-verticaltabs-box {
+  @apply hidden;
+}
+.mob-hederverticaltabs-box{
+  @apply hidden;
+}
 @media (max-width: 980px) and (min-width: 750px) {
   .mob-router-back-link-toster {
     @apply block bottom-10 -left-2 text-lg;
+  }
+  .mob-hederverticaltabs-box {
+    @apply hidden;
   }
   .menu-sidebar-hamburger-main-page,
   .mobile-sidebar-tabs-main {
@@ -767,10 +794,38 @@ html {
   .sidebar-tabs a {
     @apply text-end;
   }
+
+  .heading-deatilBox-home-Section {
+    @apply justify-start;
+  }
+  .about-box-container,
+  .WWeDo-Section,
+  #documentation,
+  .Contact-Section {
+    @apply pt-[7rem];
+  }
+  .Contact-Section {
+    @apply justify-start;
+  }
+  .heading-deatilBox-home-Section h2,
+  #opportunity h2,
+  .contact-content-container h2 {
+    font-size: 60px;
+  }
+  .fornot-moblaptab-navbar {
+    @apply hidden;
+  }
+  .menu-verticalsidebar-hamburger-main-page,
+  .mob-verticaltabs-box {
+    @apply flex;
+  }
 }
 @media (max-width: 749px) and (min-width: 551px) {
   .mob-router-back-link-toster {
     @apply block bottom-10 -left-2 text-lg;
+  }
+  .mob-hederverticaltabs-box {
+    @apply hidden;
   }
   .menu-sidebar-hamburger-main-page,
   .mobile-sidebar-tabs {
@@ -912,7 +967,7 @@ html {
     font-size: 60px;
     padding-bottom: 2px;
   }
-  .heading-deatilBox-home-Section{
+  .heading-deatilBox-home-Section {
     @apply justify-start;
   }
   .about-us-para,
@@ -932,6 +987,13 @@ html {
   }
   .contact-Form-Box {
     @apply w-[90%];
+  }
+  .fornot-moblaptab-navbar {
+    @apply hidden;
+  }
+  .mob-verticaltabs-box,
+  .menu-verticalsidebar-hamburger-main-page {
+    @apply flex;
   }
 }
 .mobile-sidebar-tabs {
@@ -1338,7 +1400,8 @@ html {
   .contact-content-box {
     @apply pt-4;
   }
-  .heading-deatilBox-home-Section, .Contact-Section{
+  .heading-deatilBox-home-Section,
+  .Contact-Section {
     @apply justify-start;
   }
   .about-box-container,
@@ -1346,14 +1409,24 @@ html {
   #documentation {
     @apply pt-[5rem];
   }
-   .Contact-Section {
+  .Contact-Section {
     @apply pt-[4rem];
   }
-  .Contact-Section h2{
+  .Contact-Section h2 {
     @apply pb-[14px];
   }
-  .WWeDo-Section h2{
+  .WWeDo-Section h2 {
     @apply mb-0;
+  }
+  .fornot-moblaptab-navbar {
+    @apply hidden;
+  }
+  .mob-verticaltabs-box,
+  .menu-verticalsidebar-hamburger-main-page {
+    @apply hidden;
+  }
+  .mob-hederverticaltabs-box {
+    @apply flex;
   }
 }
 /* snaping */

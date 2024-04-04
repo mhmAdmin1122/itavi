@@ -1,10 +1,5 @@
 import Link from "next/link";
 import React, { useState } from "react";
-import { RxHamburgerMenu } from "react-icons/rx";
-import Image from "next/image";
-import logo from "@/public/img/Logo.svg";
-import { IoCloseOutline } from "react-icons/io5";
-import weFunderIco from "@/public/img/wefunder.png";
 import {
   FaAngleDown,
   FaAngleRight,
@@ -12,8 +7,12 @@ import {
   FaSquareFacebook,
   FaSquareXTwitter,
 } from "react-icons/fa6";
+import { IoCloseOutline } from "react-icons/io5";
+import { RxHamburgerMenu } from "react-icons/rx";
+import weFunderIco from "@/public/img/wefunder.png";
+import Image from "next/image";
 
-const OpportunitySideBar = () => {
+const VerticalNavbar = () => {
   const [showTabs, setShowTabs] = useState(false);
   const [mobHomeTab, setMobHomeTab] = useState(false);
   const [mobAboutTab, setMobAboutTab] = useState(false);
@@ -38,45 +37,136 @@ const OpportunitySideBar = () => {
   const mobLegalTabOpen = () => {
     setMobLegalTab((current: any) => !current);
   };
+  const handle1Download = () => {
+    const pdfUrl = "/pdf/ppm.pdf";
+    const link = document.createElement("a");
+    link.href = pdfUrl;
+    link.setAttribute("download", "privateplacement.pdf");
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+  const handle2Download = () => {
+    const pdfUrl = "/pdf/Emd.pdf";
+    const link = document.createElement("a");
+    link.href = pdfUrl;
+    link.setAttribute("download", "pitchdeck.pdf");
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+  const handle3Download = () => {
+    const pdfUrl = "/pdf/TR.pdf";
+    const link = document.createElement("a");
+    link.href = pdfUrl;
+    link.setAttribute("download", "technicalreport.pdf");
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
 
   return (
-    <div className="side-bar-section min-h-screen max-h-full w-[30%] py-4 px-2 relative">
-      <Link
-        href="/#home"
-        className="logoBox h-[20%] flex items-center justify-center"
-      >
-        <Image
-          src={logo}
-          alt="logo-pic-itavi"
-          width={140}
-          height={120}
-          className="logo-pic-side"
-        />
-      </Link>
-      <div className="sidebar-tabs h-[75%] flex flex-col gap-2 font-normal text-white text-left items-end pt-[55px] pr-4">
-        <Link className="shadow-text" href="/reward">
-          Investor Reward
-        </Link>
-        <Link className="shadow-text" href="/visionaries">
-          Visionaries
-        </Link>
-        <Link className="shadow-text" href="/resources">
-          Scale of Resources
-        </Link>
-        <Link className="shadow-text" href="/market">
-          Emerging Markets
-        </Link>
-        <Link className="shadow-text" href="/copper">
-          Copper Concentration
+    <div>
+      <div className="flex items-center gap-8 fornot-moblaptab-navbar">
+        <div className="documentation-dropdown">
+          <Link
+            href="/#home"
+            className="documentation-dropbtn hover:underline !text-[#000] flex items-center gap-2"
+          >
+            <p>Home</p>
+            <FaAngleDown className="down-drop-ico" />
+            <FaAngleRight className="right-drop-ico" />
+          </Link>
+          <div className="documentation-dropdown-content">
+            <Link href="https://wefunder.com/itavimining" target="blank">
+              Invest
+            </Link>
+            <Link href="/Investment">Investment Details</Link>
+          </div>
+        </div>
+
+        <div className="about-dropdown">
+          <Link
+            href="/#about"
+            className="about-dropbtn hover:underline !text-[#000] flex items-center gap-2"
+          >
+            <p>About</p>
+            <FaAngleDown className="down-drop-ico" />
+            <FaAngleRight className="right-drop-ico" />
+          </Link>
+          <div className="about-dropdown-content">
+            <Link href="/values">Our Values</Link>
+            <Link href="/history">History</Link>
+            <Link href="/conviction">Invest With Conviction</Link>
+          </div>
+        </div>
+
+        <div className="opportunity-dropdown">
+          <Link
+            href="/#opportunity"
+            className="opportunity-dropbtn hover:underline !text-[#000] flex items-center gap-2"
+          >
+            <p>Opportunity</p>
+            <FaAngleDown className="down-drop-ico" />
+            <FaAngleRight className="right-drop-ico" />
+          </Link>
+          <div className="opportunity-dropdown-content">
+            <Link href="/reward">Investor Rewards</Link>
+            <Link href="/visionaries">Visionaries</Link>
+            <Link href="/resources">Scale of Resources</Link>
+            <Link href="/market">Emerging Markets</Link>
+            <Link href="/copper">Copper Concentration</Link>
+          </div>
+        </div>
+
+        <div className="documentation-dropdown">
+          <Link
+            href="/#documentation"
+            className="documentation-dropbtn hover:underline !text-[#000] flex items-center gap-2"
+          >
+            <p className="cursor-pointer">Documentation</p>
+            <FaAngleDown className="down-drop-ico" />
+            <FaAngleRight className="right-drop-ico" />
+          </Link>
+          <div className="documentation-dropdown-content">
+            <div onClick={handle1Download}>Private Placement Memorandum</div>
+            <div onClick={handle2Download}>Company Pitch Deck</div>
+            <div onClick={handle3Download}>Property Technical Report</div>
+          </div>
+        </div>
+
+        <div className="legal-dropdown">
+          <div className="legal-dropbtn !text-[#000] flex items-center gap-2">
+            <p className="cursor-pointer">Legal</p>
+            <FaAngleDown className="down-drop-ico" />
+            <FaAngleRight className="right-drop-ico" />
+          </div>
+          <div className="legal-dropdown-content">
+            <Link href="/faqs">FAQs</Link>
+            <Link href="/disclaimer">Disclaimer</Link>
+            <Link href="/terms">Terms & Conditions</Link>
+            <Link href="/privacy">Privacy Policy</Link>
+          </div>
+        </div>
+
+        <Link
+          href="/#contact"
+          className="hover:underline text-[16px] contact-btn-tabs"
+        >
+          Contact
         </Link>
       </div>
+      {/* for-mobile-navbar */}
       <div className="relative">
-        <div className="menu-sidebar-hamburger" onClick={handleShowTabs}>
+        <div
+          className="menu-verticalsidebar-hamburger-main-page flex w-full justify-end items-end text-4xl"
+          onClick={handleShowTabs}
+        >
           {showTabs ? <IoCloseOutline /> : <RxHamburgerMenu />}
         </div>
         {showTabs && (
-          <div className="w-full flex items-end justify-end top-[44px] -right-2 absolute mob-hederverticaltabs-box">
-            <div className="vert-mob-tabs-box w-[320px] bg-[#000] text-[#fff] p-6 rounded-b-md">
+          <div className="w-full flex items-end justify-end absolute mob-verticaltabs-box">
+            <div className="vert-mob-tabs-box w-[300px] bg-[#000] text-[#fff] p-6 rounded-b-md rounded-tl-md rounded-tr-sm">
               <div className="hover:underline shadow-text flex flex-col items-end gap-2">
                 <div className="flex items-center gap-2">
                   <button onClick={mobHomeTabOpen}>Home</button>
@@ -245,4 +335,4 @@ const OpportunitySideBar = () => {
   );
 };
 
-export default OpportunitySideBar;
+export default VerticalNavbar;
