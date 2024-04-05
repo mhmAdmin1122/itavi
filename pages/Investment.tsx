@@ -1,30 +1,11 @@
-// import React from "react";
-// import PageLayout from "./components/PageLayout";
-// import Head from "next/head";
-
-// const InvestmentPage = () => {
-//   return (
-//     <div>
-//       <Head>
-//         <title>Investment - Itavi Mining</title>
-//       </Head>
-//       <PageLayout>
-//         <div>Investment</div>
-//       </PageLayout>
-//     </div>
-//   );
-// };
-
-// export default InvestmentPage;
-
 import Head from "next/head";
 import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import ProjectImage1 from "@/public/img/ProjectImage1.jpeg";
-import ProjectImage2 from "@/public/img/ProjectImage2.jpeg";
-import ProjectImage3 from "@/public/img/ProjectImage3.jpeg";
-import ProjectImage4 from "@/public/img/ProjectImage4.jpeg";
+import ProjectImage1 from "@/public/img/ProjectImage1.jpg";
+import ProjectImage2 from "@/public/img/ProjectImage2.jpg";
+import ProjectImage3 from "@/public/img/ProjectImage3.jpg";
+import ProjectImage4 from "@/public/img/ProjectImage4.jpg";
 import RouterBack from "./components/RouterBack";
 
 const InvestmentPage = () => {
@@ -148,7 +129,7 @@ const InvestmentPage = () => {
           </div>
 
           {button01 && (
-            <div className="text-shower-box flex flex-col items-start gap-2 pt-10">
+            <div className="text-shower-box flex flex-col items-start gap-2 pt-10 mb-4">
               <h2>
                 <b>The La Gran Española Project</b>
               </h2>
@@ -216,7 +197,7 @@ const InvestmentPage = () => {
           )}
 
           {button02 && (
-            <div className="text-shower-box flex flex-col items-start gap-2 pt-10">
+            <div className="text-shower-box flex flex-col items-start gap-2 pt-10 mb-4">
               <h2>
                 <b>Meet The Experts</b>
               </h2>
@@ -285,7 +266,7 @@ const InvestmentPage = () => {
           )}
 
           {button03 && (
-            <div className="text-shower-box flex flex-col items-start gap-5 pt-10">
+            <div className="text-shower-box flex flex-col items-start gap-5 pt-10 mb-4">
               <div>
                 <h2>
                   <b>Investment Options</b>
