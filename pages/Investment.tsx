@@ -7,6 +7,7 @@ import ProjectImage2 from "@/public/img/ProjectImage2.jpg";
 import ProjectImage3 from "@/public/img/ProjectImage3.jpg";
 import ProjectImage4 from "@/public/img/ProjectImage4.jpg";
 import RouterBack from "./components/RouterBack";
+import Button from "./components/Button";
 
 const InvestmentPage = () => {
   const [button01, setButton01] = useState(true);
@@ -65,12 +66,8 @@ const InvestmentPage = () => {
               <b>NOTE:</b> Thorough due diligence is recommended before
               investing, as with any mining venture.
             </p>
-            <button className="w-fit bg-[#ca8a04] px-6 py-2 text-[#fff] font-bold rounded-sm hover:text-[#ca8a04] hover:bg-[#000] hover:border-[#ca8a04] transition-all ease-in-out duration-700 border-2 border-[#ca8a04]">
-              <a href="https://wefunder.com/itavimining">
-                <p className="btn-txt-desctop">Invest Now!</p>
-                <p className="btn-txt-mob">Invest</p>
-              </a>
-            </button>
+            
+            <Button url="https://wefunder.com/itavimining" btnText="Invest Now!" btnText2="Invest" />
           </div>
 
           <div className="flex justify-center max-[900px]:w-full">
@@ -217,9 +214,10 @@ const InvestmentPage = () => {
                 <b>10 years of experience</b> in financial services, investment
                 banking, and mergers and acquisitions (M&A), Lourdes manages
                 transactions for clients ranging from exploration and
-                development companies to global metals and mining giants.
-                She also serves as an <b>advisor to Inventa Capital.</b>
-                <br /><br />
+                development companies to global metals and mining giants. She
+                also serves as an <b>advisor to Inventa Capital.</b>
+                <br />
+                <br />
                 <b>Carlos Johnny Thompson</b> (Director and Exploration Chief)
                 <br />
                 Carlos Johnny Thompson, a professional geological engineer,
@@ -232,9 +230,11 @@ const InvestmentPage = () => {
                 copper, and antimony projects. Carlos has worked within the
                 geological provinces of the Altiplano, Western Cordillera, and
                 Precambrian Shield in Bolivia. <br />
-                <p className="pt-2">Notably, he was the head of geology at <b>Inti Raymi S.A.</b>,
-                the Bolivian developer of the Kori Kollu-Kori Chaca gold-copper
-                project.</p>
+                <p className="pt-2">
+                  Notably, he was the head of geology at <b>Inti Raymi S.A.</b>,
+                  the Bolivian developer of the Kori Kollu-Kori Chaca
+                  gold-copper project.
+                </p>
                 <br />
                 <b>William Cabrera</b> (Chief Executive Officer)
                 <br />
@@ -323,18 +323,13 @@ const InvestmentPage = () => {
         </div>
 
         <div className="trigerring-btn-box px-[60px] py-[12px] flex items-center gap-4 justify-end fixed right-2 bottom-4">
-          <button className="w-fit bg-[#fff] px-6 py-2 text-[#212121] font-bold rounded-sm hover:text-[#fff] hover:bg-[#212121] hover:border-[#fff] transition-all ease-in-out duration-700 border-2">
-            <Link href="https://wefunder.com/itavimining">Invest</Link>
-          </button>
-          <button className="w-fit bg-[#fff] px-6 py-2 text-[#212121] font-bold rounded-sm hover:text-[#fff] hover:bg-[#212121] hover:border-[#fff] transition-all ease-in-out duration-700 border-2">
-            <Link href="/">Home</Link>
-          </button>
-          <button className="w-fit bg-[#fff] px-6 py-2 text-[#212121] font-bold rounded-sm hover:text-[#fff] hover:bg-[#212121] hover:border-[#fff] transition-all ease-in-out duration-700 border-2">
-            <Link href="/contact">
-              <p className="btn-txt-desctop">Contact Us</p>
-              <p className="btn-txt-mob">Contact</p>
-            </Link>
-          </button>
+          <Button
+            url="https://wefunder.com/itavimining"
+            btnText="Invest Now"
+            btnText2="Invest"
+          />
+          <Button url="/#home" btnText="Go Home" btnText2="Home" />
+          <Button url="/#contact" btnText="Contact Us" btnText2="Contact" />
         </div>
       </div>
 
