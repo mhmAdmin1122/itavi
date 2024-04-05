@@ -87,7 +87,7 @@ export default function Home() {
 
       {/* Header */}
       <header className="bg-transparent navbar text-white flex items-center justify-between fixed top-0 !z-[999999] right-0 w-full py-4 px-[40px]">
-        <Link href="#about" className="w-[110px] logo-main-page">
+        <Link href="/#home" className="w-[110px] logo-main-page">
           <Image src={Logo} alt="logo-pic" className="logo-pic" />
         </Link>
 
@@ -653,7 +653,7 @@ export default function Home() {
               <h3 className="text-9xl shadow-text contact-number numbers">
                 06
               </h3>
-              <p className="contact-content-box-para w-[70vh]">
+              <p className="contact-content-box-para w-[70%]">
                 Got any question about our project? Want to know more about us?
                 Please fill out the form, email us at:{" "}
                 <b>
